@@ -13,11 +13,11 @@ services:
 
   web:
     build: .
-    container_name: uttarkarnataka_app
+    container_name: nammaBidar_app
     ports:
-      - "8096:80"
+      - "9093:80"
     volumes:
-      - ./uttarkarnataka:/var/www/html
+      - ./nammabidar:/var/www/html
     depends_on:
       - db
     environment:

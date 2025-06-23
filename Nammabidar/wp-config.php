@@ -52,7 +52,7 @@ define( 'DB_PASSWORD', 'NammaBidar@2021' );
 
 /** MySQL hostname */
 
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'db' );
 
 /** Database Charset to use in creating database tables. */
 
