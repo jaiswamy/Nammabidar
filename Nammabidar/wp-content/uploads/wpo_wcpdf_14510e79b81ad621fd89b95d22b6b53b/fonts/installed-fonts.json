@@ -1,0 +1,26 @@
+{
+    "open sans": {
+        "normal": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/OpenSans-Normal",
+        "bold": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/OpenSans-Bold",
+        "italic": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/OpenSans-Italic",
+        "bold_italic": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/OpenSans-BoldItalic"
+    },
+    "segoe": {
+        "normal": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/Segoe-Normal",
+        "bold": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/Segoe-Bold",
+        "italic": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/Segoe-Italic",
+        "bold_italic": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/Segoe-BoldItalic"
+    },
+    "roboto slab": {
+        "normal": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/RobotoSlab-Normal",
+        "bold": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/RobotoSlab-Bold",
+        "italic": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/RobotoSlab-Italic",
+        "bold_italic": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/RobotoSlab-BoldItalic"
+    },
+    "currencies": {
+        "normal": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/currencies",
+        "bold": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/currencies",
+        "italic": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/currencies",
+        "bold_italic": "\/home\/u499940289\/domains\/nammabidar.in\/public_html\/wp-content\/uploads\/wpo_wcpdf_14510e79b81ad621fd89b95d22b6b53b\/fonts\/currencies"
+    }
+}

@@ -1,0 +1,50 @@
+.card--post {
+	text-align: center;
+
+	&.sticky {
+		box-shadow: 0 0 30px $gray-light;
+		border: 0;
+
+		.card__image {
+			border: 0 solid transparent;
+			border-width: 0 1px;
+		}
+	}
+
+	.card__content {
+		padding-top: 32px;
+		padding-bottom: 32px;
+		font-size: 14px;
+
+	    flex-grow: 1;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+	}
+
+	.card__image:after {
+		padding-top: 100%;
+	}
+
+	.card__title {
+		font-size: 24px;
+		margin-bottom: 17px;
+	}
+
+	a:hover {
+		color: $accent;
+	}
+
+	ul.card__links {
+		padding-left: 0;
+
+		&:before {
+		    content: " \00B7 ";
+	    	padding: 0 0.25em;
+		}
+
+    	&, > li {
+			display: inline;
+    	}
+	}
+}

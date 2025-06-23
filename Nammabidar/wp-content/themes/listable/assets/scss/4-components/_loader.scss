@@ -1,0 +1,31 @@
+.loader {
+	pointer-events: none;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -20px;
+	margin-left: -20px;
+	animation: rotate 1s infinite;
+	opacity: 0;
+	transition: opacity $transition-macro  ease-in-out;
+	color: $accent;
+
+	@include query-above($lap) {
+		left: 300px;
+	}
+
+	@include query-above($desk) {
+		left: 360px;
+	}
+
+	.loading + & {
+		opacity: 1;
+	}
+}
+
+@keyframes rotate {
+	0% 		{ transform: rotate(180deg) }
+	100% 	{ transform: rotate(-180deg) }
+}

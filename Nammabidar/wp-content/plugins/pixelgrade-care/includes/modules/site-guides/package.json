@@ -1,0 +1,28 @@
+{
+	"name": "pixelgrade-care-site-guides",
+	"version": "1.0.0",
+	"description": "Module to display site guides throughout the WordPress admin. Inspired by the Custom Welcome Guide plugin.",
+	"author": "Vlad Olaru, Atanas Yonkov, Vlastimir Samolov",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start",
+		"packages-update": "wp-scripts packages-update"
+	},
+	"dependencies": {
+		"@wordpress/blocks": "^11.0.0",
+		"@wordpress/compose": "^5.0.1",
+		"@wordpress/data": "^6.0.0",
+		"@wordpress/edit-post": "^6.0.0",
+		"@wordpress/edit-site": "^4.0.0",
+		"@wordpress/i18n": "^4.2.1",
+		"@wordpress/notices": "^3.2.2"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^17.1.0"
+	}
+}

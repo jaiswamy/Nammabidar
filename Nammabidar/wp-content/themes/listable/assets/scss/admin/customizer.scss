@@ -1,0 +1,101 @@
+#customize-control-listable_options-mapbox_style_control {
+
+  .customify_radio_image {
+    display: block;
+    margin-left: -10px;
+
+    label {
+      width: 50%;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      margin-right: 0;
+
+      img {
+        max-width: 100%;
+        width: 90% !important;
+        height: auto;
+      }
+
+      input[type=radio]:checked + img {
+        border: 0 !important;
+        outline: 2px solid #00a0d2;
+      }
+    }
+  }
+}
+
+//.field_separator {
+//  display: block;
+//  margin-left: -15px;
+//  margin-right: -15px;
+//  padding: 5px;
+//
+//  text-align: center;
+//  border-top: 1px solid #E5E5E5;
+//  color: #E5E5E5;
+//  font-size: 22px;
+//  letter-spacing: 3px;
+//
+//  &:hover {
+//    color: #555;
+//  }
+//}
+//
+//#customize-controls .listable-image-modal-control {
+//  position: relative;
+//  padding-top: 10px;
+//
+//  a.listable-image-modal-control__choose {
+//    text-align: center;
+//    padding: 36px 0;
+//    display: block;
+//    margin: 0;
+//    height: auto;
+//    width: 100%;
+//    font-size: 40px;
+//  }
+//
+//  a.listable-image-modal-control__clear {
+//    display: none;
+//  }
+//
+//  &.has-image {
+//
+//    &:hover {
+//      .listable-image-modal-control__clear {
+//        top: -25px;
+//        left: auto;
+//        display: inline-block;
+//        opacity: 1;
+//        position: absolute;
+//        z-index: 99999;
+//        right: 0px;
+//        width: 30px;
+//        height: 35px;
+//        padding: 10px;
+//        background: transparent;
+//        border: none;
+//        box-shadow: none;
+//        text-align: center;
+//        color: #f00;
+//        font-size: 20px;
+//        overflow: hidden;
+//      }
+//    }
+//
+//    a {
+//      position: absolute;
+//      top: 0;
+//      left: 0;
+//      width: 100%;
+//      height: 100%;
+//      opacity: 0;
+//    }
+//
+//
+//    img {
+//      height: auto;
+//      width: 100%;
+//    }
+//  }
+//}

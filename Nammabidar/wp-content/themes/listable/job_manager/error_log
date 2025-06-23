@@ -1,0 +1,12 @@
+[29-May-2021 21:18:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_user_logged_in() in /home/hiideals/public_html/nammabidar.in/wp-content/themes/listable/job_manager/account-signin.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hiideals/public_html/nammabidar.in/wp-content/themes/listable/job_manager/account-signin.php on line 1
+[31-May-2021 11:51:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_user_logged_in() in /home/hiideals/public_html/nammabidar.in/wp-content/themes/listable/job_manager/account-signin.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hiideals/public_html/nammabidar.in/wp-content/themes/listable/job_manager/account-signin.php on line 1
+[06-Jun-2021 09:55:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_user_logged_in() in /home/hiideals/public_html/nammabidar.in/wp-content/themes/listable/job_manager/account-signin.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/hiideals/public_html/nammabidar.in/wp-content/themes/listable/job_manager/account-signin.php on line 1

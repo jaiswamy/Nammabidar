@@ -1,0 +1,714 @@
+.page-add-listing,
+.page-job-dashboard {
+
+	.site-main {
+		padding: 0;
+	}
+
+	.hentry {
+		background: $gray-lightest;
+		overflow: hidden;
+	}
+}
+
+.page-add-listing fieldset:first-child {
+	@include query-above($lap) {
+		margin-top: -100px;
+	}
+}
+
+.page-job-dashboard .job-manager-message + .job-manager-form {
+	margin-top: 30px;
+}
+
+.page-add-listing,
+.page-job-dashboard {
+
+	fieldset:first-child {
+		background: $gray-lightest;
+		border: 1px solid $borders;
+		padding: 30px;
+		padding-bottom: 40px;
+		border-radius: 4px;
+		position: relative;
+		font-size: 15px;
+		line-height: 25px;
+
+		label {
+			@extend %alt-sans-serif;
+			font-size: 18px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid $borders;
+			margin-bottom: 20px;
+		}
+	}
+
+	.entry-content {
+		margin-bottom: 0;
+
+		@include query-above($lap) {
+			position: relative;
+			margin-top: -35px;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+		}
+	}
+
+	.job-manager-form {
+
+		p:last-child {
+			margin-top: 55px;
+			margin-bottom: 40px;
+
+			.button {
+				display: block;
+				width: 100%;
+
+				+ .button {
+					margin-top: 20px;
+				}
+			}
+		}
+
+		.select2-container {
+			.select2-search--inline {
+
+				padding-top: 0;
+				padding-bottom: 0;
+
+				.select2-search__field {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+	.fieldset-job_location .geo-tag {
+		display: block;
+	}
+}
+
+@include query-above($lap) {
+	.page-add-listing,
+	.page-job-dashboard {
+		.job-manager-error + .job-manager-form fieldset:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.job-manager-form {
+
+	.chosen-container-multi .chosen-choices li.search-field input[type=text],
+	.chosen-container-single .chosen-single span {
+		padding: rem(14px) rem(15px);
+		font-size: 14px;
+		height: 47px;
+	}
+
+	.chosen-container-multi .chosen-choices li.search-field {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.chosen-container-multi .chosen-choices li.search-choice {
+		display: inline-block;
+	}
+
+	select {
+		background-color: white;
+		border-color: $borders;
+		font-weight: normal;
+		font-size: 14px;
+	}
+
+	.field {
+		position: relative;
+
+		small.field-description {
+			display: block;
+			margin-top: 6px;
+			font-size: 14px;
+			line-height: 25px;
+			color: $gray;
+			opacity: 1;
+		}
+	}
+
+	.select2-search {
+		border: 0;
+	}
+
+	.select2-selection--single .select2-selection__arrow {
+		display: block;
+	}
+
+	.select2-container--default {
+		&.select2-container--focus {
+
+		}
+
+		.select2-selection--multiple[class] {
+			border-radius: 4px;
+			border: 1px solid rgba(0, 0, 0, 0.075);
+
+			.select2-selection__choice {
+				padding: 12px;
+				display: flex;
+				align-items: center;
+				flex-direction: row-reverse;
+				background: #F9F9F9;
+			}
+
+			.select2-selection__rendered {
+				padding: 0;
+			}
+
+			.select2-selection__choice__remove {
+				font-size: 21px;
+				line-height: 1;
+
+				color: #c1c1c1;
+
+				margin-right: 0;
+				margin-left: 10px;
+			}
+		}
+
+		.select2-results__option--highlighted[aria-selected] {
+			color: currentColor;
+		}
+	}
+}
+
+@include query-above(1260px) {
+
+	.description_tooltip {
+		width: 17em;
+		position: absolute;
+		top: 0;
+		right: 100%;
+		margin-right: 24px;
+		padding: 20px 20px;
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 25px;
+		color: $gray;
+		background: white;
+		border: 1px solid $borders;
+		margin-top: -1px;
+		border-radius: 4px;
+		opacity: 1;
+		text-align: center;
+
+		&:after {
+			content: "";
+			display: block;
+			width: 16px;
+			height: 16px;
+			border: 1px solid transparent;
+			background: white;
+			border-top-color: $borders;
+			border-right-color: $borders;
+			position: absolute;
+			top: 16px;
+			right: -9px;
+			transform: rotate(45deg);
+		}
+	}
+
+	.description_tooltip.left {
+		top: -45px;
+	}
+
+	.description_tooltip.right {
+		right: auto;
+		margin-right: 0;
+		left: 100%;
+		margin-left: 24px;
+
+		&:after {
+			border-right-color: transparent;
+			border-left-color: $borders;
+			transform: rotate(-45deg);
+			right: auto;
+			left: -9px;
+		}
+	}
+}
+
+.fieldset-company_logo {
+
+	input[type="file"] {
+		display: none;
+	}
+
+	label {
+		margin-bottom: 0;
+	}
+
+	.job-manager-form & small.field-description {
+		margin-top: 0;
+	}
+}
+
+.job-manager-form fieldset .job-manager-uploaded-files {
+	display: inline;
+	vertical-align: top;
+
+	.job-manager-uploaded-file {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0;
+		width: 33%;
+		padding-right: 20px;
+		margin-bottom: 20px;
+
+		span {
+			display: block;
+			padding-top: 100%;
+			position: relative;
+			overflow: hidden;
+			border-radius: 4px;
+
+			img, a {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			img {
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				max-width: none;
+			}
+		}
+	}
+}
+
+.wp-job-manager-file-upload,
+.fieldset-company_logo{
+	display: none;
+}
+
+progress {
+    width: 33%;
+    padding-right: 20px;
+    color: $accent;
+    margin-top: 16.66%
+}
+progress::-webkit-progress-bar {
+	background: $accent;
+}
+progress::-webkit-progress-value {
+	background: $accent;
+}
+progress::-moz-progress-bar {
+	background: $accent;
+}
+
+.job-manager-form fieldset .job-manager-uploaded-files .job-manager-uploaded-file .job-manager-uploaded-file-preview a {
+	@extend %btn;
+	padding: 0 6px;
+	opacity: 0;
+	transition: all $transition-micro ease-in-out;
+	line-height: inherit;
+	font-style: normal;
+}
+
+.job-manager-form fieldset .job-manager-uploaded-files .job-manager-uploaded-file .job-manager-uploaded-file-preview:hover a {
+	opacity: 1;
+}
+
+.account-sign-in + input[type="email"] {
+	margin-top: 20px !important;
+}
+
+.account-sign-in .button {
+	margin-right: 0 !important;
+	font-weight: 600;
+
+	&:before {
+		display: none !important;
+	}
+}
+
+.uploader-btn {
+	width: 33%;
+	display: inline-block;
+	padding-right: 20px;
+	margin-bottom: 20px;
+
+	.spacer {
+		padding-top: 100%;
+		cursor: pointer;
+		position: relative;
+		border: 1px solid $borders;
+		border-radius: 4px;
+
+		.text {
+			position: absolute;
+			top: 50%; left: 50%;
+			content: "";
+			transform: translate(-50%, -50%);
+			color: #919191;
+			font-size: 15px;
+			margin-top: 30px;
+			z-index: 3;
+
+			@include query-below($small) {
+				display: none;
+			}
+		}
+
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			pointer-events: none;
+			display: block;
+		}
+
+		&:before {
+			top: -15px;
+			left: 4px;
+			width: 100%;
+			height: 100%;
+			background: url('assets/svg/addphoto.svg') center no-repeat;
+
+			@include query-below($small) {
+				top: 0;
+			}
+		}
+
+		&:after {
+			top: -1px;
+			right: -1px;
+			border: 15px solid white;
+			border-bottom-color: $borders;
+			border-left-color: $borders;
+			border-bottom-left-radius: 4px;
+		}
+	}
+
+	+ small.field-description {
+		margin-top: -20px !important;
+	}
+}
+
+.page-add-listing,
+.page-job-dashboard {
+	.chosen-container-multi .chosen-choices li.search-choice {
+		@extend %alt-sans-serif;
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		padding: 12px;
+		padding-right: 30px;
+		margin: 8px 0 0 8px;
+		border: 1px solid $borders;
+		border-radius: 4px;
+		font-size: 13px;
+		color: $gray;
+		background: $gray-lightest;
+		box-shadow: none;
+
+		.search-choice-close {
+			top: 13px;
+			right: 9px;
+		}
+	}
+}
+
+.job_listing_preview {
+	padding: 0;
+	border: 0;
+
+	> h1 {
+		display: none;
+	}
+}
+
+.entry-content .job_listing_preview_title {
+	@extend %single-listing-width;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 100;
+	background: none;
+	text-align: center;
+	padding: 0;
+
+	h2 {
+		display: none;
+	}
+}
+
+.entry-content .job_listing_preview_title .button,
+.job_listing_preview_title .button {
+	float: none;
+	display: inline-block;
+}
+
+.job_listing_preview_title input[name="edit_job"] {
+	background: $dark;
+}
+
+
+.single-job_listing_preview .entry-footer,
+.single-job_listing_preview .page-header {
+	display: none;
+}
+
+html:not(.is--ready) .page-add-listing {
+	opacity: 0;
+}
+
+.single-job_listing_preview .entry-content {
+	&[class][class][class] {
+		max-width: none;
+	}
+}
+
+.job_listing_preview.single_job_listing {
+	max-width: none;
+	padding: 0;
+	padding-bottom: 50px;
+	margin: 0;
+}
+
+.page-add-listing,
+.page-job-dashboard {
+	.job-manager-form ~ * {
+		display: none;
+	}
+}
+
+#job_preview_wrapper {
+	opacity: 0;
+	transition: opacity $transition-macro ease-in-out;
+}
+#job_preview_wrapper ~ * {
+	display: none;
+}
+
+.page-package-selection {
+
+	.entry-content {
+		background: white;
+		padding: 24px;
+		padding-bottom: 48px;
+		position: relative;
+		margin-bottom: 0;
+		border-top: 1px solid $borders;
+
+		@include query-above($small) {
+			padding: 48px;
+		}
+
+		@include query-below($lap) {
+			max-width: none;
+		}
+
+		@include query-above($lap) {
+			margin-top: 20px;
+			padding: 40px;
+			padding-bottom: 70px;
+			border: 1px solid $borders;
+			border-bottom: 0;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+		}
+	}
+
+	.has-featured-image + .entry-content {
+		border-top: 0;
+
+		@include query-above($lap) {
+			margin-top: -30px;
+		}
+	}
+
+	.hentry.hentry {
+		background: white;
+	}
+
+ 	.has-featured-image + .entry-content {
+ 		@include query-above($lap) {
+ 			margin-top: 0;
+ 		}
+ 	}
+
+	.entry-content {
+		border-color: transparent;
+		background-color: transparent;
+	}
+}
+
+// Extended Location plugin
+.fieldset-job_location {
+
+	#map-canvas-options .map-action-lock {
+		padding-left: 2em;
+		line-height: 1.7em;
+		font-size: 14px;
+		color: #919191;
+
+		&:hover {
+			color: $dark;
+		}
+	}
+}
+
+
+
+
+
+// Fix the add link popup editor
+body {
+	&.modal-open {
+		overflow: hidden;
+	}
+
+	#wp-link-wrap {
+		border-radius: 4px;
+	}
+
+	#wp-link #link-options label span,
+	#wp-link #search-panel label span.search-label {
+		text-align: left;
+	}
+
+	.link-target > label > span:first-child {
+		display: none !important;
+	}
+
+	#wp-link #link-options + p.howto {
+		margin: 30px 0;
+	}
+
+	#wp-link-target {
+		margin-left: 0;
+	}
+
+	#wp-link-wrap #link-selector {
+		overflow: auto;
+	}
+
+	#wp-link .query-results {
+		position: static;
+	}
+
+	#wp-link .submitbox {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		& > * {
+			float: none;
+			line-height: normal;
+		}
+	}
+
+	#wp-link-wrap.search-panel-visible #search-panel {
+		margin-bottom: 33px;
+	}
+
+	#wp-link-search-toggle:after {
+		@extend %fa;
+
+		content: $fa-var-chevron-down;
+
+		margin-left: 5px;
+		margin-top: -2px;
+		vertical-align: middle;
+
+		font-size: 14px;
+	}
+
+	.search-panel-visible #wp-link-search-toggle:after {
+		content: $fa-var-chevron-up;
+	}
+}
+
+.page-add-listing,
+.page-listings {
+
+	.select2-results__option {
+		font-size: 13px;
+		padding: 6px 12px;
+		border: 0;
+	}
+
+	.select2-results {
+		.select2-results__options .select2-results__option:not([aria-selected="true"]):hover {
+			background-color: transparent;
+			color: $accent;
+		}
+	}
+
+	.select2-container {
+		.select2-search--inline .select2-search__field {
+			padding: 0.875rem 0.9375rem;
+		}
+	}
+
+	.select2-container--default {
+
+		.select2-results {
+			&__option--highlighted[aria-selected] {
+				background-color: transparent;
+			}
+		}
+
+		.select2-selection--multiple .select2-selection__choice {
+			background: #f9f9f9;
+			border: 1px solid rgba(0, 0, 0, 0.075);
+			border-radius: 4px;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			color: #919191;
+			display: inline-block;
+			font-size: 13px;
+			margin: 8px 0 0 8px;
+			padding: 12px;
+			padding-right: 30px;
+			position: relative;
+			z-index: 1;
+		}
+
+		.select2-results__option--highlighted[aria-selected]:not(:first-child) {
+			background-color: transparent;
+		}
+	}
+	.select2-results {
+		&__option--highlighted[aria-selected]:not(:first-child) {
+			background-color: transparent;
+		}
+		&__options {
+			box-shadow: none;
+			border: 1px solid rgba(0, 0, 0, 0.075);
+			border-top: 0;
+			margin-top: -1px;
+		}
+	}
+
+	.chosen-single {
+		line-height: normal;
+	}
+
+	.select2-results {
+		.select2-results__option {
+			&[aria-selected="true"] {
+				color: #ccc;
+
+				&:hover {
+					background-color: transparent;
+					color: #ccc;
+				}
+			}
+		}
+	}
+}

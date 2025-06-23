@@ -1,0 +1,543 @@
+.screen-reader-text,
+.widget-area {
+	display: none;
+}
+
+.site-content {
+	position: relative;
+}
+
+
+%nav-link-wrapper {
+	font-size: 14px;
+	border-radius: 3px;
+	padding: 6px 18px;
+	background-color: white;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		border: 1px solid $gray-light;
+		border-radius: inherit;
+
+		opacity: 0.2;
+		pointer-events: none;
+	}
+}
+
+%nav-link {
+	transition: color $transition-micro ease-out;
+
+	&:hover {
+		color: $accent;
+	}
+}
+
+.nav-links {
+	@extend .clearfix;
+	margin-top: 20px;
+	margin-bottom: 70px;
+	text-align: center;
+
+	a {
+		@extend %nav-link;
+		@extend %nav-link-wrapper;
+
+		position: relative;
+		display: block;
+
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			border: 0 solid transparent;
+			border-width: 4px 5px;
+			margin-top: -4px;
+			transition: border-color .2s ease-out;
+		}
+	}
+
+	.nav-previous, .nav-next {
+		display: block;
+		margin: rem(10px) auto;
+		text-align: center;
+
+		@include query-above($xsmall) {
+			display: inline-block;
+			margin: 0;
+			text-align: inherit;
+		}
+	}
+
+	.nav-previous {
+		@include query-above($xsmall) {
+			float: left;
+		}
+
+		a {
+			padding-left: 30px;
+
+			&:before {
+				left: 13px;
+				border-right-color: currentColor;
+			}
+		}
+	}
+
+	.nav-next {
+		@include query-above($xsmall) {
+			float: right;
+		}
+		a {
+			padding-right: 30px;
+
+			&:before {
+				right: 13px;
+				border-left-color: currentColor;
+			}
+		}
+	}
+
+	// Remove extra spacing on
+	// "Front Page - Recent Posts" Widget
+	.grid--widget + & {
+		margin-bottom: 0;
+	}
+}
+
+// Sticky footer; a fix for #686
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.site {
+	overflow: hidden;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.site-header {
+	flex: none;
+}
+
+.site-footer {
+	flex: none;
+}
+
+.site-content {
+	flex: 1 0 auto;
+}
+// Sticky footer END
+
+.mfp-bg-transparent {
+	.mfp-iframe-scaler iframe {
+		background: transparent;
+		box-shadow: none;
+	}
+}
+
+
+.mfp-iframe-scaler.mfp-wp-login {
+	position: relative;
+
+	margin: 0 auto;
+	width: 385px;
+	height: 560px;
+	padding-top: 0;
+
+	.mfp-close {
+		top: 0;
+		right: 10px;
+
+		width: auto;
+		padding: 12px;
+		padding-top: 50px;
+		overflow: hidden;
+
+		color: $gray;
+
+		&:before {
+			@extend %fa;
+
+			content: $fa-var-close;
+
+			position: absolute;
+			top: 50%;
+			left:50%;
+
+			display: block;
+
+			font-size: 24px;
+
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+
+	iframe {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.archive-title {
+	font-size: 32px;
+	margin: 30px;
+	margin-bottom: 0;
+}
+
+.leaflet-bar.leaflet-bar {
+	background: white;
+	box-shadow: rgba(black, 0.5) 0 1px 2px;
+	top: 20px;
+	left: 20px;
+	margin: 0;
+	border-radius: 4px;
+	border: 0;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 7px;
+		width: 12px;
+		border-top: 1px solid #E6E6E6;
+	}
+
+	a {
+		width: 21px;
+		height: 21px;
+		font-size: 16px;
+		line-height: 18px;
+		background: white;
+		margin: 0 auto;
+		border: 0;
+		color: $dark;
+
+		&:hover {
+			border: 0;
+		}
+	}
+}
+
+.tax-job_listing_tag .select-tags {
+	display: none;
+}
+
+.load_more_jobs {
+	width: 100%;
+}
+
+.mobile-buttons {
+	@extend .clearfix;
+	display: none;
+	background: $gray-lightest;
+	padding: 26px;
+	padding-bottom: 0;
+
+	@include query-below($lap) {
+		display: block;
+	}
+
+	.btn {
+		position: relative;
+		font-size: 16px;
+		padding: 11px 14px 10px;
+		min-height: 48px;
+
+		&:after {
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		span {
+			@include query-below($xsmall) {
+				display: none;
+			}
+		}
+	}
+
+	.btn--filter {
+		float: left;
+		padding-left: 50px;
+
+		&:before {
+			content: "";
+			display: block;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			top: 12px;
+			left: 14px;
+			background-image: url('assets/svg/filter.svg');
+		}
+	}
+
+	.btn--view {
+		float: right;
+		background: white;
+		color: $dark !important;
+		box-shadow: rgba(black, 0.5) 0 1px 2px;
+		padding-right: 38px;
+
+		&:after {
+			content: "";
+			width: 26px;
+			height: 26px;
+			display: block;
+			position: absolute;
+			top: 9px;
+			right: 1px;
+			background-image: url('assets/svg/map.svg');
+		}
+	}
+
+	.btn--view-cards {
+		display: none;
+		padding-right: 48px;
+
+		&:after {
+			width: 21px;
+			height: 23px;
+			top: 12px;
+			right: 13px;
+			background-image: url('assets/svg/cards.svg');
+		}
+	}
+}
+
+.show-map {
+	.btn--view-cards {
+		display: block;
+	}
+
+	.btn--view-map {
+		display: none;
+	}
+}
+
+@include query-below($lap) {
+
+	.show-map {
+		overflow: hidden;
+
+		.job_filters {
+		    position: absolute;
+		    z-index: 20;
+		    width: 100%;
+		    background: none;
+		}
+
+		.mobile-buttons {
+			position: absolute;
+			z-index: 20;
+			width: 100%;
+			background: none;
+		}
+
+		.search_jobs {
+			background: white;
+		}
+	}
+
+	.btn--view.btn--view-map {
+		box-shadow: none;
+		background: none;
+	}
+
+	.btn--view.btn--view-map {
+		&:hover {
+			background: none;
+		}
+	}
+
+	.btn--view.btn--view-cards {
+		&:hover {
+			background: white;
+		}
+	}
+}
+
+@include query-below($xsmall) {
+	.mobile-buttons .btn--view-cards {
+		padding: 0;
+		width: 48px;
+	}
+}
+
+/* rtl:ignore */
+body[class*="rtl"] {
+	.cta-text:after {
+		transform: rotateY(180deg);
+	}
+}
+
+.color-accent {
+	color: $accent;
+}
+
+.is--iele10 svg circle {
+	display: none;
+}
+
+.twocolumn {
+
+	@include query-above($lap) {
+	    column-count: 2;
+	    column-gap: 40px;
+
+	    > h1, h2, h3, h4, h5, h6 {
+	    	&:first-child {
+	    		margin-top: 0;
+	    	}
+	    }
+	}
+}
+
+.leaflet-control-attribution.leaflet-control-attribution {
+	color: black;
+    font-size: 12px;
+    font-family: Source Sans, sans-serif;
+	opacity: 0.5;
+	transition: opacity .2s ease-in;
+	cursor: default;
+
+	&:hover {
+		opacity: 1;
+		transition: opacity 1s ease-out;
+	}
+
+	a {
+    	display: inline-block;
+		color: black;
+	}
+}
+
+.edit-link {
+	padding-bottom: 30px;
+	padding-left: 30px;
+
+	.page & { padding-left: 0; }
+}
+
+.post-type-archive-job_listing {
+	@extend .page-listings;
+
+	.listing_category_description { display: none; }
+}
+
+.widget:empty { display: none; }
+
+#sharing_email#sharing_email { z-index: 2000; }
+
+// Claim listings new features style
+
+.wpjmcl_form_claim_package {
+	.job_listing_packages_title {
+		display: flex;
+		flex-flow: row-reverse nowrap;
+		justify-content: space-between;
+
+		& > * {
+			margin: 0;
+		}
+	}
+
+	.job_listing_packages {
+		margin-top: 20px;
+		padding-top: 60px;
+
+		border-top-width: 1px;
+	}
+
+	.job_packages {
+		@extend .package-list;
+
+		list-style-type: none;
+
+		.package-section {
+			display: none;
+		}
+
+	}
+
+	.job-package {
+		@extend .package;
+
+		label {
+			@extend .package__title[class];
+
+			position: relative;
+			top: 3px;
+		}
+
+		.p1 {
+			@extend .package__description;
+			margin-top: 30px;
+		}
+
+		.amount {
+			@extend .package__price;
+			display: block;
+
+			.woocommerce-Price-currencySymbol {
+				@extend .package__currency;
+
+				position: relative;
+				top: 6px;
+
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+	}
+}
+
+
+// WP 4.9.1 broke video scaling in hero area
+.entry-featured mediaelementwrapper {
+	&, video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+}
+
+.select-tags .chosen-container-multi .chosen-choices {
+	background: none;
+}
+
+.chosen-container-active .chosen-choices li.search-field input[type=text] {
+	color: inherit !important;
+}
+
+input,
+select,
+textarea {
+	color: inherit;
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+// needed on ios to handle clicks
+.page-template-front_page.touch [id="page"] {
+    cursor: pointer;
+}

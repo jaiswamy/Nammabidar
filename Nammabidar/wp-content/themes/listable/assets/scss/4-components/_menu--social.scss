@@ -1,0 +1,102 @@
+.nav--social {
+
+    @include query-below($lap) {
+        float: left;
+    }
+
+    .menu-item:not(.menu-item-language) {
+        overflow: hidden;
+        width: 2em;
+        height: 2.4em;
+//        line-height: 2.3 !important;
+
+        a {
+            @extend %display--block;
+            position: relative;
+            padding-top: 50px;
+
+            &:before {
+                @extend %display--block;
+                @extend %visibility--visible;
+                @extend %pointer-events--auto;
+                @extend %fa;
+                content: $fa-var-share-alt;
+
+                position: absolute;
+                top: 4px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            // default share icon used as a fallback
+            // now for the social services that are in FA
+            // we will match the href to them - left them looser so we don't have complaints
+            &[href*="mailto:"]:before,
+            &[href*="mail"]:before              {content: $fa-var-envelope;}
+            &[href*="feed"]:before,
+            &[href*="rss"]:before               {content: $fa-var-rss;}
+            &[href*="behance.net"]:before       {content: $fa-var-behance;}
+            &[href*="delicious.com"]:before     {content: $fa-var-delicious;}
+            &[href*="deviantart.com"]:before    {content: $fa-var-deviantart;}
+            &[href*="digg.com"]:before          {content: $fa-var-digg;}
+            &[href*="dribbble.com"]:before      {content: $fa-var-dribbble;}
+            &[href*="facebook.com"]:before      {content: $fa-var-facebook;}
+            &[href*="flickr.com"]:before        {content: $fa-var-flickr;}
+            &[href*="foursquare.com"]:before    {content: $fa-var-foursquare;}
+            &[href*="github.com"]:before        {content: $fa-var-github;}
+            &[href*="plus.google"]:before       {content: $fa-var-google-plus;}
+            &[href*="instagram.com"]:before     {content: $fa-var-instagram;}
+            &[href*="linkedin.com"]:before      {content: $fa-var-linkedin;}
+            &[href*="pinterest.com"]:before     {content: $fa-var-pinterest;}
+            &[href*="reddit.com"]:before        {content: $fa-var-reddit;}
+            &[href*="skype.com"]:before         {content: $fa-var-skype;}
+            &[href*="soundcloud.com"]:before    {content: $fa-var-soundcloud;}
+            &[href*="spotify.com"]:before       {content: $fa-var-spotify;}
+            &[href*="stumbleupon.com"]:before   {content: $fa-var-stumbleupon;}
+            &[href*="tumblr.com"]:before        {content: $fa-var-tumblr;}
+            &[href*="twitter.com"]:before       {content: $fa-var-twitter;}
+            &[href*="vimeo.com"]:before         {content: $fa-var-vimeo-square;}
+            &[href*="vine.com"]:before          {content: $fa-var-vine;}
+            &[href*="vk.com"]:before            {content: $fa-var-vk;}
+            &[href*="weibo.com"]:before         {content: $fa-var-weibo;}
+            &[href*="xing.com"]:before          {content: $fa-var-xing;}
+            &[href*="yahoo.com"]:before         {content: $fa-var-yahoo;}
+            &[href*="youtube.com"]:before       {content: $fa-var-youtube;}
+            &[href*="angel.co"]:before          {content: $fa-var-angellist;}
+            &[href*="yelp.com"]:before          {content: $fa-var-yelp;}
+            &[href*="last.fm"]:before           {content: $fa-var-lastfm;}
+            &[href*="slideshare.net"]:before    {content: $fa-var-slideshare;}
+            &[href*="twitch.tv"]:before         {content: $fa-var-twitch;}
+            &[href*="bloglovin.com"]:before     {content: $fa-var-heart;}
+            &[href*="#search"]:before           {content: $fa-var-search;}
+            &[href*="medium.com"]:before        {content: $fa-var-medium;}
+            &[href*="whatsapp.com"]:before      {content: $fa-var-whatsapp;}
+            &[href*="leanpub.com"]:before       {content: $fa-var-leanpub;}
+            &[href*="renren.com"]:before        {content: $fa-var-renren;}
+        }
+    }
+
+    .is--ie-le10 & li {
+        display: inline-block;
+    }
+}
+
+.is--ie-le10 {
+    .menu-short-container, .toggle {
+        display: inline-block;
+    }
+}
+
+.is--ie-le10 {
+    .menu-social-menu-container {
+        position: relative;
+        top: 5px;
+        display: inline-block;
+    }
+}
+
+.is--ie-le10 {
+    .menu-social-menu-container {
+        top: 0;
+    }
+}

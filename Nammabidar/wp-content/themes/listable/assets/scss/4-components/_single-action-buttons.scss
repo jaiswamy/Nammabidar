@@ -1,0 +1,242 @@
+// Write a review, Add to favorites, Share
+
+.single-action-buttons {
+	display: flex;
+	justify-content: space-between;
+
+	&.has--one-action {
+		justify-content: center;
+	}
+
+	.is--ie9 & {
+		display: table;
+		width: 100%;
+	}
+
+	.action {
+		display: inline-block;
+
+		.is--ie9 & {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		&:hover {
+			.action__text {
+				color: $accent;
+			}
+
+			.action__icon {
+				background-color: $accent;
+				color: white;
+			}
+		}
+	}
+
+	.action__text, .action__icon {
+		display: inline-block;
+		vertical-align: middle;
+
+		transition: all $transition-micro linear;
+	}
+
+	.action__text--mobile {
+		display: block;
+		text-align: center;
+
+		@include query-above($xsmall) {
+			display: none;
+		}
+	}
+
+	@include query-below($xsmall) {
+		.action__text {
+			display: none;
+		}
+	}
+
+	.action__text, .action__text--mobile {
+		color: $dark;
+	}
+
+	.action__icon {
+		position: relative;
+
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		margin-right: rem(5px);
+
+		border: 2px solid $accent;
+		border-radius: 50%;
+
+		background-color: white;
+
+		svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		@include query-below($xsmall) {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+.action--share {
+	@extend .tooltip-container;
+
+	div.sharedaddy {
+		@extend .tooltip;
+
+		@include query-below($lap) {
+			&.sharedaddy { // enforcing
+				left: auto;
+				right: 0;
+				transform: translateY(-100%);
+
+				&:before, &:after {
+					left: auto;
+					right: 0;
+				}
+			}
+
+			.has--one-action &.sharedaddy {
+				left: 50%;
+				right: auto;
+				transform: translateX(-50%) translateY(-100%);
+
+				&:before, &:after {
+					left: 50%;
+					right: auto;
+					transform: translateX(-50%);
+				}
+			}
+		}
+
+		.sd-sharing {
+			margin: rem(-15px) 0;
+		}
+
+		.sd-social.sd-social-icon {
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				li[class] {
+					margin-bottom: 10px !important;
+					flex: 0 0 48%;
+					text-align: center;
+
+					a {
+						margin: 0;
+						display: inline-block;
+					}
+
+					&.share-end {
+						display: none;
+					}
+				}
+
+				li:not([class]) {
+					flex: 0 0 100%;
+
+					a.sd-button.share-more {
+						display: block;
+						margin: 0;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.sharing-hidden {
+		position: relative;
+
+		.inner {
+			width: rem(135px);
+			padding: 1.25rem;
+			left: rem(-21px) !important;
+			top: 0 !important;
+		}
+	}
+}
+
+.action--favorite.bookmarked .action__icon,
+.wp-job-manager-bookmarks-form[class].has-bookmark .action__icon {
+	background-color: $accent;
+	color: white;
+}
+
+// some tweaks wp-jobs-bookmark plugin
+.wp-job-manager-bookmarks-form[class] {
+	overflow: visible;
+	border: none;
+	margin: 0;
+
+	.add_to_favorite_wrap {
+		@extend .tooltip-container;
+	}
+
+	div.tooltip {
+		width: 300px;
+		text-align: center;
+
+		.bookmark_notes {
+			margin: 5px auto;
+		}
+
+		.btn {
+			padding: 8px;
+			font-size: 1rem;
+			margin: 10px;
+			color: #fff;
+			display: inline-block;
+			border: 0;
+			line-height: 1;
+		}
+	}
+
+	&.has-bookmark[class] .tooltip[class] {
+		opacity: 0;
+	}
+
+	a.bookmark-notice {
+		padding: 0;
+
+		&:before {
+			display: none;
+		}
+	}
+}
+
+@include query-below($lap) {
+	.has--two-actions {
+		.add_to_favorite_wrap .tooltip {
+			left: 0;
+			right: auto;
+			transform: translateY(-100%);
+
+			&:before, &:after {
+				left: 23px;
+				right: auto;
+			}
+		}
+
+		.wp-job-manager-bookmarks-form:last-child .tooltip {
+			right: 0;
+			left: auto;
+
+			&:before, &:after {
+				right: 0;
+				left: auto;
+			}
+		}
+	}
+}

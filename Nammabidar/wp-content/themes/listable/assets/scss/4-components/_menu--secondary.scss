@@ -1,0 +1,131 @@
+.secondary-menu {
+	// box-shadow: rgba(black, 0.25) 0 0 2px;
+	background-color: $accent;
+
+	.header--transparent & {
+		display: none;
+	}
+}
+
+.secondary-menu > ul > .page_item:before,
+ul.secondary-menu > .menu-item:before {
+	display: none;
+}
+
+.primary-menu.secondary-menu > ul > li > a,
+ul.primary-menu.secondary-menu > li > a,
+ul.primary-menu.secondary-menu .hover.menu-item-has-children > a {
+	color: inherit;
+}
+
+.primary-menu.secondary-menu > ul > li:hover > a,
+ul.primary-menu.secondary-menu > li:hover > a {
+	color: inherit;
+}
+
+ul.secondary-menu > .menu-item.menu-item-has-children > .sub-menu:after {
+	border-top-color: currentColor;
+}
+
+ul.secondary-menu > .current-menu-item.menu-item-has-children > .sub-menu:after {
+	display: none;
+}
+
+.primary-menu.secondary-menu > ul > .page_item_has_children:after,
+ul.primary-menu.secondary-menu > .menu-item-has-children:after,
+.primary-menu.secondary-menu.secondary-menu > ul > .page_item_has_children:hover:after,
+ul.primary-menu.secondary-menu.secondary-menu > .menu-item-has-children:hover:after,
+ul.primary-menu.secondary-menu .hover.menu-item-has-children > a:after,
+ul.secondary-menu .menu-item-has-children > a:after,
+.secondary-menu > ul .page_item_has_children > a:after {
+	border-top-color: currentColor;
+}
+
+@include query-above($lap) {
+
+	.primary-menu.secondary-menu > ul > li > a,
+	ul.primary-menu.secondary-menu > li > a {
+		padding-top: 14px;
+		padding-bottom: 12px;
+	}
+
+	.primary-menu.secondary-menu > ul > li,
+	ul.primary-menu.secondary-menu > li {
+
+		&:not(.cta) {
+			height: 48px;
+		}
+
+		&.current-menu-item > a {
+			position: relative;
+
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				right: 22px;
+				bottom: 0;
+				left: 22px;
+				width: auto;
+				height: 4px;
+				background: currentColor;
+			}
+		}
+
+		&:before,
+		a:before {
+			display: none;
+		}
+	}
+
+	.secondary-menu {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		max-width: $page-full-width;
+		padding: 0 8px;
+		margin: 0 auto;
+
+		.page-listings & {
+			max-width: none;
+			text-align: left;
+
+			// the first sub-menu would overflow so let's keep it in
+			> .menu-item-has-children,
+			> ul > .menu-item-has-children,
+			> .page_item_has_children,
+			> ul > .page_item_has_children {
+				&:first-child > .sub-menu {
+					left: 0;
+					transform: none;
+
+					&:after {
+						left: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.secondary-menu-wrapper {
+		.header--transparent & {
+			display: none;
+		}
+
+		&:before {
+			content: "";
+
+			position: absolute;
+			bottom: 0;
+			left: 0;
+
+			display: block;
+			width: 100%;
+			height: 48px;
+
+			background-color: $accent;
+			pointer-events: none;
+		}
+	}
+}

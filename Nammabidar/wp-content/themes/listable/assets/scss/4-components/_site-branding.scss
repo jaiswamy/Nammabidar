@@ -1,0 +1,73 @@
+.site-branding {
+	text-align: center;
+
+	@include query-above($lap) {
+		text-align: left;
+	}
+
+	.header--transparent & {
+		color: white;
+
+		&:after {
+			border-color: white;
+		}
+	}
+
+	.site-logo-link,
+	.custom-logo-link {
+		position: relative;
+		z-index: 1;
+
+		display: block;
+
+		width: 100%;
+
+		@include query-above($lap) {
+			margin-left: 0;
+		}
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+		width: auto;
+		height: auto;
+
+		max-height: $header-height - 20;
+
+		@include query-above($xsmall) {
+			max-height: $header-height - 15;
+		}
+
+		&[src*="svg"] {
+			min-width: 50px;
+
+			// Edge interprets min-width
+			// somehow like width in this case
+			html.is--edge & {
+				min-width: initial;
+			}
+		}
+	}
+}
+
+.site-branding .custom-logo-link--light {
+	display: none;
+}
+
+.header--transparent .site-branding {
+	.custom-logo-link--light + .custom-logo-link {
+		display: none;
+	}
+
+	.custom-logo-link--light {
+		display: block;
+	}
+}
+
+@include query-above($lap) {
+	.site-title--text {
+		word-break: normal;
+		-webkit-hyphens: none;
+	}
+}

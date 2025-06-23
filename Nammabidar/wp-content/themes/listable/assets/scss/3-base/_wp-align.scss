@@ -1,0 +1,127 @@
+$image-spacing: 50px;
+
+.alignleft, .alignright {
+    position: relative;
+    z-index: 1;
+    margin-bottom: rem($image-spacing/4);
+    clear: both;
+
+    @include query-below(640px) {
+        max-width: 100%;
+        display: block;
+    }
+
+    @include query-above($lap) {
+        max-width: calc(50% + #{3 * $image-spacing} - 20px) !important;
+    }
+
+}
+
+.alignleft {
+    float: left;
+    margin-right: rem($image-spacing/2);
+    text-align: left;
+
+    @include query-above($lap) {
+        margin-right: rem($image-spacing);
+    }
+
+    @include query-below($lap) {
+        &.wp-caption {
+            margin-left: 0;
+        }
+    }
+}
+
+.alignright {
+    float: right;
+    margin-left: rem($image-spacing/2);
+    text-align: right;
+
+    @include query-above($lap) {
+        margin-left: rem($image-spacing);
+    }
+
+    @include query-below($lap) {
+        &.wp-caption {
+            margin-right: 0;
+        }
+    }
+}
+
+.aligncenter {
+    display: block;
+    width: auto !important;
+    max-width: none !important;
+    margin-top: rem($image-spacing);
+    margin-bottom: rem($image-spacing);
+    text-align: center;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+@include query-below($lap) {
+    figure.aligncenter, figure.alignnone {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@include query-above($desk) {
+
+    .aligncenter {
+        margin-left: -4 * $image-spacing;
+        margin-right: -4 * $image-spacing;
+    }
+
+    .alignleft {
+        margin-left: rem(-90px);
+
+        @if $editor-style == false {
+            .single-post & {
+                margin-left: -4 * $image-spacing;
+            }
+        }
+    }
+
+    .alignright {
+        margin-right: rem(-90px);
+
+        @if $editor-style == false {
+            .single-post & {
+                margin-right: -4 * $image-spacing;
+            }
+        }
+    }
+}
+
+@if $editor-style == false {
+    .alignleft, .alignright {
+
+        // Remove nevative margins on images in widgets
+        .widget & {
+            margin: 0;
+        }
+
+        // Remove negative margins on images on archive
+        .blog &, .archive & {
+            margin: 0;
+        }
+    }
+
+    .aligncenter {
+        .widget & {
+            margin: 0 auto;
+        }
+
+        // Remove negative margins on images on archive
+        .blog &, .archive & {
+            margin: 0 auto;
+        }
+    }
+}

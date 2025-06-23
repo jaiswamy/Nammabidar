@@ -1,0 +1,62 @@
+/**
+ * The following styles get applied everywhere.
+ *
+ */
+.pixcare-guide-list-item {
+  display: flex;
+  align-items: center;
+}
+.pixcare-guide-list-item span {
+  margin-right: 3px;
+  padding: 6px 0;
+}
+.pixcare-guide-list-item button {
+  text-align: left;
+  height: auto;
+  padding: 6px 6px;
+}
+
+.pixcare-site-guide .site-guide-image {
+  display: flex;
+  justify-content: center;
+}
+.pixcare-site-guide img {
+  width: 100%;
+  height: auto;
+}
+.pixcare-site-guide .site-guide-content {
+  margin: 0;
+  padding: 2em;
+}
+.pixcare-site-guide .site-guide-content > *:first-child {
+  margin-top: 0;
+}
+.pixcare-site-guide .site-guide-content h1 {
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+.pixcare-site-guide .site-guide-content .components-button {
+  width: 100%;
+  justify-content: center;
+  height: 42px;
+  font-size: 14px;
+}
+.pixcare-site-guide.single-page .components-guide__footer {
+  display: none;
+}
+.pixcare-site-guide .components-modal__header .components-button span {
+  display: none;
+}
+.pixcare-site-guide .components-modal__header .components-button:hover svg {
+  fill: #1e1e1e;
+}
+
+@media (min-width: 600px) {
+  .components-modal__frame.components-guide.pixcare-site-guide {
+    width: 380px;
+    height: auto;
+    max-height: 80vh;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

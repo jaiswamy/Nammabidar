@@ -1,0 +1,73 @@
+// Change background color on Blog Archive page
+/*body*/.blog, .woocommerce.archive {
+	background-color: $gray-lightest;
+}
+
+.postcards {
+	width: 100%;
+	max-width: 1048px;
+	margin: 0 auto;
+	padding: 0 24px 60px;
+	// overflow: hidden;
+
+	.nav-links {
+		margin-bottom: 0;
+	}
+
+	.front-page-section & {
+		margin-bottom: 0;
+	}
+
+	.grid__item {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.blog, .archive, .search {
+
+	.postcards {
+
+		.grid {
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: -24px;
+			margin-bottom: -24px;
+		}
+
+		.grid__item {
+			padding-left: 24px;
+			padding-bottom: 24px;
+		}
+
+		@include query-above($small) {
+			.grid__item {
+				width: 50%;
+			}
+		}
+
+		@include query-above($lap) {
+			.grid__item {
+				width: 33.3%;
+			}
+		}
+	}
+
+	&.infinite-scroll .nav-links {
+		display: none;
+	}
+}
+
+.infinite-loader {
+	flex: 1 0 100%;
+	margin: 20px 0;
+	padding-left: 24px;
+
+	.spinner {
+		margin: 0 auto;
+	}
+}
+
+.is--ie9 .postcards .grid {
+	margin-bottom: 0 !important;
+}

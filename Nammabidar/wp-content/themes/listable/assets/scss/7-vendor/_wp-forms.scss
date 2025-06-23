@@ -1,0 +1,36 @@
+#page .wpforms-form {
+    input[type=date],
+    input[type=datetime],
+    input[type=datetime-local],
+    input[type=email],
+    input[type=month],
+    input[type=number],
+    input[type=password],
+    input[type=range],
+    input[type=search],
+    input[type=tel],
+    input[type=text],
+    input[type=time],
+    input[type=url],
+    input[type=week],
+    select,
+    textarea {
+        @extend %text-box;
+    }
+
+    input[type=submit],
+    button[type=submit],
+    .wpforms-page-button {
+        @extend %btn;
+    }
+
+    .wpforms-field-label {
+        @extend %label;
+        margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+        @extend %checkbox;
+        margin-left: 0;
+    }
+}

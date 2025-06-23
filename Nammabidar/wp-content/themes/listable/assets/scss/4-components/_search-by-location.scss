@@ -1,0 +1,129 @@
+.job_filters .search_jobs div.filter_last,
+.job_filters .search_jobs div.search_location {
+    position: fixed;
+    top: 60px;
+    left: 720px;
+    z-index: 1000;
+    right: auto;
+    width: auto;
+
+    .admin-bar & { top: 92px; }
+    .has--secondary-menu & { top: 108px; }
+    .has--secondary-menu.admin-bar & { top: 140px; }
+
+    @media screen and (max-width: 782px) {
+        .admin-bar & { top: 106px; }
+        .has--secondary-menu.admin-bar & { top: 154px; }
+    }
+
+    @media only screen and (min-width: $lap) and (max-width: $desk) {
+        left: 600px;
+    }
+
+    @include query-below($lap) {
+        position: static;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.findme {
+	z-index: 1000;
+	position: fixed;
+	top: 130px;
+	left: 720px;
+	margin-left: 20px;
+    width: 21px;
+    height: 21px;
+    display: block;
+    background: white url(assets/svg/findme.svg) center no-repeat;
+    border-radius: 50%;
+    box-shadow: rgba(black, 0.5) 0 1px 2px;
+
+    @media only screen and (min-width: $lap) and (max-width: $desk) {
+        left: 600px;
+    }
+
+    @include query-below($lap) {
+        display: none;
+        background: white url(assets/svg/findme-dark.svg) center no-repeat;
+        top: auto !important;
+        left: auto !important;
+        bottom: 26px;
+        right: 26px;
+        width: 42px;
+        height: 42px;
+        background-size: 50%;
+
+        .show-map & {
+            display: block;
+        }
+    }
+
+    .admin-bar & { top: 162px; }
+    .has--secondary-menu & { top: 178px; }
+    .has--secondary-menu.admin-bar & { top: 210px; }
+
+    @media screen and (max-width: 782px) {
+        .admin-bar & { top: 176px; }
+        .has--secondary-menu.admin-bar & { top: 224px; }
+    }
+}
+
+.job_filters .search_jobs div.search_location {
+
+    .no-map & {
+        position: static;
+        float: none;
+        display: inline-block;
+        margin-right: 16px;
+        margin-bottom: 14px;
+
+        input {
+            width: 230px !important;
+            max-width: 100%;
+            position: relative;
+            box-shadow: none;
+            border: 1px solid $borders;
+            top: 2px;
+            left: 0;
+        }
+    }
+}
+
+.search_location {
+
+    input {
+        @extend %alt-sans-serif;
+        width: auto !important;
+        max-width: 500px;
+        position: absolute;
+        left: 51px;
+        top: 20px;
+        right: auto;
+        font-size: 14.95px;
+        color: #5D5D5D;
+        background: white;
+        border: 0;
+        box-shadow: rgba(black, 0.5) 0 1px 2px;
+        padding: 11px 15px 10px;
+
+        @include query-below($lap) {
+            position: static;
+            box-shadow: none;
+            border: 1px solid $borders;
+            margin-bottom: 14px;
+            border-radius: 4px;
+            width: 100% !important;
+            max-width: none !important;
+        }
+    }
+}
+
+.job_filters .search_jobs div.filter_last {
+    display: none;
+
+    @include query-above($lap) {
+        display: block;
+    }
+}

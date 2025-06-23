@@ -1,0 +1,152 @@
+.widgets_area {
+  .front-page-section:nth-child(odd) .product_list_widget li {
+      background-color: $gray-lightest;
+  }
+
+  .front-page-section:nth-child(even) .product_list_widget li {
+      background-color: #FFFFFF;
+  }
+
+  .front_page_sections_title {
+    text-align: center;
+  }
+
+  .product_list_widget {
+    padding-top: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @include query-below($lap) {
+      flex-direction: column;
+    }
+
+    li {
+      a .product-title {
+        padding: 22px 16px 0 16px;
+      }
+
+      .woocommerce-product-details__short-description {
+        padding: 0 16px 38px 16px;
+      }
+
+      &:nth-of-type(3n+1) {
+        margin-right: 5%;
+
+        @include query-below($lap) {
+          margin-right: 0;
+          align-self: center;
+        }
+      }
+
+      &:nth-of-type(3n) {
+        margin-left: 5%;
+
+        @include query-below($lap) {
+          margin-left: 0;
+          align-self: center;
+        }
+      }
+
+      @include query-below($xsmall) {
+        width: 100%;
+      }
+
+      @include query-above($xsmall) {
+        width: 50%;
+        align-self: center;
+      }
+
+      @include query-above($lap) {
+        width: 30%;
+        align-self: stretch;
+      }
+    }
+  }
+
+  .woocommerce-product-search {
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    @include query-below($xsmall) {
+      flex-direction: column;
+    }
+
+    .search-field {
+      flex: 0 1 50%;
+    }
+
+    button[type="submit"] {
+      margin-left: 20px;
+
+      @include query-below($xsmall) {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .job_listings {
+    margin-top: 50px;
+
+    .content .job-type {
+      color: $accent;
+
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+
+  .widget_shopping_cart_content {
+    .woocommerce-mini-cart {
+      justify-content: flex-start;
+    }
+
+    .woocommerce-mini-cart__total,
+    .woocommerce-mini-cart__buttons {
+      justify-content: flex-start;
+    }
+
+    .woocommerce-mini-cart__total {
+      @include query-below($lap) {
+        justify-content: center;
+      }
+    }
+
+    .woocommerce-mini-cart__buttons {
+      @include query-below($lap) {
+        justify-content: center;
+      }
+
+      a {
+        color: $dark;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  .product-categories {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    li:not(:last-of-type) {
+      margin-right: 35px;
+    }
+  }
+
+  .tagcloud {
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+}

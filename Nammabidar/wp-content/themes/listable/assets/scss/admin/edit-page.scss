@@ -1,0 +1,180 @@
+$border   : #d9d9d9;
+$borders    : #919191;
+$body     : #515150;
+$dark     : #262526;
+$accent   : #0095ea;
+
+//*------------------------------------*\
+//   $Projects
+//*------------------------------------*/
+
+///**
+// * HERO AREA thumbnails
+// */
+
+#listing_aside {
+
+	&.no-image {
+		.inside {
+
+		}
+
+		#pixgallery {
+			margin: 10px 5px;
+			min-height: 115px;
+
+			.open_pixgallery {
+				border: 1px dashed #d9d9d9;
+
+				.icon {
+					opacity: 1;
+					color: $dark;
+				}
+				//Change Edit Icon to Upload
+				.icon:before {
+					content: "\f093";
+				}
+
+				&:hover .icon {
+					color: $accent;
+				}
+			}
+		}
+
+		// Not needed to clear anything
+		.clear_gallery {
+			display: none !important;
+		}
+	}
+
+	&.single-image {
+
+	}
+
+	&.multiple-images {
+		#pixgallery > ul {
+			margin: 0;
+
+			li {
+				width: 33%;
+				margin: 0;
+				padding: 5px;
+
+				@extend %box-sizing;
+			}
+		}
+	}
+
+
+	#pixgallery {
+		.open_pixgallery {
+			opacity: 1;
+			background: none;
+			-webkit-transition: opacity .1s ease-in 0;
+
+			// Edit Icon on Hover
+			.icon {
+					opacity: 0;
+					-webkit-transition: opacity .1s ease-in 0, color .1s ease-in 0;
+					font-size: 40px;
+					color: $dark;
+
+					&:before {
+						content: "\f040";
+
+						@extend %centered;
+					}
+			}
+
+			.clear_gallery {
+				display: block;
+				margin: 0;
+
+				opacity: 0;
+				color: $borders;
+				background: none;
+
+				text-transform: uppercase;
+				font-size:11px;
+
+				-webkit-transition: opacity .1s ease-in 0, color .1s ease-in 0;
+
+				&:hover {
+					color: $accent;
+				}
+			}
+
+
+			&:hover {
+
+				.icon, .clear_gallery {
+					opacity: 1;
+				}
+			}
+		}
+
+		& > ul {
+			min-height: 0;
+			padding: 0;
+		}
+
+		& > ul li {
+			width: 100%;
+			text-align: center;
+
+			img {
+				width: auto;
+				height: auto;
+
+				border-radius: 0;
+			}
+		}
+	}
+
+
+	table.cmb_metabox td, table.cmb_metabox th {
+		padding: 0;
+
+		border-bottom: none;
+	}
+}
+
+#_page_frontpage_search_fields {
+	label {
+		margin-top: 2px;
+	}
+
+	ul {
+		margin-left: 20px;
+
+		li {
+			display: inline-block;
+			margin-right: 20px;
+		}
+	}
+}
+
+
+//hide attachment options link ( media file, video, external url etc)
+//anywhere BUT on project pages
+//body:not(.post-type-pile_portfolio) .compat-item{
+//	display: none;
+//}
+
+
+
+//*------------------------------------*\
+//   $HELPERS
+//*------------------------------------*/
+
+%centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+%box-sizing {
+	box-sizing: border-box;
+}
+

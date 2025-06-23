@@ -1,0 +1,72 @@
+$border   : #d9d9d9;
+$light    : #919191;
+$body     : #515150;
+$dark     : #262526;
+$accent   : #0095ea;
+
+//*------------------------------------*\
+//   $HELPERS
+//*------------------------------------*/
+
+%centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+%box-sizing {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+//*------------------------------------*\
+//
+//   $TAGS
+//
+//   Styling the listing tags to
+//   better match their importance
+//
+//*------------------------------------*/
+
+// Selected Tags
+ .tagchecklist {
+
+}
+
+// Most Used Tags
+.the-tagcloud {
+	column-count: 2;
+	column-gap: 5px;
+
+	a {
+		display: block;
+		font-size: 13px !important;
+	}
+
+	#poststuff .inside & {
+		padding: 8px 0 0 0;
+		border: none;
+	}
+}
+
+// listing columns
+.type-job_listing .listable_job_image, .column-listable_job_image {
+	width: 80px;
+
+	.company_logo {
+		width: 80px;
+		//height: 100%;
+		overflow: hidden;
+	}
+}

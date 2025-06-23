@@ -1,0 +1,83 @@
+%login-form {
+	position: relative;
+
+	padding: rem(40px) rem(50px);
+	border-radius: 7px;
+	border: 1px solid $borders;
+
+	h3 {
+		margin-top: 0;
+		padding-bottom: 17px;
+		margin-bottom: 20px;
+
+		border-bottom: 1px solid $borders;
+		font-size: rem(18px);
+
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"] {
+		margin-top: 5px;
+		margin-bottom: 14px;
+		box-shadow: none;
+		background: white;
+	}
+
+	input[type="password"] {
+		margin-bottom: 30px;
+	}
+
+	.submit {
+		position: relative;
+
+		&:after {
+			content: "";
+
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			transform: translateY(-50%);
+
+			display: inline-block;
+			width: 0;
+			height: 0;
+
+			border: 4px solid transparent;
+			border-left: 4px solid white;
+			pointer-events: none;
+		}
+	}
+
+	.form-row {
+		@extend %clearfix;
+
+		margin: 0;
+		padding: 0;
+
+		.required {
+			color: $dark;
+		}
+	}
+
+	.forgetmenot, .submit {
+		width: 49%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	label[for=rememberme] {
+		font-weight: 500;
+		color: $gray;
+
+		input {
+			margin-top: -2px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	.oneall_social_login {
+		margin: 20px 0;
+	}
+}

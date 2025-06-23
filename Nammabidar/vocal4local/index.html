@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Job Application Form</title>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+    
+    <style>
+        input{
+            width:300%;
+        }
+        
+    </style>
+    
+    
+</head>
+
+<body>
+
+    <div class="page-wrapper bg-primary p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                 <h1 class="text-success text-center my-1">Hi-ideals Technologies Pvt Ltd</h1>
+                <div class="container"><img src="../images/1.png" width="650px" height="240px"></div>
+                <div class="card-body">
+                    
+                    <h2 class="title text-danger">Job Application Form</h2>
+                    <form method="POST" action="mail2.php" enctype="multipart/form-data" autocomplete="on"> 
+					
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="state" type="text" placeholder="FIRST NAME" name="firstname" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                 
+                          <input class="city" type="text" placeholder="LAST NAME" name="lastname" required>
+ 
+                                </div>
+                            </div>
+                        </div>
+						
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                              <input class="input--style-1 js-datepicker" type="text" placeholder="DATE OF BIRTH" name="birthday" required>
+                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="gender" required>
+                                            <option disabled="disabled" selected="selected">GENDER</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="state" type="text" placeholder="EMAIL" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                 
+                          <input class="city" type="text" placeholder="PHONE NUMER" name="number" required>
+ 
+                                </div>
+                            </div>
+                        </div>
+						
+						 <div class="input-group">
+                            <div class="address">
+							<input class="input--style-1" type="text" placeholder="ADDRESS LINE1" name="address1" required>
+
+                            </div>
+                        </div>
+						
+							 <div class="input-group">
+                            <div class="address">
+							<input class="input--style-1" type="text" placeholder="ADDRESS LINE2" name="address2" required>
+
+                            </div>
+                        </div>
+						
+						
+						
+						<div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="state" type="text" placeholder="STATE" name="state" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                 
+                          <input class="city" type="text" placeholder="CITY" name="city" required>
+ 
+                                </div>
+                            </div>
+                        </div>
+						
+							
+						<div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="pincode" type="text" placeholder="POSTALCODE" name="pincode" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                         <input class="country" type="text" placeholder="INDIA" name="nation" value="India" required>
+                                </div>
+                            </div>
+                        </div>
+						
+						
+						<div class="input-group">
+                            <div class="education">
+							<input class="input--style-1" type="text" placeholder="EDUCATION QUALIFICATION" 
+							name="education" required>
+
+                            </div>
+                        </div>
+						
+							
+						<div class="input-group">
+                            <div class="work">
+							<input class="input--style-1" type="text" placeholder="WORK EXPERIENCE" name="work">
+
+                            </div>
+                        </div>
+						
+								
+						<div class="input-group">
+                            <div class="skill">
+							<input class="input--style-1" type="text" placeholder="TECHNICAL SKILLS" name="skil" required>
+
+                            </div>
+                        </div>
+				
+                            <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="gender" required>
+                                            <option disabled="disabled" selected="selected">APPLYING FOR POSITION</option>
+                                            <option>Java Developer</option>
+                                            <option>Software Testing</option>
+                                            <option>Graphic Designer</option>
+                                              <option>Web Developer</option>
+                                            <option>Executive Engineer</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                      
+                 
+						
+							<div class="input-group">
+                            <div class="file">
+							RESUME<input class="input--style-1" type="file" placeholder="CHOOSE FILE" name="attachment" accept=".pdf,.docx,.doc" required>
+
+                            </div>
+                        </div>
+						
+						
+                        <div class="p-t-20">
+                            <button class="btn btn-success" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

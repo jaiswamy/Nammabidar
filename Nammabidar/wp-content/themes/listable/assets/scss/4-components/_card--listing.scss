@@ -1,0 +1,195 @@
+.card--listing {
+
+	.card__content {
+		padding-top: 32px;
+
+		@include query-cards() {
+			padding-top: 26px;
+			font-size: 14px;
+			line-height: 18px/14px;
+		}
+	}
+
+	.card__title {
+		color: $accent;
+	}
+
+	@include query-below($xsmall) {
+		.page-listings & {
+			border: 0;
+			border-radius: 0;
+		}
+	}
+
+	&.is--featured {
+
+		&:after {
+			border-width: 3px;
+		}
+
+		.card__image:before {
+			content: "";
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			opacity: .5;
+
+			background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 95%, #000000 100%);
+		}
+	}
+}
+
+.card--listing.card--widget.is--featured {
+
+	&:after {
+		border-width: 3px;
+	}
+}
+
+.card__featured-tag {
+	position: absolute;
+	top: 14px;
+	left: 14px;
+
+	display: block;
+	padding: 1px 4px;
+
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+
+
+	background-color: $accent;
+	color: white;
+	border-radius: 2px;
+}
+
+.card--listing,
+.popup__title {
+	.listing-claimed-icon {
+		display: inline-block;
+		margin-left: 5px;
+	}
+}
+
+.card__pin svg {
+	display: block;
+}
+
+.card__rating,
+.card__address {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.card__footer {
+	@extend .clearfix;
+	margin-top: 10px;
+	margin-bottom: -10px;
+
+	@include query-cards() {
+		margin-top: 14px;
+	}
+}
+
+.card__rating {
+	float: left;
+	margin-right: 10px;
+	color: $accent;
+}
+
+.card__address 	{ overflow: hidden; }
+
+// typography overwrites some properties throught ".entry-content ul li"
+.card__tags.card__tags {
+	float: right;
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 0;
+	list-style: none;
+
+	> li {
+		padding: 0;
+		float: left;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+
+	.no-flexbox & {
+		max-width: 100px;
+	}
+}
+
+	.card__tag {
+		width: 40px;
+		height: 40px;
+		border: 2px solid $accent;
+		border-radius: 50%;
+		position: relative;
+		overflow: hidden;
+
+		.pin__icon {
+			top: 50%;
+			left: 50%;
+
+			// Image Case Category Icons
+			img {
+				top: 0;
+			    // max-height: 38px;
+			    // max-width: 38px;
+			}
+		}
+
+		@include query-cards() {
+			width: 36px;
+			height: 36px;
+
+			svg {
+				width: 22px;
+				height: 22px;
+			}
+		}
+	}
+
+	// in case of larger images
+	.pin__icon{
+		svg, img {
+			max-width: 30px;
+			max-height: 30px;
+
+			// If SVG has no w/h (inline)
+			min-height: 20px;
+			min-width: 20px;
+
+			// some have inline margins
+			margin: 0 !important;
+		}
+	}
+
+
+// make use of flexbox content rendering
+.flexbox {
+
+	.card__footer {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.card__tags {
+		order: 2;
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		flex-grow: 1;
+	}
+
+	.card__address {
+		flex: 100 0 7.5em;
+	}
+}

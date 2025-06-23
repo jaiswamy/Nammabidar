@@ -1,0 +1,80 @@
+.map {
+	position: fixed !important;
+	top: 60px;
+	right: 0;
+	bottom: 0;
+
+	.admin-bar & { top: 92px; }
+
+	@include query-above($lap) {
+		.has--secondary-menu & { top: 108px; }
+		.has--secondary-menu.admin-bar & { top: 140px; }
+	}
+
+    @media screen and (max-width: 782px) {
+        .admin-bar & { top: 106px; }
+    }
+
+    @include query-below($lap) {
+    	position: absolute;
+    	top: 60px;
+    	bottom: 0;
+    	width: 100%;
+    	left: 0;
+        transform: translateZ(0);
+        pointer-events: none;
+    	visibility: hidden;
+    	z-index: -1;
+
+    	.show-map & {
+    		z-index: 10;
+    		opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            display: block;
+
+    		.leaflet-control-container {
+    			display: none;
+    		}
+    	}
+    }
+
+    @include query-above($small) {
+        display: block !important;
+    }
+
+    @include query-below($xsmall) {
+        top: 50px;
+
+        .page-listings.admin-bar & {
+            top: 96px;
+        }
+    }
+}
+
+.listing-map {
+	width: 350px;
+	height: 200px;
+}
+
+.map--google {
+
+    // weird empty iframe prevents click on mobile devices
+    iframe {
+        display: none;
+    }
+
+    .leaflet-bottom.leaflet-right {
+        bottom: 17px;
+    }
+}
+
+.single-job_listing {
+
+    .gm-style > div > a > div > img,
+    .gmnoprint,
+    .gm-style-cc,
+    .leaflet-control-attribution {
+        display: none;
+    }
+}

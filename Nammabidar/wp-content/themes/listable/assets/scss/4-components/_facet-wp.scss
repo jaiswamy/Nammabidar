@@ -1,0 +1,1347 @@
+.facetwp-facet {
+	.facetwp-checkbox,
+	.facetwp-link {
+		display: inline-block;
+	}
+
+	&.facetwp-type-checkboxes {
+		max-height: none;
+	}
+
+	.facetwp-search-wrap {
+		display: block;
+
+		.facetwp-btn {
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+
+			padding: 6px 12px;
+
+			background-color: $gray-lightest;
+		}
+	}
+} // .facetwp-facet
+
+.facetwp-type-dropdown select.facetwp-dropdown {
+	display: block;
+}
+
+.facetwp-type-autocomplete .facet-wrapper {
+	position: relative;
+
+	&:after {
+		@extend %fa;
+		content: $fa-var-refresh;
+
+		position: absolute;
+		top: 50%;
+		right: 72px;
+
+		color: $gray;
+		transform: translateY(-50%);
+		pointer-events: none;
+
+		opacity: 0;
+
+		.is--loaded & {
+			opacity: 1;
+		}
+	}
+}
+
+.facetwp-autocomplete-update {
+	position: absolute;
+
+	top: 50%;
+	right: 31px;
+
+	width: auto !important;
+	height: 34px;
+	padding: 8px 15px;
+	padding-left: 35px;
+
+	transform: translateY(-50%);
+	cursor: pointer;
+
+	border: 0;
+	border-radius: 0;
+
+	-webkit-appearance: none;
+
+
+	color: #808080;
+	background-color: $gray-lightest;
+}
+
+.facetwp-type-slider {
+	display: flex;
+	flex-wrap: wrap;
+
+	.facetwp-slider-wrap {
+		flex: 0 1 100%;
+	}
+
+	.facetwp-slider.noUi-horizontal,
+	.noUi-background,
+	.noUi-connect,
+	.noUi-handle {
+		box-shadow: none;
+	}
+
+	.facetwp-slider.noUi-horizontal {
+		height: 6px;
+		border: 0;
+	}
+
+	.noUi-background {
+		background-color: #D9D9D9;
+		border-radius: 20px;
+
+		&.noUi-origin {
+			border-radius: 0;
+		}
+	}
+
+	.noUi-connect {
+		background-color: $accent;
+		box-shadow: none;
+	}
+
+	.noUi-horizontal .noUi-handle {
+		top: -8px;
+
+		//width: 22px;
+		height: 22px;
+		border-radius: 4px;
+
+		&:after, &:before {
+			height: 8px;
+		}
+		//
+		//&:before {
+		//	left: 8px;
+		//}
+		//
+		//&:after {
+		//	left: 11px;
+		//}
+	}
+
+	.facetwp-slider-label {
+		&, & + div {
+			flex: 1 0 auto;
+		}
+
+		& + div {
+			text-align: right;
+		}
+	}
+
+	.facetwp-slider-reset {
+		display: inline-block;
+		margin-right: -10px;
+
+		color: $gray;
+		border: 0;
+		box-shadow: none;
+
+		.is--using-facetwp & {
+			width: auto;
+		}
+	}
+}
+
+.facetwp-checkbox.facetwp-checkbox {
+	position: relative;
+	padding-left: 31px;
+
+	background: none !important;
+
+	&:after {
+		content: "";
+
+		position: absolute;
+		left: 0;
+		top: 2px;
+
+		width: 18px;
+		height: 18px;
+
+		border-radius: 2px;
+		border: 1px solid $borders-alt;
+
+		pointer-events: none;
+	}
+
+	&:hover, &.checked {
+		&:after {
+			border-color: $dark;
+		}
+	}
+
+	&.checked:before {
+		@extend %fa;
+
+		content: $fa-var-check;
+
+		position: absolute;
+		top: 0;
+		left: 2px;
+	}
+} // .facetwp-checkbox
+
+.facetwp-type-checkboxes,
+.facetwp-type-hierarchy {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.location-wrap {
+	.locate-me {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		opacity: .3;
+		cursor: pointer;
+
+		z-index: 5;
+
+		@include query-below($lap) {
+			padding: 15px;
+			right: 0;
+		}
+
+		&:hover {
+			opacity: .5;
+		}
+	}
+
+	#facetwp-location {
+		word-break: break-all;
+		text-overflow: ellipsis;
+
+		-moz-hyphens:none;
+		-ms-hyphens:none;
+		-webkit-hyphens: none;
+		hyphens:none;
+	}
+}
+
+.facetwp-facet.facetwp-type-fselect {
+	.fs-label-wrap {
+		display: block;
+		border: 0;
+
+		.fs-label {
+			padding: 15px 20px;
+			height: 51px;
+			text-align: left;
+		}
+	}
+
+	select.facetwp-dropdown {
+		display: none;
+	}
+
+	.fs-wrap {
+		position: relative;
+		width: 100%;
+	}
+
+	.fs-dropdown {
+		left: 0;
+
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.fs-option {
+		text-align: left;
+	}
+}
+
+
+
+
+
+// Listing archive custom style
+
+.job_filters {
+	.is--using-facetwp & .search_jobs {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.facetwp-facet {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+
+		min-height: 77px;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding: 20px 30px;
+
+		font-size: 14px;
+		border-top: 1px solid $borders;
+
+		@include query-above($small) {
+			flex-wrap: nowrap;
+		}
+
+		&:first-of-type {
+			margin-top: -20px;
+			border-top: 0;
+		}
+
+		input,
+		select,
+		.facetwp-type-fselect .fs-label {
+			@extend %sans-serif;
+			font-size: 14px;
+		}
+
+		input[type="text"],
+		input[type="number"],
+		input[type="search"],
+		input[type="date"],
+		select,
+		.facetwp-type-fselect .fs-label {
+			padding: 8px;
+		}
+
+		select {
+			background: url("assets/img/select-arrows.png") calc(100% - 10px) center no-repeat;
+			background-size: 7px 10px;
+		}
+
+		label {
+			flex: 1 0 auto;
+			margin-right: 10px;
+
+			font-weight: normal;
+			line-height: 36px;
+		}
+
+		.facetwp-filter-title {
+			flex-basis: 100%;
+			margin-right: 0;
+
+			align-self: flex-start;
+
+
+			@include query-above($small) {
+				padding-right: 15px;
+				flex: 0 0 140px;
+			}
+		}
+
+		.facet-wrapper {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			flex-basis: 100%;
+
+			@include query-above($small) {
+				flex: 0 1 100%;;
+			}
+		}
+
+		.no-map & {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	} // .facetwp-facet
+
+	.facetwp-type-fselect .fs-label.fs-label {
+		@extend %sans-serif;
+
+		padding: 8px;
+		height: auto;
+
+		border: 1px solid $borders;
+		border-radius: 3px;
+
+		font-size: 14px;
+		line-height: normal;
+		-webkit-font-smoothing: antialiased;
+
+		background: url("assets/img/select-arrows.png") calc(100% - 10px) center no-repeat;
+		background-size: 7px 10px;
+
+		& + .fs-arrow {
+			display: none;
+		}
+	}
+
+	.facetwp-search-wrap {
+		flex-basis: 100%;
+	}
+
+	.facetwp-type-checkboxes,
+	.facetwp-type-hierarchy {
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		.facetwp-checkbox,
+		.facetwp-link {
+			margin: 7px 0;
+			padding-right: 10px;
+
+			flex-basis: 50%;
+
+			@include query-above($lap) {
+				flex-basis: 33%;
+			}
+		}
+	}
+
+	.facetwp-type-slider {
+		padding-bottom: 12px;
+	}
+
+	.facetwp-slider-wrap {
+		margin-top: 7px;
+	}
+
+	.facetwp-type-date_range,
+	.facetwp-type-number_range {
+		display: flex;
+	}
+
+	.facetwp-type-date_range {
+		.flatpickr-input:empty,
+		.facetwp-date:empty {
+			height: 36px;
+		}
+	}
+
+	.facetwp-date,
+	.facetwp-number,
+	.facetwp-quantity {
+		flex-basis: 155px;
+		margin-right: 20px;
+		-ms-flex-preferred-size: 155px;
+	}
+
+	.facetwp-type-availability {
+		.facetwp-quantity {
+			margin-right: 0;
+		}
+		.facetwp-availability-update {
+			display: none;
+		}
+	}
+
+	.facetwp-type-proximity {
+		display: flex;
+
+		.facet-wrapper {
+			flex-wrap: nowrap;
+		}
+
+		.location-wrap {
+			position: relative;
+			display: block;
+
+			flex: 0 1 100%;
+			margin-right: 20px;
+		}
+
+		.locate-me {
+			right: 10px;
+
+			&:before {
+				display: block;
+			}
+		}
+
+		#facetwp-radius {
+			flex: 1 0 30%;
+			display: block;
+			margin-left: 30px;
+		}
+	}
+
+	.facetwp-loading {
+		height: 36px;
+
+		background-position: center center;
+	}
+
+	.facetwp-autocomplete-update {
+		right: 1px;
+	}
+
+	.facetwp-type-fselect .fs-wrap {
+		width: 100%;
+	}
+
+	.facetwp-type-date_range input {
+		@include query-above($xsmall) {
+			flex-basis: calc(50% - 10px);
+			margin-right: 10px;
+		}
+
+		@include query-above(1025px) {
+			flex-basis: calc(33% - 10px);
+		}
+	}
+
+	@include query-below($small) {
+		.facetwp-type-autocomplete {
+			&:after {
+				top: auto;
+				bottom: 15px;
+			}
+		}
+
+		.facetwp-type-number_range .facet-wrapper {
+			label {
+				flex: 0 0 20%;
+			}
+
+			input {
+				flex: 1 1 70%;
+				width: auto;
+				margin-right: 0;
+			}
+
+			input:first-of-type {
+				margin-bottom: 10px;
+			}
+		}
+
+
+		.facetwp-date,
+		.facetwp-quantity {
+			flex-basis: 100%;
+			margin-right: 0;
+		}
+
+		.facetwp-date:first-of-type {
+			margin-bottom: 10px;
+		}
+
+		.facetwp-type-date_range input[type="date"] {
+			margin-bottom: 10px;
+		}
+	}
+} // .job_filters
+
+.page-listings .search_jobs .facetwp-facet label {
+	display: block;
+}
+
+// More / Less filters style
+.toggle-hidden-facets {
+	position: relative;
+	z-index: 11;
+
+	display: block;
+	margin: 20px 26px;
+	margin-bottom: 0;
+	padding: 4px 14px;
+
+	font-size: 15px;
+	font-weight: 600;
+
+	border: 1px solid #D9D9D9;
+	border-radius: 2px;
+
+	background-color: white;
+
+	& > * {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&:before {
+	    position: relative;
+	    top: -1px;
+		content: "";
+
+		display: inline-block;
+		vertical-align: middle;
+		width: 17px;
+		height: 17px;
+		margin-right: 5px;
+
+		background: url("assets/svg/filter-dark.svg") no-repeat center center;
+		background-size: 100%;
+	}
+
+	span {
+		position: relative;
+		top: -2px;
+		display: inline-block;
+	}
+
+	@include query-below($lap) {
+		margin: 26px;
+
+		body:not(.show-filters) & {
+			display: none;
+		}
+	}
+}
+
+.hidden_facets {
+	display: none;
+
+	.facetwp-facet:first-child {
+		border-top: 1px solid $borders;
+		margin-top: 0;
+	}
+}
+
+body:not(.is--showing-hidden-facets) {
+	.toggle-hidden-facets .text--active {
+		display: none;
+	}
+}
+
+body.is--showing-hidden-facets {
+
+	.toggle-hidden-facets {
+		.text--active {
+			display: inline-block;
+		}
+
+		.text--inactive {
+			display: none;
+		}
+	}
+}
+
+
+/* rtl:ignore */
+body[class*="rtl"] {
+	.locate-me,
+	.facetwp-btn {
+		&:before {
+			float: left;
+		}
+	}
+	#facetwp-location {
+		padding-left: 8px;
+	}
+}
+
+
+
+// Front Page custom style
+
+.search_jobs--frontpage-facetwp {
+	color: $gray;
+	opacity: 0;
+	transition: linear $transition-macro opacity;
+
+	.is--loaded & {
+		opacity: 1;
+	}
+
+	//border-radius: 4px;
+	//overflow: hidden;
+	flex-wrap: wrap;
+
+	&,
+	input,
+	select,
+	.facetwp-filter-title {
+		@extend %alt-sans-serif;
+		font-size: 16px;
+	}
+
+	input,
+	select {
+		@extend %frontpage-search-input;
+	}
+
+	.facetwp-filter-title {
+		color: $dark;
+	}
+
+	&.search_jobs--frontpage select {
+		display: initial;
+
+		background: url("assets/img/select-arrow.svg") calc(100% - 22px) center no-repeat;
+		background-size: 12px 10px;
+
+		.rtl & {
+			background: url("assets/img/select-arrow.svg") 22px center no-repeat;
+		}
+	}
+
+	.facetwp-facet {
+		display: flex;
+		min-height: 51px;
+		margin-bottom: 0;
+
+		background-color: white;
+		border-bottom: 1px solid #EBEBEB;
+
+		@include query-above($lap) {
+			flex: 1 1 200px;
+			border-right: 1px solid #EBEBEB;
+		}
+	}
+
+	.facet-wrapper {
+		display: flex;
+		flex: 0 1 100%;
+		flex-wrap: wrap;
+	}
+
+	.facetwp-search-wrap {
+		flex-basis: 100%;
+
+		.facetwp-btn {
+			display: none;
+		}
+	}
+
+	.facetwp-type-autocomplete {
+		@include query-above($lap) {
+			flex-basis: 365px;
+		}
+
+		.facet-wrapper:after {
+			display: none;
+		}
+
+		input {
+			padding-left: 15px;
+		}
+	}
+		.facetwp-autocomplete-update {
+			display: none;
+		}
+
+	.facetwp-type-date_range {
+		@include query-below($lap) {
+			& {
+				width: 100%;
+			}
+
+			input {
+				width: 50%;
+			}
+
+			.flatpickr-input.flatpickr-mobile {
+				border-right: 1px solid $borders;
+				border-radius: 0;
+			}
+
+			& + .search-submit {
+				margin-left: 0;
+			}
+		}
+
+		@include query-above($lap) {
+			.flatpickr-input,
+			.facetwp-date {
+				width: 50%;
+			}
+
+			flex-basis: 270px;
+		}
+	}
+
+	.facetwp-date-min,
+	.facetwp-number-min {
+		border-right: 1px solid $borders;
+	}
+
+	.facetwp-type-slider {
+		padding: 10px 15px;
+
+		//@include query-above($lap) {
+		//	flex-wrap: nowrap;
+		//	flex-basis: 500px;
+		//}
+	}
+		.facetwp-slider-label {
+			order: 1;
+			line-height: 30px;
+			text-align: left;
+
+			& + div {
+				text-align: right;
+				order: 2;
+
+				input {
+					margin-right: 0;
+				}
+			}
+		}
+
+		.facetwp-slider-wrap {
+			padding-bottom: 0;
+			margin: 15px 0 20px 0;
+
+			order: 0;
+			display: flex;
+			align-items: center;
+
+			.noUi-horizontal {
+				flex-basis: 100%;
+			}
+		}
+
+		.facetwp-slider-reset {
+			height: 30px;
+			padding: 6px;
+		}
+
+		@include query-above($lap) {
+			.facetwp-slider-label {
+				order: 1;
+				flex: 1 0 auto;
+			}
+
+			.facetwp-slider-wrap {
+				margin: 0 15px;
+				order: 2;
+			}
+		}
+
+	.facetwp-type-checkboxes,
+	.facetwp-type-hierarchy {
+		flex: 1 1 auto;
+		flex-wrap: nowrap;
+
+		.facetwp-filter-title {
+			margin: 12px 20px;
+			flex: 1 0 auto;
+			align-self: flex-start;
+			display: block;
+		}
+	}
+
+	.facetwp-link,
+	.facetwp-checkbox {
+		margin: 12px 20px;
+	}
+
+	.facetwp-checkbox.facetwp-checkbox.checked{
+		&:before {
+			left: 1px;
+		}
+
+		&:after {
+			border-color: $gray;
+		}
+	}
+
+	.facetwp-checkbox:after {
+		top: 3px;
+	}
+
+	//@include query-above($lap) {
+	//	.facetwp-type-proximity {
+	//		flex-basis: 500px;
+	//	}
+	//}
+
+	.facetwp-type-proximity,
+	.facetwp-type-number_range,
+	.facetwp-type-date_range,
+	.facetwp-type-slider {
+		.facet-wrapper {
+			flex-wrap: nowrap;
+		}
+	}
+
+		.location-wrap {
+			flex: 0 1 100%;
+
+			@include query-above($lap) {
+				.locate-me {
+					right: 15px;
+					left: auto;
+				}
+			}
+		}
+
+		#facetwp-radius {
+			flex: 1 0 30%;
+			border-left: 1px solid $borders;
+			display: none;
+		}
+
+	.facetwp-type-fselect {
+		.fs-label {
+			padding: 15px 20px;
+			height: 51px;
+
+			line-height: 22px;
+			text-align: left;
+		}
+
+		.fs-arrow {
+			position: absolute;
+			right: 17px;
+			top: 50%;
+			z-index: 1021;
+
+			transform: translateY(-25%);
+
+			display: block;
+			width: 0;
+			height: 0;
+			margin: initial;
+
+			pointer-events: none;
+
+			border: 6px solid transparent;
+			border-top: 7px solid $gray;
+		}
+	}
+
+
+	.fs-dropdown {
+		@extend %menu-search-box-aspect;
+
+		padding-left: 0;
+		margin: 0;
+		border: 0;
+
+		.fs-option {
+			@extend %menu-search-item-wrapper;
+			@extend %menu-search-item;
+
+			padding-right: 20px;
+
+			color: $dark;
+			line-height: 1.5;
+
+			&:hover {
+				color: white;
+				background-color: $accent;
+			}
+		}
+
+		.fs-search {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	.page-template-front_page & .search-submit {
+		border-radius: 0;
+
+		flex: 1 1 auto;
+		width: 100%;
+
+		@include query-above($lap) {
+			margin-left: 0;
+			width: auto;
+		}
+	}
+
+	.facetwp-loading {
+		height: 51px;
+		width: 100%;
+
+		background-position: center center;
+	}
+
+	#facetwp-location {
+		padding-right: 40px;
+	}
+
+	.fs-label-wrap {
+		display: none;
+	}
+
+	.facetwp-facet-availability {
+		.facet-wrapper {
+			max-width: 100%;
+			flex-wrap: nowrap;
+
+			> * {
+				flex-basis: 33%;
+			}
+		}
+
+		.facetwp-availability-update {
+			display: none;
+		}
+
+		.facetwp-quantity {
+			border-left: 1px solid $borders;
+		}
+	}
+
+	&.has--one-field .facetwp-facet-availability + .search-submit {
+		margin-left: 0;
+	}
+} // .search_jobs--frontpage-facetwp
+
+.show-map {
+
+	.facetwp-pager,
+	.facetwp-template {
+		display: none;
+	}
+
+	.mobile-buttons {
+		margin-bottom: 50px;
+	}
+}
+
+
+
+
+
+// Header Facets Custom Styling
+
+.header-facet-wrapper {
+	@include query-below($lap) {
+		display: none;
+	}
+
+	position: relative;
+
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-start;
+
+	flex: 1 1 auto;
+	align-self: center;
+
+	//height: $header-height / 2;
+	min-width: 250px;
+	padding-right: 38px;
+	margin-right: 1vw;
+	overflow: hidden;
+
+	opacity: 0;
+	transition: opacity $transition-micro;
+
+	.is--loaded & {
+		opacity: 1;
+	}
+
+	.page-template-front_page & {
+		// display: none; >> Will be removed from PHP #295
+	}
+
+	.facetwp-facet {
+		position: relative;
+
+		flex: 0 1 47%;
+		min-width: 100px;
+		max-width: 220px;
+		margin-bottom: 0;
+
+		&:before {
+			content: "";
+
+			position: absolute;
+			left: 0;
+			top: 50%;
+			z-index: 1;
+
+			height: 30px;
+
+			border-left: 1px solid $borders;
+			transform: translateY(-50%);
+		}
+
+		& > label {
+			display: none;
+		}
+
+		input, select, label {
+			@extend %alt-sans-serif;
+			font-size: 15px;
+		}
+
+		input, select {
+			height: 60px;
+			border: 0;
+			padding: 15px 20px;
+			word-break: break-all;
+		}
+	}
+
+	.facet-wrapper {
+		display: flex;
+	}
+
+	.facetwp-loading {
+		position: relative;
+	    left: 20px;
+	}
+
+	.facetwp-type-search {
+		//flex-basis: 260px;
+		//min-width: 260px;
+
+		.facetwp-search-wrap {
+			width: 100%;
+		}
+
+		.facetwp-btn {
+			display: none;
+		}
+	}
+
+	.facetwp-type-proximity {
+		#facetwp-radius {
+			max-width: 80px;
+			display: none;
+		}
+
+		.location-wrap {
+
+			.locate-me {
+				left: 20px;
+				right: auto;
+			}
+
+			#facetwp-location {
+				padding-left: 50px;
+				padding-right: 20px;
+			}
+		}
+	}
+
+	.facetwp-type-autocomplete {
+		.facet-wrapper:after {
+			display: none;
+		}
+
+		.facetwp-autocomplete-update {
+			display: none;
+		}
+	}
+
+	.facetwp-type-checkboxes {
+		height: 30px;
+		.facet-wrapper {
+			flex-wrap: nowrap;
+			padding: 0 20px;
+		}
+
+		.facetwp-checkbox {
+			flex: 0 0 auto;
+			margin-bottom: 0;
+			margin-right: 10px;
+		}
+	}
+
+
+	.search-submit {
+		position: relative;
+		margin-left: 20px;
+		padding-top: 8px;
+
+		.is--edge & {
+			right: 0;
+		}
+
+		&:before {
+			content: "";
+
+			position: absolute;
+			left: -20px;
+			top: 1px;
+			//transform: inherit;
+
+			height: 30px;
+			border-left: 1px solid $borders;
+		}
+	}
+} // .header-facet-wrapper
+
+// Google search suggestions
+.pac-container {
+	@extend %menu-hover;
+	@extend %menu-search-box-aspect;
+
+	z-index: 1200;
+
+	border-top: 0;
+	border-radius: 0;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+	.page-listings & {
+		// so it remains fixed when scrolling
+		position: fixed !important;
+	}
+
+
+	.pac-item {
+		@extend %menu-search-item;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		&:hover {
+			cursor: pointer;
+			background-color: transparent;
+
+			.pac-item-query {
+				color: $accent;
+			}
+		}
+
+		.page-template-front_page &:hover {
+			background-color: $accent;
+			color: white;
+
+			.pac-item-query {
+				color: white;
+			}
+
+			.pac-icon-marker {
+				-webkit-filter: brightness(10);
+				filter: brightness(10);
+			}
+		}
+	}
+
+	.pac-item-query {
+		font-size: 14.95px;
+
+		& + span {
+			@extend %sans-serif;
+			font-size: 12px;
+			font-weight: 300;
+		}
+	}
+
+	&.pac-logo:after {
+		padding: 20px 0;
+		border-top: 1px solid $borders;
+		background-position: center;
+		background-size: 100px 11px;
+	}
+}
+
+.facetwp-pager {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px;
+	margin-top: 0;
+
+	& > span, & > a {
+		@extend %nav-link-wrapper;
+	}
+
+	a {
+		@extend %nav-link;
+		color: $gray;
+	}
+
+	.facetwp-pager-label,
+	a.active,
+	a.active:hover {
+		background: $gray-lightest;
+		color: $gray;
+	}
+
+	a.first-page, a.last-page {
+		position: relative;
+
+		color: transparent;
+
+		&:before {
+			@extend %fa;
+
+			position: absolute;
+			left: 50%;
+			top: 50%;
+
+			color: $gray;
+
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+		&:hover {
+			color: transparent;
+
+			&:before, &:after {
+				color: $accent;
+			}
+		}
+	}
+
+	a.first-page:before {
+		content: $fa-var-chevron-left;
+	}
+
+	a.last-page:before {
+		content: $fa-var-chevron-right;
+	}
+
+} // .facetwp-pager
+
+
+body[class*="rtl"] {
+	a.first-page:before {
+		content: $fa-var-chevron-right;
+	}
+	a.last-page:before {
+		content: $fa-var-chevron-left;
+	}
+	.facetwp-autocomplete-update {
+		padding-right: 35px;
+	}
+	.facetwp-type-autocomplete .facet-wrapper:after {
+			right: 12px;
+	}
+
+	.facetwp-counter {
+		padding-left: 5px;
+		display: inline-block;
+		width: 40%;
+	}
+
+	&.home .facetwp-counter {
+		width: auto !important;
+	}
+
+	.fs-label {
+		direction: ltr;
+	}
+
+	.job_filters .facetwp-type-checkboxes .facetwp-checkbox {
+		display: inline-flex;
+	}
+}
+
+.fwp-load-more {
+	@extend %btn;
+
+	.page-listings & {
+		display: none;
+	}
+}
+
+.fwp-load-more-wrapper {
+	margin: 30px;
+	margin-top: 0;
+
+	.fwp-load-more {
+		margin: 0 auto;
+
+		.page-listings & {
+			display: block;
+		}
+	}
+
+	+ .facetwp-pager {
+		display: none;
+	}
+}
+

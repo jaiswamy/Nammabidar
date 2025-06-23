@@ -1,0 +1,156 @@
+// Contact links - phone, Twitter, Website URL
+
+.single-meta {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+	.is--iele10 & {
+		display: table;
+		width: 100%;
+	}
+
+	& > * {
+		padding: rem(6px) 0;
+
+		@include query-above($xsmall) {
+			padding: rem(12px) 0;
+		}
+
+		.is--iele10 & {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+}
+
+a.listing-contact {
+	color: $dark;
+	//padding: rem(12px) 0;
+
+	//font-size: rem(15px);
+
+	@include query-above($xsmall) {
+		padding: rem(7px) 0 0 rem(12px);
+	}
+
+	&:before {
+		@extend %fa;
+
+		position: relative;
+	    top: 0.05em;
+
+
+		display: inline-block;
+		margin-right: rem(5px);
+	}
+}
+
+.listing--phone {
+	&:before {
+		content: $fa-var-phone;
+	}
+}
+
+// Default Twitter Field
+.listing--twitter:before { content: $fa-var-twitter; }
+
+// Extra fields that can be enabled through WPJM Field Editor plugin
+// we will match the href to them - left them looser so we don't have complaints
+a.listing-contact {
+    &[href*="mailto:"]:before,
+    &[href*="mail"]:before         {content: $fa-var-envelope;}
+    &.listing--behance:before      {content: $fa-var-behance;}
+    &.listing--delicious:before    {content: $fa-var-delicious;}
+    &.listing--deviantart:before   {content: $fa-var-deviantart;}
+    &.listing--digg:before         {content: $fa-var-digg;}
+    &.listing--dribbble:before     {content: $fa-var-dribbble;}
+    &.listing--facebook:before     {content: $fa-var-facebook;}
+    &.listing--flickr:before       {content: $fa-var-flickr;}
+    &.listing--foursquare:before   {content: $fa-var-foursquare;}
+    &.listing--github:before       {content: $fa-var-github;}
+    &.listing--plus:before         {content: $fa-var-google-plus;}
+    &.listing--instagram:before    {content: $fa-var-instagram;}
+    &.listing--linkedin:before     {content: $fa-var-linkedin;}
+    &.listing--pinterest:before    {content: $fa-var-pinterest;}
+    &.listing--reddit:before       {content: $fa-var-reddit;}
+    &.listing--skype:before 	   {content: $fa-var-skype;}
+    &.listing--soundcloud:before   {content: $fa-var-soundcloud;}
+    &.listing--spotify:before      {content: $fa-var-spotify;}
+    &.listing--stumbleupon:before  {content: $fa-var-stumbleupon;}
+    &.listing--tumblr:before       {content: $fa-var-tumblr;}
+    &.listing--twitter:before      {content: $fa-var-twitter;}
+    &.listing--vimeo:before        {content: $fa-var-vimeo-square;}
+    &.listing--vine:before         {content: $fa-var-vine;}
+    &.listing--vk:before           {content: $fa-var-vk;}
+    &.listing--weibo:before        {content: $fa-var-weibo;}
+    &.listing--xing:before         {content: $fa-var-xing;}
+    &.listing--yahoo:before        {content: $fa-var-yahoo;}
+    &.listing--youtube:before      {content: $fa-var-youtube;}
+    &.listing--angel:before        {content: $fa-var-angellist;}
+    &.listing--yelp:before 		   {content: $fa-var-yelp;}
+    &.listing--last:before         {content: $fa-var-lastfm;}
+    &.listing--slideshare:before   {content: $fa-var-slideshare;}
+    &.listing--twitch:before       {content: $fa-var-twitch;}
+    &.listing--bloglovin:before    {content: $fa-var-heart;}
+    &.listing--medium:before       {content: $fa-var-medium;}
+    &.listing--whatsapp:before     {content: $fa-var-whatsapp;}
+    &.listing--leanpub:before      {content: $fa-var-leanpub;}
+    &.listing--renren:before       {content: $fa-var-renren;}
+
+}
+
+// .listing--facebook:before { content: $fa-var-facebook; }
+// .listing--instagram:before { content: $fa-var-instagram; }
+
+.listing--website {
+	&:before {
+		content: $fa-var-link;
+
+		position: relative;
+		top: rem(2px);
+
+		margin-right: rem(5px);
+	}
+}
+
+%star-rating {
+	display: flex;
+	align-items: center;
+
+	line-height: rem(16px);
+
+	.is--iele10 & {
+		@extend %clearfix;
+	}
+
+	.rating-value {
+		order: 10;
+		//padding: rem(12px) 0;
+		margin-left: 3px;
+
+		font-size: rem(15px);
+
+		color: $gray;
+	}
+
+	& > i {
+		margin-right: 2px;
+		display: inline-block;
+		height: rem(16px);
+
+		font-size: rem(18px);
+
+		color: $accent;
+
+		.is--iele10 & {
+			float: left;
+		}
+	}
+}
+
+.single-rating {
+	@extend %star-rating;
+}

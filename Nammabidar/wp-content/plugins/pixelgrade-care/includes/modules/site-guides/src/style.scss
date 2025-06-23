@@ -1,0 +1,79 @@
+/**
+ * The following styles get applied everywhere.
+ *
+ */
+
+// Guide list styles
+.pixcare-guide-list-item {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-right: 3px;
+    padding: 6px 0;
+  }
+
+  button {
+    text-align: left;
+    height: auto;
+    padding: 6px 6px;
+  }
+}
+
+// guide popup styles
+.pixcare-site-guide {
+  .site-guide-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .site-guide-content {
+    margin: 0;
+    padding: 2em;
+
+    > *:first-child {
+      margin-top: 0;
+    }
+
+    // Title
+    h1 {
+      margin-bottom: 0.5em;
+      line-height: 1.2;
+    }
+
+    // Button
+    .components-button {
+      width: 100%;
+      justify-content: center;
+      height: 42px;
+      font-size: 14px;
+    }
+  }
+
+  &.single-page .components-guide__footer {
+    display: none;
+  }
+
+  .components-modal__header {
+    .components-button span {
+      display: none;
+    }
+
+    .components-button:hover svg {
+      fill: #1e1e1e;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .components-modal__frame.components-guide.pixcare-site-guide {
+    width: 380px;
+    height: auto;
+    max-height: 80vh;
+  }
+}

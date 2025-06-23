@@ -1,0 +1,33 @@
+.no-results {
+    display: none;
+    padding: 50px 0 0 150px;
+
+    .clear-results-btn {
+        @extend .package__btn;
+        border: 0;
+        background: $accent;
+        color: white;
+    }
+}
+
+.has-no-listings .no-results { display: block; }
+
+.underlined-link.underlined-link {
+    text-decoration: underline;
+    color: $dark;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .no-results {
+        padding: 0 0 0 26px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .no-results {
+        padding: 0 0 0 60px;
+    }
+}

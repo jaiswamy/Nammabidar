@@ -1,0 +1,147 @@
+// Footer widgets
+.widget--footer {
+	@extend %single-listing-width;
+	text-align: center;
+
+	padding-top: rem(30px);
+	padding-bottom: rem(30px);
+
+	color: white;
+
+	ul {
+		@extend %ends--hard;
+	}
+
+	&.widget_nav_menu li {
+		display: inline-block;
+	}
+
+	[id*=social] {
+		@extend .nav--social;
+		float: none;
+		font-size: 0;
+
+		li.menu-item {
+			margin: 0 2px;
+			width: rem(44px) !important;
+			height: rem(44px) !important;
+
+			border: 2px solid currentColor;
+			border-radius: 50%;
+
+			a {
+				color: inherit;
+			}
+
+			a:before {
+				font-size: 22px;
+			}
+
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+
+	.widget-title {
+		margin-bottom: rem(15px);
+	}
+
+	.search-form {
+		position: relative;
+		max-width: 500px;
+
+		margin: 0 auto;
+
+		.search-field {
+			@extend %sans-serif;
+
+			font-weight: 600;
+
+			background-color: white;
+			color: $dark;
+		}
+	}
+
+	.search-submit {
+		position: absolute;
+		right: 0%;
+		top: 50%;
+
+		transform: translateY(-50%);
+	}
+}
+
+// Blog sidebar widgets
+.widget-area--post {
+
+	[id*=social] {
+		@extend .nav--social;
+		float: none;
+		font-size: 0;
+
+		li.menu-item {
+			margin: 0 2px;
+			width: rem(44px) !important;
+			height: rem(44px) !important;
+
+			border: 2px solid currentColor;
+			border-radius: 50%;
+
+			a:before {
+				font-size: 22px;
+			}
+
+			&:hover {
+				opacity: .7;
+
+				a {
+					color: white;
+				}
+			}
+		}
+	}
+
+	[id*=social] {
+
+		.menu-item:not(.menu-item-language) {
+			display: inline-block;
+		}
+
+		.facebook:not(.menu-item-language) {
+			color: #3b5998;
+		}
+
+		.twitter:not(.menu-item-language) {
+			color: #00aced;
+		}
+
+		.twitter:not(.menu-item-language) {
+			color: #00aced;
+		}
+
+		.youtube:not(.menu-item-language) {
+			color: #CC181E;
+		}
+
+		.pinterest:not(.menu-item-language) {
+			color: #CB2026;
+		}
+
+		.instagram:not(.menu-item-language) {
+			color: #4F7EA6;
+		}
+
+		.whatsapp:not(.menu-item-language) {
+			color: #25d366;
+		}
+
+		.googleplus:not(.menu-item-language) {
+			color: #dd4b39;
+		}
+
+		.tumblr:not(.menu-item-language) {
+			color: #35465c;
+		}
+	}
+}

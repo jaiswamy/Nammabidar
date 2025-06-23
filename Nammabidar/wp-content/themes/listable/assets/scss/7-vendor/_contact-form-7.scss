@@ -1,0 +1,31 @@
+#page .wpcf7-form {
+
+    .wpcf7-list-item {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+
+        > input {
+            margin: 0;
+        }
+
+        > input + .wpcf7-list-item-label,
+        > .wpcf7-list-item-label + input {
+            margin-left: 10px;
+        }
+    }
+
+    .wpcf7-list-item + .wpcf7-list-item {
+        margin-top: 20px;
+    }
+
+    label .wpcf7-form-control-wrap:not(:first-child) {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .wpcf7-quiz-label {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

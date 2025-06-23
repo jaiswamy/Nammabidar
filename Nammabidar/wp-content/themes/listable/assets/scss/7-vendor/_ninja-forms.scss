@@ -1,0 +1,104 @@
+
+#page .nf-form-cont {
+
+    .nf-form-content {
+        padding: 0;
+    }
+
+    hr.ninja-forms-field {
+        height: 1px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .nf-field label {
+        @extend %label;
+    }
+
+    .nf-field-element > p:last-child {
+        margin-bottom: 0;
+    }
+
+    .nf-field-container {
+        margin: 20px 0;
+    }
+
+    .listradio-wrap,
+    .listcheckbox-container {
+
+        .nf-field-element {
+
+            li {
+                display: flex;
+                align-items: center;
+            }
+
+            input {
+                display: block;
+                margin-top: 0;
+                margin-right: 0;
+            }
+
+            label {
+                cursor: pointer;
+                margin-left: 0 !important;
+                padding-left: 10px;
+            }
+
+            label:before,
+            label:after {
+                content: none;
+            }
+        }
+    }
+
+    .checkbox-wrap {
+
+        .nf-field-element {
+            width: auto;
+        }
+
+        label {
+            cursor: pointer;
+            margin-left: 0;
+            padding-left: 10px;
+        }
+
+        .nf-field-element,
+        input {
+            display: block;
+        }
+
+        label:before,
+        label:after {
+            content: none;
+        }
+    }
+
+    textarea,
+    input:not([type="button"]):not([type="submit"]) {
+        @extend %text-box;
+    }
+
+    .listmultiselect-wrap select,
+    .list-select-wrap select,
+    .listcountry-wrap select {
+        @extend %text-box;
+        @extend %select;
+    }
+
+    .list-select-wrap select + div {
+        display: none;
+    }
+
+    button,
+    input[type=button],
+    input[type=submit] {
+        @extend %btn;
+    }
+}
+
+
+#page .ninja-forms-noscript-message:first-child + .nf-form-cont .nf-form-title > h3 {
+    margin-top: 0;
+}

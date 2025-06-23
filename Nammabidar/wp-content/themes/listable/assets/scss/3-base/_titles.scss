@@ -1,0 +1,80 @@
+h1, h2, h3, h4, h5, h6 {
+    @extend %heading;
+
+    font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+    color: #5D5C5C;
+
+    & + & {
+        margin-top: 0;
+    }
+}
+
+%h1 {
+    @extend %alt-sans-serif;
+    font-size: rem(48px);
+    font-weight: normal;
+    line-height: 1.27;
+}
+
+%h2 {
+    @extend %alt-sans-serif;
+    font-size: rem(36px); // 36px
+    font-weight: normal;
+    line-height: 1.33;
+}
+
+%h3 {
+    @extend %alt-sans-serif;
+    font-size: rem(24px); // 24px
+    font-weight: normal;
+
+    margin-bottom: 1rem;
+}
+
+%h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: rem(18px); // 14px
+    font-weight: bold;
+
+    margin-bottom: 0.5rem;
+}
+
+%h5 {
+    font-size: 15px;
+    line-height: (25/15);
+}
+
+%h6 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: rem(13px);
+
+     margin-bottom: 0.5rem;
+}
+
+@mixin responsive-title($font-size) {
+    %h1 {
+        font-size: rem($font-size);
+    }
+}
+
+@include responsive-title( map-get($responsive-title, $default) );
+
+// Using $responsive-body-text map(settings.scss) to set title font-size depending on screen size;
+// font-size for $palm is default, used above; it will be skipped in the loop;
+// "0000" is a dummy value, it means it must not taken into consideration;
+// output example: < @include query-above($lap) { @include responsive-title( 16px ) }; >.
+@each $breakpoint, $font-size in $responsive-title {
+
+    @if $breakpoint != $default {
+
+        @if $font-size != 0000 {
+
+            @include query-above( $breakpoint ) {
+                @include responsive-title( $font-size );
+            }
+
+        }
+    }
+}

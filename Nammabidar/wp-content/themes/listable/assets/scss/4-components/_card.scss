@@ -1,0 +1,97 @@
+.card {
+	@extend %alt-sans-light;
+	overflow: hidden;
+	border-radius: 8px;
+
+	background: white;
+	color: $gray-light;
+
+	transition: box-shadow $transition-micro ease-out,
+				opacity $transition-macro ease-in-out;
+
+	.loading & {
+		opacity: 0;
+	}
+
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		border: 1px solid currentColor;
+		border-radius: inherit;
+
+		opacity: 0.2;
+		pointer-events: none;
+	}
+}
+
+%card__image,
+.card__image {
+	position: relative;
+	background: $borders center no-repeat;
+	background-size: cover;
+
+	&:after {
+		content: "";
+		display: block;
+		padding-top: 60%;
+	}
+}
+
+%card__content,
+.card__content {
+	padding: 16px;
+	font-size: 14.95px;
+	color: $gray-light;
+
+	p {
+		margin: 0;
+	}
+
+	@include query-cards() {
+		padding: 13px;
+	}
+}
+
+// typography overwrites some properties through ".entry-content h1"
+.card__title.card__title {
+	margin: 0;
+	margin-bottom: 4px;
+	font-size: 24px;
+	line-height: 28px/24px;
+	font-weight: normal;
+	color: $dark;
+
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	hyphens: none;
+
+	@include query-cards() {
+		font-size: 21px;
+		margin-bottom: 0;
+	}
+}
+
+// strech card so the card on the same row have equal height
+// align footer to the bottom
+.flexbox {
+
+	.card,
+	.card > a,
+	.card--listing .card__content {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	.card__tagline {
+		flex-grow: 1;
+	}
+}
+

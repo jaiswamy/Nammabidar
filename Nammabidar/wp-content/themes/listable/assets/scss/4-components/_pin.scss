@@ -1,0 +1,71 @@
+.pin {
+	position: relative;
+	width: 48px;
+	height: 59px;
+	margin-left: -24px;
+	margin-top: -59px;
+	color: $accent;
+
+	// in case of larger SVG's
+	overflow: hidden;
+
+	&__icon {
+		position: absolute;
+		top: 38%;
+		left: 50%;
+		color: $accent;
+		transform: scale(0.85);
+
+		svg, img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translate(-50%, -50%);
+		}
+
+		img {
+			top: 1px;
+
+			max-width: 44px;
+			max-height: 44px;
+
+			border-radius: 50%;
+		}
+
+        // Avoids weird display of SVG's in IE 11
+        .is--ie & {
+            /*rtl:ignore*/
+            direction: ltr;
+        }
+	}
+
+	#selected {
+		fill: white;
+		transition: fill .2s ease-out;
+	}
+
+	&--selected {
+		#selected {
+			fill: $accent;
+		}
+	}
+}
+
+.marker-cluster {
+	width: 50px !important;
+	height: 62px !important;
+	margin-left: -25px !important;
+	margin-top: -62px !important;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: $accent;
+
+    span {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		width: 100%;
+		transform: translate(0, -50%);
+    }
+}

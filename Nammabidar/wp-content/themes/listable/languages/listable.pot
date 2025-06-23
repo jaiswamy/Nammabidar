@@ -1,0 +1,2614 @@
+# Copyright (C) 2020 Pixelgrade
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Listable 1.12.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/listable\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-04-14T12:38:25+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: listable\n"
+
+#. Theme Name of the theme
+#: inc/integrations/customify/style-presets.php:31
+msgid "Listable"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://demos.pixelgrade.com/listable/"
+msgstr ""
+
+#. Description of the theme
+msgid "A directory WordPress theme that will help you create and manage a local or global listings site."
+msgstr ""
+
+#. Author of the theme
+msgid "Pixelgrade"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://pixelgrade.com/"
+msgstr ""
+
+#: 404.php:27
+msgid "Oops! We can&rsquo;t seem to find the page you&rsquo;re looking for."
+msgstr ""
+
+#: 404.php:30
+msgid "The page you were looking for could not be found. It might have been removed, renamed, or did not exist in the first place."
+msgstr ""
+
+#: bookmark-form.php:25
+#: bookmark-form.php:26
+msgid "Favorited"
+msgstr ""
+
+#: bookmark-form.php:33
+#: logged-out-bookmark-form.php:20
+msgid "Add to favorites"
+msgstr ""
+
+#: bookmark-form.php:34
+#: logged-out-bookmark-form.php:23
+msgid "Favorite"
+msgstr ""
+
+#: bookmark-form.php:40
+msgid "Notes:"
+msgstr ""
+
+#: bookmark-form.php:47
+msgid "Update Bookmark"
+msgstr ""
+
+#: bookmark-form.php:47
+msgid "Add Bookmark"
+msgstr ""
+
+#: bookmark-form.php:50
+msgid "Clear"
+msgstr ""
+
+#: category.php:20
+msgid "Category: "
+msgstr ""
+
+#: comments.php:37
+msgctxt "comments title"
+msgid "1 review"
+msgid_plural "%1$s reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:43
+msgctxt "comments title"
+msgid "1 comment"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:52
+#: comments.php:75
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:56
+#: comments.php:79
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:57
+#: comments.php:80
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:90
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:97
+msgid "Rate and write a review"
+msgstr ""
+
+#: footer.php:52
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: footer.php:52
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:53
+msgid "and"
+msgstr ""
+
+#: footer.php:54
+msgid "%1$s by %2$s."
+msgstr ""
+
+#: functions.php:59
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:60
+msgid "Secondary Menu"
+msgstr ""
+
+#: functions.php:61
+msgid "Search Menu"
+msgstr ""
+
+#: functions.php:62
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:235
+msgid "Add Photo"
+msgstr ""
+
+#: functions.php:236
+msgid "No results"
+msgstr ""
+
+#: functions.php:237
+msgid "Results"
+msgstr ""
+
+#: functions.php:238
+#: job_manager/form-fields/multiselect-field.php:3
+msgid "Select Some Options"
+msgstr ""
+
+#: functions.php:239
+msgid "Select an Option"
+msgstr ""
+
+#: functions.php:240
+#: job_manager/form-fields/multiselect-field.php:3
+msgid "No results match"
+msgstr ""
+
+#: functions.php:241
+msgid "or"
+msgstr ""
+
+#: functions.php:508
+msgid "You can also create an account with a social network."
+msgstr ""
+
+#: header.php:32
+msgid "Skip to content"
+msgstr ""
+
+#: inc/activation.php:23
+#: inc/integrations/wp-job-manager.php:403
+#: inc/widgets.php:438
+msgid "Gallery Images"
+msgstr ""
+
+#: inc/activation.php:30
+#: inc/activation.php:59
+msgid "Gallery Image"
+msgstr ""
+
+#: inc/activation.php:41
+msgid "Hero Area"
+msgstr ""
+
+#: inc/activation.php:42
+msgid "Add an image or a video to be used as a Background for the Hero Area on the Front Page"
+msgstr ""
+
+#: inc/activation.php:43
+msgid "Tip: Uploading"
+msgstr ""
+
+#: inc/activation.php:44
+msgid "multiple images and/or videos"
+msgstr ""
+
+#: inc/activation.php:45
+msgid "will"
+msgstr ""
+
+#: inc/activation.php:46
+msgid "randomly"
+msgstr ""
+
+#: inc/activation.php:47
+msgid "pick one when page is loaded"
+msgstr ""
+
+#: inc/activation.php:65
+msgid "Playlist"
+msgstr ""
+
+#: inc/activation.php:73
+msgid "Front Page &raquo; Search Fields"
+msgstr ""
+
+#: inc/activation.php:73
+msgid "<p>Choose what fields to show in the hero area of this front page.</p>"
+msgstr ""
+
+#: inc/activation.php:83
+msgid "Search Fields"
+msgstr ""
+
+#: inc/activation.php:88
+#: job_manager/job-filters-hero.php:91
+#: template-parts/header-fields.php:105
+msgid "Keywords"
+msgstr ""
+
+#: inc/activation.php:89
+#: job_manager/job-filters-hero.php:106
+#: job_manager/job-filters-hero.php:109
+#: job_manager/job-filters-hero.php:113
+#: job_manager/job-filters.php:101
+#: job_manager/job-filters.php:103
+msgid "Location"
+msgstr ""
+
+#: inc/activation.php:90
+#: inc/integrations/wp-job-manager.php:85
+#: inc/widgets.php:353
+msgid "Categories"
+msgstr ""
+
+#: inc/activation.php:98
+msgid "Front Page &raquo; Highlighted Categories"
+msgstr ""
+
+#: inc/activation.php:98
+msgid "<p>You can select which categories to highlight, by adding their <em>slugs</em>, separated by a comma: <em>food, hotels, restaurants</em></p><p> You can change their <em>shown name</em> (in case it is too long) with this pattern: <em>slug (My Custom Name)</em></p>"
+msgstr ""
+
+#: inc/activation.php:108
+msgid "Frontend Categories"
+msgstr ""
+
+#: inc/activation.php:113
+msgid "CTA Text"
+msgstr ""
+
+#: inc/activation.php:117
+msgid "Or browse the highlights"
+msgstr ""
+
+#: inc/customizer.php:50
+msgid "Customize Front Page Sections"
+msgstr ""
+
+#: inc/customizer.php:71
+msgid "Customize Listings Layout"
+msgstr ""
+
+#: inc/extras.php:109
+#: inc/extras.php:120
+msgid "Page Subtitle"
+msgstr ""
+
+#: inc/extras.php:111
+msgid "This is the subtitle that will be shown in the page's Hero Area, below the page title."
+msgstr ""
+
+#: inc/extras.php:524
+msgid "Your name"
+msgstr ""
+
+#: inc/extras.php:525
+msgid "your@email.com"
+msgstr ""
+
+#: inc/extras.php:665
+#: inc/extras.php:672
+msgid "Wrong Password"
+msgstr ""
+
+#: inc/extras.php:683
+msgid "&#x1f4bc; Listing URL Base"
+msgstr ""
+
+#: inc/extras.php:690
+msgid "&#x1f4bc; Listing Category Base"
+msgstr ""
+
+#: inc/extras.php:697
+msgid "&#x1f4bc; Listing Tag Base"
+msgstr ""
+
+#: inc/extras.php:784
+msgid "User Menu"
+msgstr ""
+
+#: inc/extras.php:793
+#: inc/extras.php:794
+#: plugins/login-with-ajax/modal/widget_out.php:39
+msgid "Log In"
+msgstr ""
+
+#: inc/extras.php:797
+#: inc/extras.php:798
+msgid "Log Out"
+msgstr ""
+
+#: inc/extras.php:801
+msgid "Welcome!"
+msgstr ""
+
+#: inc/extras.php:802
+msgid "Current Username"
+msgstr ""
+
+#: inc/extras.php:836
+msgid "Add to Menu"
+msgstr ""
+
+#: inc/extras.php:1183
+msgid "%1$s"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:21
+msgid "Colors"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:26
+msgid "Site Header"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:31
+msgid "Transparent on Front Page Hero"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:35
+msgid "Header Background Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:75
+msgid "Site Title Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:88
+msgid "Search Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:101
+msgid "Nav Link Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:136
+msgid "Nav Active Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:178
+msgid "Nav Button Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:195
+msgid "Main Content"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:199
+msgid "Content Background"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:372
+msgid "Page Background"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:438
+msgid "Page Titles Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:462
+msgid "Page Subtitles Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:474
+#: inc/integrations/customify/colors.php:829
+#: inc/integrations/customify/colors.php:957
+#: inc/integrations/customify/colors.php:986
+msgid "Text Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:675
+msgid "Buttons Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:749
+msgid "Cards"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:753
+msgid "Cards Background"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:777
+msgid "Cards Radius"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:795
+msgid "Thumbs Radius"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:813
+msgid "Title Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:854
+msgid "Icons Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:869
+msgid "Icons Border Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:892
+msgid "Icon Background Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:906
+msgid "Pin Background Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:922
+msgid "Pin Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:941
+msgid "Pre-Footer"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:945
+#: inc/integrations/customify/colors.php:974
+msgid "Background"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:970
+#: inc/integrations/customify/customify.php:109
+msgid "Footer"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:998
+msgid "Credits Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:1011
+msgid "Other Colors"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:1015
+msgid "Accent Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:1091
+msgid "Meta Fields Color"
+msgstr ""
+
+#: inc/integrations/customify/colors.php:1245
+msgid "Micro Elements"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:48
+msgid "Theme Options"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:51
+msgid "General"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:55
+msgid "Footer Copyright Text"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:56
+msgid "The copyright text which should appear in the footer area."
+msgstr ""
+
+#: inc/integrations/customify/customify.php:57
+msgid "Copyright &copy; %year% Company Inc.   &bull;   Address  &bull;   Tel: 42-898-4363"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:64
+msgid "Map Options"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:68
+msgid "Default Map Location"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:71
+msgid "Default GPS coordinates (latitude, longitude). Get them from %s."
+msgstr ""
+
+#: inc/integrations/customify/customify.php:71
+msgid "here"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:75
+msgid "Mapbox Integration (optional)"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:77
+msgid "We are offering integration with the %s service, so you can have better looking and highly performance maps."
+msgstr ""
+
+#: inc/integrations/customify/customify.php:78
+msgid "%sGet a FREE token%s and paste it above. If there is nothing added, we will fallback to the Google Maps service."
+msgstr ""
+
+#: inc/integrations/customify/customify.php:82
+msgid "Mapbox Style"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:94
+msgid "Custom styles works only if you have set a valid Mapbox API token in the field above."
+msgstr ""
+
+#: inc/integrations/customify/customify.php:99
+msgid "Custom JavaScript"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:103
+#: inc/integrations/customify/layout.php:23
+msgid "Header"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:104
+msgid "Easily add Custom Javascript code. This code will be loaded in the <head> section."
+msgstr ""
+
+#: inc/integrations/customify/customify.php:110
+msgid "You can paste here your Google Analytics tracking code (or for what matters any tracking code) and we will put it on every page."
+msgstr ""
+
+#: inc/integrations/customify/customify.php:125
+msgid "Logo while on Transparent Hero Area"
+msgstr ""
+
+#: inc/integrations/customify/customify.php:126
+msgid "Replace the default logo on the Front Page Hero."
+msgstr ""
+
+#: inc/integrations/customify/font-palettes.php:15
+#: inc/integrations/customify/font-palettes.php:17
+msgid "Softable"
+msgstr ""
+
+#: inc/integrations/customify/font-palettes.php:18
+msgid "A friendly and inviting genuine character"
+msgstr ""
+
+#: inc/integrations/customify/font-palettes.php:84
+#: inc/integrations/customify/font-palettes.php:86
+msgid "Exquisite"
+msgstr ""
+
+#: inc/integrations/customify/font-palettes.php:87
+msgid "A warm comfort, truly simple and delightfull"
+msgstr ""
+
+#: inc/integrations/customify/font-palettes.php:175
+#: inc/integrations/customify/font-palettes.php:177
+msgid "Lively"
+msgstr ""
+
+#: inc/integrations/customify/font-palettes.php:178
+msgid "Chic and energetic with a confident nature"
+msgstr ""
+
+#: inc/integrations/customify/font-palettes.php:240
+#: inc/integrations/customify/font-palettes.php:242
+msgid "Voltage"
+msgstr ""
+
+#: inc/integrations/customify/font-palettes.php:243
+msgid "Bold and strong, ready to make an impact"
+msgstr ""
+
+#: inc/integrations/customify/font-palettes.php:305
+#: inc/integrations/customify/font-palettes.php:307
+msgid "Self"
+msgstr ""
+
+#: inc/integrations/customify/font-palettes.php:308
+msgid "An adventurous spirit that's loud and proud"
+msgstr ""
+
+#: inc/integrations/customify/fonts.php:150
+msgid "Fonts"
+msgstr ""
+
+#: inc/integrations/customify/fonts.php:154
+msgid "Site Title Font"
+msgstr ""
+
+#: inc/integrations/customify/fonts.php:171
+msgid "Navigation Font"
+msgstr ""
+
+#: inc/integrations/customify/fonts.php:193
+msgid "Body Font"
+msgstr ""
+
+#: inc/integrations/customify/fonts.php:225
+msgid "Headings"
+msgstr ""
+
+#: inc/integrations/customify/fonts.php:247
+msgid "Page Subtitles"
+msgstr ""
+
+#: inc/integrations/customify/fonts.php:267
+msgid "Card Title Font"
+msgstr ""
+
+#: inc/integrations/customify/fonts.php:287
+msgid "Card Font"
+msgstr ""
+
+#: inc/integrations/customify/fonts.php:300
+msgid "Meta & Forms"
+msgstr ""
+
+#: inc/integrations/customify/layout.php:18
+msgid "Layout"
+msgstr ""
+
+#: inc/integrations/customify/layout.php:27
+msgid "Logo Height"
+msgstr ""
+
+#: inc/integrations/customify/layout.php:28
+msgid "This setting only applies to images"
+msgstr ""
+
+#: inc/integrations/customify/layout.php:48
+msgid "Header Vertical Margins"
+msgstr ""
+
+#: inc/integrations/customify/layout.php:75
+msgid "Menu Items Spacing"
+msgstr ""
+
+#: inc/integrations/customify/layout.php:102
+msgid "Frontpage"
+msgstr ""
+
+#: inc/integrations/customify/layout.php:106
+#: inc/integrations/customify/layout.php:157
+msgid "Container Width"
+msgstr ""
+
+#: inc/integrations/customify/layout.php:126
+msgid "Sections Vertical Margins"
+msgstr ""
+
+#: inc/integrations/customify/layout.php:153
+#: inc/widgets.php:19
+#: inc/widgets.php:198
+msgid "Content"
+msgstr ""
+
+#: inc/integrations/customify/style-presets.php:19
+msgid "Style Presets"
+msgstr ""
+
+#: inc/integrations/customify/style-presets.php:23
+msgid "Select a style:"
+msgstr ""
+
+#: inc/integrations/customify/style-presets.php:24
+msgid "Conveniently change the design of your site with built-in style presets. Easy as pie."
+msgstr ""
+
+#: inc/integrations/customify/style-presets.php:131
+msgid "Royal"
+msgstr ""
+
+#: inc/integrations/customify/style-presets.php:231
+msgid "Silkberry"
+msgstr ""
+
+#: inc/integrations/customify/style-presets.php:335
+msgid "Orangina"
+msgstr ""
+
+#: inc/integrations/customify/style-presets.php:436
+msgid "Jolly"
+msgstr ""
+
+#: inc/integrations/customify/style-presets.php:537
+msgid "Navy"
+msgstr ""
+
+#: inc/integrations/customify/style-presets.php:637
+msgid "Grass"
+msgstr ""
+
+#: inc/integrations/facetwp.php:233
+msgid "Facets Advanced Filtering"
+msgstr ""
+
+#: inc/integrations/facetwp.php:234
+msgid "Add filtering fields to your site and allow your visitors to better search through the listings"
+msgstr ""
+
+#: inc/integrations/facetwp.php:237
+msgid "Available Facets"
+msgstr ""
+
+#: inc/integrations/facetwp.php:238
+msgid "Drag and drop the facets you'd like to add into the right side boxes"
+msgstr ""
+
+#: inc/integrations/facetwp.php:248
+msgid "Listing Archive"
+msgstr ""
+
+#: inc/integrations/facetwp.php:249
+msgid "This area is where most of your facets should go (except the ones already shown in the Navigation Bar)"
+msgstr ""
+
+#: inc/integrations/facetwp.php:259
+msgid "Facets dragged here will be hidden under an \"More Filters\" button"
+msgstr ""
+
+#: inc/integrations/facetwp.php:270
+msgid "Navigation Bar"
+msgstr ""
+
+#: inc/integrations/facetwp.php:271
+msgid "Site-wide available facets. Choose wisely a maximum of two of the most essential filters -- the rest of them go to the Listings Archive section."
+msgstr ""
+
+#: inc/integrations/facetwp.php:281
+msgid "Front Page Hero"
+msgstr ""
+
+#: inc/integrations/facetwp.php:282
+msgid "Considering that Navigation Bar facets will not be shown on the Front Pagem feel free to use a similar configuration."
+msgstr ""
+
+#: inc/integrations/pixcare.php:95
+msgid "Pixelgrade Care &rsaquo; Installer"
+msgstr ""
+
+#: inc/integrations/pixcare.php:119
+msgid "One more lap to go.."
+msgstr ""
+
+#: inc/integrations/pixcare.php:124
+msgid "Start your digital journey with our"
+msgstr ""
+
+#: inc/integrations/pixcare.php:125
+#: inc/integrations/pixcare.php:132
+msgid "Pixelgrade Care®"
+msgstr ""
+
+#: inc/integrations/pixcare.php:126
+msgid "on board. It's the core of your experience with our WordPress theme, and we bet you are going to love it from day one. You’re in great hands, no doubt about that!"
+msgstr ""
+
+#: inc/integrations/pixcare.php:133
+msgid "Installing ..."
+msgstr ""
+
+#: inc/integrations/pixcare.php:140
+msgid "Return to the WordPress Dashboard"
+msgstr ""
+
+#: inc/integrations/pixcare.php:161
+msgid "Installing..."
+msgstr ""
+
+#: inc/integrations/pixcare.php:164
+#: inc/integrations/pixcare.php:198
+msgid "Activating..."
+msgstr ""
+
+#: inc/integrations/pixcare.php:187
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: inc/integrations/pixcare.php:190
+msgid "Plugin destination folder already exists."
+msgstr ""
+
+#: inc/integrations/pixcare.php:219
+#: inc/integrations/pixcare.php:237
+msgid "Unfortunately something went wrong. We are sorry, but you will need to install the plugin manually. Redirecting you to the appropriate page..."
+msgstr ""
+
+#: inc/integrations/woocommerce.php:67
+#: woocommerce/checkout/form-checkout.php:51
+msgid "Place order"
+msgstr ""
+
+#: inc/integrations/wp-job-manager-products.php:122
+#: inc/integrations/wp-job-manager-tags.php:28
+#: inc/integrations/wp-job-manager.php:14
+#: inc/integrations/wp-job-manager.php:293
+#: inc/integrations/wp-job-manager.php:302
+#: inc/widgets.php:19
+#: inc/widgets.php:29
+#: inc/widgets.php:39
+#: inc/widgets.php:107
+#: inc/widgets.php:198
+#: inc/widgets.php:254
+#: inc/widgets.php:284
+#: inc/widgets.php:353
+#: inc/widgets.php:409
+#: inc/widgets.php:438
+#: inc/widgets.php:497
+msgid "Listing"
+msgstr ""
+
+#: inc/integrations/wp-job-manager-products.php:122
+msgid "Products"
+msgstr ""
+
+#: inc/integrations/wp-job-manager-products.php:124
+msgid "The products linked to the current listing."
+msgstr ""
+
+#: inc/integrations/wp-job-manager-products.php:213
+#: inc/widgets.php:848
+#: inc/widgets.php:1174
+#: inc/widgets.php:1381
+#: inc/widgets.php:1598
+#: inc/widgets.php:1632
+#: inc/widgets.php:1908
+msgid "Title:"
+msgstr ""
+
+#: inc/integrations/wp-job-manager-products.php:218
+#: inc/widgets.php:853
+#: inc/widgets.php:1179
+#: inc/widgets.php:1386
+#: inc/widgets.php:1913
+msgid "Subtitle:"
+msgstr ""
+
+#: inc/integrations/wp-job-manager-products.php:247
+msgid "Make an Online Reservation"
+msgstr ""
+
+#: inc/integrations/wp-job-manager-products.php:248
+msgid "Powered by WooCommerce Plugin"
+msgstr ""
+
+#: inc/integrations/wp-job-manager-tags.php:28
+msgid "Tags"
+msgstr ""
+
+#: inc/integrations/wp-job-manager-tags.php:29
+msgid "A list of tags or amenities."
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:15
+#: inc/integrations/wp-job-manager.php:230
+#: job_manager/content-single-job_listing-preview.php:68
+#: job_manager/content-single-job_listing.php:46
+#: job_manager/job-filters.php:72
+#: job_manager/job-filters.php:171
+msgid "Listings"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:21
+#: inc/integrations/wp-job-manager.php:58
+#: inc/integrations/wp-job-manager.php:87
+msgid "All %s"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:22
+msgid "Add New"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:23
+msgid "Add %s"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:24
+msgid "Edit"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: inc/integrations/wp-job-manager.php:25
+#: inc/integrations/wp-job-manager.php:61
+#: inc/integrations/wp-job-manager.php:90
+#: template-parts/content-page.php:49
+msgid "Edit %s"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:26
+msgid "New %s"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:27
+#: inc/integrations/wp-job-manager.php:28
+msgid "View %s"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:29
+#: inc/integrations/wp-job-manager.php:57
+#: inc/integrations/wp-job-manager.php:86
+msgid "Search %s"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:30
+msgid "No %s found"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:31
+msgid "No %s found in trash"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:32
+#: inc/integrations/wp-job-manager.php:59
+#: inc/integrations/wp-job-manager.php:88
+msgid "Parent %s"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:34
+msgid "This is where you can create and manage %s."
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:49
+msgid "Listing Type"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:50
+msgid "Listings Types"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:56
+msgid "Types"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:60
+#: inc/integrations/wp-job-manager.php:89
+msgid "Parent %s:"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:62
+#: inc/integrations/wp-job-manager.php:91
+msgid "Update %s"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:63
+#: inc/integrations/wp-job-manager.php:92
+msgid "Add New %s"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:64
+#: inc/integrations/wp-job-manager.php:93
+msgid "New %s Name"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:68
+msgctxt "Listing type slug - resave permalinks after changing this"
+msgid "listing-type"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:77
+msgid "Listing Category"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:78
+msgid "Listings Categories"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:97
+msgctxt "Listing category slug - resave permalinks after changing this"
+msgid "listing-category"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:123
+#: inc/integrations/wp-job-manager.php:140
+msgid "Listing Tags"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:124
+#: inc/integrations/wp-job-manager.php:141
+msgid "Listing Tag"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:125
+msgid "Search Listing Tags"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:126
+msgid "Popular Tags"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:127
+msgid "All Listing Tags"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:128
+msgid "Parent Listing Tag"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:129
+msgid "Parent Listing Tag:"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:130
+msgid "Edit Listing Tag"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:131
+msgid "View Tag"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:132
+msgid "Update Listing Tag"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:133
+msgid "Add New Listing Tag"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:134
+msgid "New Listing Tag Name"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:135
+msgid "Separate tags with commas"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:136
+msgid "Add or remove tags"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:137
+msgid "Choose from the most used tags"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:138
+msgid "No tags found."
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:139
+msgid "No tags"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:144
+msgctxt "permalink"
+msgid "listing-tag"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:179
+#: inc/integrations/wp-job-manager.php:198
+#: inc/widgets.php:1694
+msgid "Listing Regions"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:180
+msgid "Region"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:181
+msgid "Search Regions"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:182
+msgid "Popular Regions"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:183
+#: job_manager/job-filters-hero.php:110
+msgid "All Regions"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:184
+msgid "Parent Region"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:185
+msgid "Parent Region:"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:186
+msgid "Edit Region"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:187
+msgid "View Region"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:188
+msgid "Update Region"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:189
+msgid "Add New Region"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:190
+msgid "New Region Name"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:191
+msgid "Separate regions with commas"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:192
+msgid "Add or remove regions"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:193
+msgid "Choose from the most used regions"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:194
+msgid "No regions found."
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:195
+msgid "No regions"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:196
+msgid "Regions"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:197
+msgid "Listing Region"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:201
+msgctxt "permalink"
+msgid "listing-region"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:222
+msgid "Post a Listing"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:226
+msgid "Listing Dashboard"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:261
+msgid "FacetWP"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:297
+msgid "Submission"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:323
+#: inc/widgets.php:409
+msgid "Hours"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:325
+#: inc/integrations/wp-job-manager.php:421
+msgid ""
+"Mon - Fri: 09:00 - 23:00 \n"
+"Sat - Sun: 17:00 - 23:00"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:331
+#: inc/integrations/wp-job-manager.php:428
+#: job_manager/content-single-job_listing-company.php:23
+msgid "Phone"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:333
+#: inc/integrations/wp-job-manager.php:430
+msgid "e.g +42-898-4364"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:373
+msgid "Listing Name"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:374
+msgid "Your listing name"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:377
+msgid "e.g Speciality Coffee Shop"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:378
+msgid "Keep it short and descriptive as it will appear on search results instead of the link description"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:382
+msgid "An overview of your listing and the things you love about it."
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:385
+msgid "Choose one or more categories"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:387
+msgid "Listing category"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:388
+msgid "Visitors can filter their search by the categories and amenities they want - so make sure you choose them wisely and include all the relevant ones"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:393
+msgid "Add tags"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:394
+msgid "Listing tags"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:395
+msgid "Visitors can filter their search by the amenities too, so make sure you include all the relevant ones."
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:399
+msgid "e.g 34 Wigmore Street, London"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:400
+msgid "Leave this blank if the location is not important."
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:411
+#: inc/integrations/wp-job-manager.php:416
+msgid "The first image will be shown on listing cards."
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:413
+msgid "Logo"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:419
+msgid "Hours of Operation"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:422
+msgid "Feel free to change the text format to fit your needs."
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:436
+msgid "e.g yourwebsite.com, London"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:578
+msgid "Position"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:583
+msgid "Image"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:597
+msgid "ID: %d"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:838
+msgid "Submit Listing"
+msgstr ""
+
+#: inc/integrations/wp-job-manager.php:854
+msgid "Preview"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:327
+#: inc/required-plugins/required-plugins.php:55
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:328
+#: inc/required-plugins/required-plugins.php:56
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/required-plugins/class-tgm-plugin-activation.php:330
+#: inc/required-plugins/required-plugins.php:57
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/required-plugins/class-tgm-plugin-activation.php:332
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:333
+#: inc/required-plugins/required-plugins.php:59
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: inc/required-plugins/class-tgm-plugin-activation.php:334
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/required-plugins/class-tgm-plugin-activation.php:340
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/required-plugins/class-tgm-plugin-activation.php:346
+#: inc/required-plugins/required-plugins.php:73
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/required-plugins/class-tgm-plugin-activation.php:352
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/required-plugins/class-tgm-plugin-activation.php:358
+#: inc/required-plugins/required-plugins.php:67
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/required-plugins/class-tgm-plugin-activation.php:364
+#: inc/required-plugins/required-plugins.php:69
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:370
+#: inc/required-plugins/required-plugins.php:77
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:385
+#: inc/required-plugins/required-plugins.php:79
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:386
+#: inc/required-plugins/class-tgm-plugin-activation.php:826
+#: inc/required-plugins/class-tgm-plugin-activation.php:2564
+#: inc/required-plugins/class-tgm-plugin-activation.php:3611
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:387
+#: inc/required-plugins/class-tgm-plugin-activation.php:3190
+#: inc/required-plugins/required-plugins.php:80
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:388
+#: inc/required-plugins/class-tgm-plugin-activation.php:2983
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:389
+msgid "No action taken. Plugin was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/required-plugins/class-tgm-plugin-activation.php:391
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: inc/required-plugins/class-tgm-plugin-activation.php:393
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:394
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:395
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:396
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:521
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:522
+msgid "Update Required"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:933
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:933
+#: inc/required-plugins/class-tgm-plugin-activation.php:936
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:936
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:1126
+#: inc/required-plugins/class-tgm-plugin-activation.php:2979
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: inc/required-plugins/class-tgm-plugin-activation.php:2013
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2304
+msgid "Required"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2307
+msgid "Recommended"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2323
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2326
+msgid "External Source"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2329
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2346
+msgid "Not Installed"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2350
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2352
+msgid "Active"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2358
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2361
+msgid "Requires Update"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2364
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: inc/required-plugins/class-tgm-plugin-activation.php:2373
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: inc/required-plugins/class-tgm-plugin-activation.php:2419
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/required-plugins/class-tgm-plugin-activation.php:2423
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/required-plugins/class-tgm-plugin-activation.php:2427
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/required-plugins/class-tgm-plugin-activation.php:2431
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2513
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2521
+msgid "Installed version:"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2529
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2541
+msgid "Available version:"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2564
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2578
+msgid "Plugin"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2579
+msgid "Source"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2580
+msgid "Type"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2584
+msgid "Version"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2585
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/required-plugins/class-tgm-plugin-activation.php:2634
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/required-plugins/class-tgm-plugin-activation.php:2639
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/required-plugins/class-tgm-plugin-activation.php:2645
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2715
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2748
+msgid "Install"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2754
+msgid "Update"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2757
+msgid "Activate"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2788
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2790
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2831
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2833
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2939
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:2965
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:3189
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/required-plugins/class-tgm-plugin-activation.php:3529
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/required-plugins/class-tgm-plugin-activation.php:3532
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/required-plugins/class-tgm-plugin-activation.php:3534
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:3538
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/required-plugins/class-tgm-plugin-activation.php:3540
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/required-plugins/class-tgm-plugin-activation.php:3540
+#: inc/required-plugins/class-tgm-plugin-activation.php:3548
+msgid "Show Details"
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/required-plugins/class-tgm-plugin-activation.php:3540
+#: inc/required-plugins/class-tgm-plugin-activation.php:3548
+msgid "Hide Details"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:3541
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/required-plugins/class-tgm-plugin-activation.php:3543
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:3546
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/required-plugins/class-tgm-plugin-activation.php:3548
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/required-plugins/class-tgm-plugin-activation.php:3549
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/required-plugins/class-tgm-plugin-activation.php:3551
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: %1$s = plugin name
+#: inc/required-plugins/required-plugins.php:61
+msgid "Listable requires the following plugin: %1$s."
+msgid_plural "Listable requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %1$s = plugin name
+#: inc/required-plugins/required-plugins.php:63
+msgid "Listable recommends the following plugin: %1$s."
+msgid_plural "Listable recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugins/required-plugins.php:65
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugins/required-plugins.php:71
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugins/required-plugins.php:75
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugins/required-plugins.php:78
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/required-plugins/required-plugins.php:81
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:139
+#: inc/template-tags.php:145
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:141
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:147
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:153
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:153
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:153
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:231
+msgctxt "slug"
+msgid "listings"
+msgstr ""
+
+#: inc/template-tags.php:241
+msgctxt "slug"
+msgid "listing-category"
+msgstr ""
+
+#: inc/template-tags.php:251
+msgctxt "slug"
+msgid "listing-tag"
+msgstr ""
+
+#: inc/template-tags.php:373
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:373
+#: inc/template-tags.php:419
+#: inc/template-tags.php:451
+msgid "(Edit)"
+msgstr ""
+
+#: inc/template-tags.php:387
+#: inc/template-tags.php:411
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: inc/template-tags.php:417
+#: inc/template-tags.php:450
+msgid "on %1$s"
+msgstr ""
+
+#: inc/template-tags.php:599
+msgid "This content is password protected. To view it please enter your password below:"
+msgstr ""
+
+#: inc/template-tags.php:600
+msgid "Password:"
+msgstr ""
+
+#: inc/template-tags.php:600
+msgid "Submit"
+msgstr ""
+
+#: inc/tutorials.php:28
+msgid "Let's add your first listing! To better familiarize with the process, start by adding a good"
+msgstr ""
+
+#: inc/tutorials.php:29
+msgid "title"
+msgstr ""
+
+#: inc/tutorials.php:30
+msgid "Coffee Heaven"
+msgstr ""
+
+#: inc/tutorials.php:43
+msgid "Visitors can filter their search result by "
+msgstr ""
+
+#: inc/tutorials.php:44
+msgid "categories"
+msgstr ""
+
+#: inc/tutorials.php:45
+msgid "so make sure you choose them wisely and include all the relevant ones."
+msgstr ""
+
+#: inc/tutorials.php:46
+msgid "Let's add two categories: \"Food\" and \"Coffee Shops\" &#8212; later on we will "
+msgstr ""
+
+#: inc/tutorials.php:47
+msgid "add icons"
+msgstr ""
+
+#: inc/tutorials.php:48
+msgid "to them"
+msgstr ""
+
+#: inc/tutorials.php:62
+msgid "Add a short and descriptive"
+msgstr ""
+
+#: inc/tutorials.php:63
+msgid "Tagline"
+msgstr ""
+
+#: inc/tutorials.php:64
+msgid "like \"Speciality Coffee Shop\""
+msgstr ""
+
+#: inc/tutorials.php:78
+msgid "Now you can add the"
+msgstr ""
+
+#: inc/tutorials.php:79
+msgid "address"
+msgstr ""
+
+#: inc/tutorials.php:80
+msgid "of the listing. Let's use \"34 Wigmore Street, London\""
+msgstr ""
+
+#: inc/tutorials.php:93
+msgid "Add 4 or 5"
+msgstr ""
+
+#: inc/tutorials.php:94
+msgid "images"
+msgstr ""
+
+#: inc/tutorials.php:95
+msgid "users love them. *Note that the first one appears on the listing card from the archive page"
+msgstr ""
+
+#: inc/tutorials.php:109
+msgid "Contact information is always useful. If you have a"
+msgstr ""
+
+#: inc/tutorials.php:110
+msgid "phone number"
+msgstr ""
+
+#: inc/tutorials.php:111
+msgid "a"
+msgstr ""
+
+#: inc/tutorials.php:112
+msgid "website"
+msgstr ""
+
+#: inc/tutorials.php:113
+msgid "or a"
+msgstr ""
+
+#: inc/tutorials.php:114
+msgid "Twitter username"
+msgstr ""
+
+#: inc/tutorials.php:115
+msgid "at hand -- fill them below"
+msgstr ""
+
+#: inc/tutorials.php:116
+msgid "Even if they are optional, they are very important so visitors can get find you"
+msgstr ""
+
+#: inc/tutorials.php:129
+msgid "We're ready to launch!"
+msgstr ""
+
+#: inc/tutorials.php:130
+msgid "Even if there are other fields that you can play with, there's plenty of time afterwards"
+msgstr ""
+
+#: inc/tutorials.php:131
+msgid "Fasten your seatbelt and hit the"
+msgstr ""
+
+#: inc/tutorials.php:132
+msgid "Publish button"
+msgstr ""
+
+#: inc/tutorials.php:133
+msgid "Congratulations for your first listing!"
+msgstr ""
+
+#: inc/tutorials.php:212
+msgid "Next &rarr;"
+msgstr ""
+
+#: inc/tutorials.php:220
+msgid "&larr; Prev"
+msgstr ""
+
+#: inc/tutorials.php:224
+msgid "Finish!"
+msgstr ""
+
+#: inc/tutorials.php:228
+msgid "Step"
+msgstr ""
+
+#: inc/tutorials.php:238
+#: inc/tutorials.php:242
+msgid "PixCare&reg; Assistant"
+msgstr ""
+
+#: inc/upgrade/class-Listable_Upgrade.php:141
+msgid "Your <strong>%s</strong> theme has been updated to <strong>version %s.</strong> Enjoy!"
+msgstr ""
+
+#: inc/upgrade/class-Listable_Upgrade.php:201
+#: inc/upgrade/class-Listable_Upgrade.php:209
+msgid "You should not do that!"
+msgstr ""
+
+#: inc/widgets.php:9
+msgid "Front Page Sections"
+msgstr ""
+
+#: inc/widgets.php:20
+msgid "The wider area where the main listing content should go."
+msgstr ""
+
+#: inc/widgets.php:29
+msgid "Sidebar Top"
+msgstr ""
+
+#: inc/widgets.php:30
+msgid "Placed to the top of the right sidebar, this area put each widget in a visually different boxed container."
+msgstr ""
+
+#: inc/widgets.php:39
+msgid "Sidebar Bottom"
+msgstr ""
+
+#: inc/widgets.php:40
+msgid "Placed below the Sidebar Top, this area brings together all the widgets under the same container."
+msgstr ""
+
+#: inc/widgets.php:49
+msgid "Footer Area"
+msgstr ""
+
+#: inc/widgets.php:59
+msgid "Blog Sidebar Area"
+msgstr ""
+
+#: inc/widgets.php:107
+#: wp-job-manager-bookmarks/my-bookmarks.php:18
+msgid "Actions"
+msgstr ""
+
+#: inc/widgets.php:108
+msgid "The action buttons like Write a Review, Share or Add to Favorites."
+msgstr ""
+
+#: inc/widgets.php:152
+msgid "Write a review"
+msgstr ""
+
+#: inc/widgets.php:153
+msgid "Review"
+msgstr ""
+
+#: inc/widgets.php:170
+#: inc/widgets.php:171
+msgid "Share"
+msgstr ""
+
+#: inc/widgets.php:199
+msgid "The main listing content."
+msgstr ""
+
+#: inc/widgets.php:254
+msgid "Reviews"
+msgstr ""
+
+#: inc/widgets.php:255
+msgid "A list of the recent reviews and the submission form."
+msgstr ""
+
+#: inc/widgets.php:284
+msgid "Location Map"
+msgstr ""
+
+#: inc/widgets.php:285
+msgid "A Map View of the listing location along with a Directions link to Google Map."
+msgstr ""
+
+#: inc/widgets.php:335
+msgid "Get directions"
+msgstr ""
+
+#: inc/widgets.php:355
+msgid "The listing categories along with the related icon."
+msgstr ""
+
+#: inc/widgets.php:410
+msgid "The Hours field content."
+msgstr ""
+
+#: inc/widgets.php:439
+msgid "The attached images in a gallery grid format."
+msgstr ""
+
+#: inc/widgets.php:452
+msgid "Photo gallery"
+msgstr ""
+
+#: inc/widgets.php:453
+msgid "All photos"
+msgstr ""
+
+#: inc/widgets.php:497
+msgid "Claim Listing"
+msgstr ""
+
+#: inc/widgets.php:498
+msgid "Display a claim listing button."
+msgstr ""
+
+#: inc/widgets.php:594
+msgid "Description:"
+msgstr ""
+
+#: inc/widgets.php:607
+msgid "Is this your business?"
+msgstr ""
+
+#: inc/widgets.php:608
+msgid "Claim it now."
+msgstr ""
+
+#: inc/widgets.php:609
+msgid "Make sure your information is up to date."
+msgstr ""
+
+#. Template Name of the theme
+#: inc/widgets.php:634
+#: inc/widgets.php:951
+#: inc/widgets.php:1281
+#: inc/widgets.php:1436
+#: inc/widgets.php:1694
+msgid "Front Page"
+msgstr ""
+
+#: inc/widgets.php:634
+#: inc/widgets.php:929
+msgid "Listing Cards"
+msgstr ""
+
+#: inc/widgets.php:635
+msgid "Displays a list of your listings based on different criteria (eg. latest of featured listings from a specific category)"
+msgstr ""
+
+#: inc/widgets.php:733
+#: job_manager/content-job_listing.php:58
+msgid "Featured"
+msgstr ""
+
+#: inc/widgets.php:858
+#: inc/widgets.php:1184
+#: inc/widgets.php:1391
+#: inc/widgets.php:1918
+msgid "Number of items to show:"
+msgstr ""
+
+#: inc/widgets.php:863
+msgid "Show:"
+msgstr ""
+
+#: inc/widgets.php:865
+msgid "All Listings"
+msgstr ""
+
+#: inc/widgets.php:866
+msgid "Featured Listings"
+msgstr ""
+
+#: inc/widgets.php:871
+#: inc/widgets.php:1189
+#: inc/widgets.php:1923
+msgid "Order by:"
+msgstr ""
+
+#: inc/widgets.php:873
+msgid "Date"
+msgstr ""
+
+#: inc/widgets.php:874
+#: inc/widgets.php:1193
+#: inc/widgets.php:1927
+msgid "Random"
+msgstr ""
+
+#: inc/widgets.php:879
+msgid "Items IDs(optional):"
+msgstr ""
+
+#: inc/widgets.php:884
+#: inc/widgets.php:1198
+msgid "Categories Slug(optional):"
+msgstr ""
+
+#: inc/widgets.php:930
+msgid "Explore these lovely listings"
+msgstr ""
+
+#: inc/widgets.php:951
+msgid "Listing Categories"
+msgstr ""
+
+#: inc/widgets.php:952
+msgid "Display a list of listing categories based on different criteria (eg. most popular, random) or specify which ones you want to show."
+msgstr ""
+
+#: inc/widgets.php:1191
+#: inc/widgets.php:1925
+msgid "Default"
+msgstr ""
+
+#: inc/widgets.php:1192
+#: inc/widgets.php:1926
+msgid "Number of Listings"
+msgstr ""
+
+#: inc/widgets.php:1261
+msgid "What are you interested in?"
+msgstr ""
+
+#: inc/widgets.php:1262
+msgid "Discover something nice"
+msgstr ""
+
+#: inc/widgets.php:1281
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/widgets.php:1282
+msgid "A list of the latest posts from blog."
+msgstr ""
+
+#: inc/widgets.php:1342
+msgid "View All"
+msgstr ""
+
+#: inc/widgets.php:1422
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/widgets.php:1423
+msgid "Fresh articles from the blog"
+msgstr ""
+
+#: inc/widgets.php:1436
+msgid "Spotlights"
+msgstr ""
+
+#: inc/widgets.php:1438
+msgid "Emphasize some features of your website or use it as a step-by-step explaining process."
+msgstr ""
+
+#: inc/widgets.php:1543
+#: inc/widgets.php:1586
+#: inc/widgets.php:1594
+#: inc/widgets.php:1623
+msgid "Select an Image"
+msgstr ""
+
+#: inc/widgets.php:1544
+#: inc/widgets.php:1587
+#: inc/widgets.php:1624
+msgid "Update Image"
+msgstr ""
+
+#: inc/widgets.php:1564
+msgid "Main Title:"
+msgstr ""
+
+#: inc/widgets.php:1569
+msgid "Main Subtitle:"
+msgstr ""
+
+#: inc/widgets.php:1603
+#: inc/widgets.php:1637
+msgid "Content:"
+msgstr ""
+
+#: inc/widgets.php:1608
+msgid "Remove spotlight \""
+msgstr ""
+
+#: inc/widgets.php:1608
+#: inc/widgets.php:1642
+msgid "Remove"
+msgstr ""
+
+#: inc/widgets.php:1616
+msgid "Add Spotlight"
+msgstr ""
+
+#: inc/widgets.php:1628
+msgid "Choose an Image"
+msgstr ""
+
+#: inc/widgets.php:1642
+msgid "Remove spotlight"
+msgstr ""
+
+#: inc/widgets.php:1672
+msgid "How It Works"
+msgstr ""
+
+#: inc/widgets.php:1695
+msgid "Display a list of listing regions based on different criteria (eg. most popular, random) or specify which ones you want to show."
+msgstr ""
+
+#: inc/widgets.php:1932
+msgid "Regions Slug(optional):"
+msgstr ""
+
+#: inc/widgets.php:1970
+msgid "Where are you going next?"
+msgstr ""
+
+#: inc/widgets.php:1971
+msgid "Find the best places to spend your time, near you or in any location around the world."
+msgstr ""
+
+#: job_manager/content-no-jobs-found.php:12
+msgid "No Results"
+msgstr ""
+
+#: job_manager/content-no-jobs-found.php:13
+msgid "There are no listings matching your search."
+msgstr ""
+
+#: job_manager/content-no-jobs-found.php:17
+msgid "Try changing your filters or "
+msgstr ""
+
+#: job_manager/content-no-jobs-found.php:19
+msgid "create a listing"
+msgstr ""
+
+#: job_manager/content-no-jobs-found.php:24
+msgid "Clear Filters "
+msgstr ""
+
+#: job_manager/content-single-job_listing-company.php:34
+msgid "Twitter"
+msgstr ""
+
+#: job_manager/content-single-job_listing-company.php:51
+msgid "Website"
+msgstr ""
+
+#: job_manager/content-single-job_listing-meta.php:23
+msgid "Posted %s ago"
+msgstr ""
+
+#: job_manager/content-single-job_listing-meta.php:26
+msgid "This position has been filled"
+msgstr ""
+
+#: job_manager/content-single-job_listing-meta.php:28
+msgid "Applications have closed"
+msgstr ""
+
+#: job_manager/content-single-job_listing-preview.php:62
+#: job_manager/content-single-job_listing.php:40
+msgid "This listing has expired."
+msgstr ""
+
+#: job_manager/job-filters-hero.php:23
+#: job_manager/job-filters-hero.php:134
+msgid "Search"
+msgstr ""
+
+#: job_manager/job-filters-hero.php:92
+#: searchform.php:17
+#: template-parts/header-fields.php:108
+msgid "What are you looking for?"
+msgstr ""
+
+#: job_manager/job-filters-hero.php:123
+#: job_manager/job-filters.php:138
+msgid "Category"
+msgstr ""
+
+#: job_manager/job-filters-hero.php:124
+#: job_manager/job-filters.php:142
+msgid "Any category"
+msgstr ""
+
+#: job_manager/job-filters.php:65
+msgid "More filters"
+msgstr ""
+
+#: job_manager/job-filters.php:66
+msgid "Less filters"
+msgstr ""
+
+#: job_manager/job-filters.php:71
+#: job_manager/job-filters.php:170
+msgid "Filter"
+msgstr ""
+
+#: job_manager/job-filters.php:73
+#: job_manager/job-filters.php:172
+msgid "Map View"
+msgstr ""
+
+#: job_manager/job-filters.php:76
+#: job_manager/job-filters.php:175
+msgid "Cards View"
+msgstr ""
+
+#: job_manager/job-filters.php:157
+msgid "Filter by tags"
+msgstr ""
+
+#: job_manager/job-filters.php:184
+msgid "Your browser does not support JavaScript, or it is disabled. JavaScript must be enabled in order to view listings."
+msgstr ""
+
+#: job_manager/job-submit.php:50
+msgid "(optional)"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Full Width"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Full Width (No title)"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:20
+msgid "Username or Email Address"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:24
+msgid "Password"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:30
+msgid "Remember me"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:34
+msgid "Password Lost and Found"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:34
+msgid "Lost your password?"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:48
+msgid "Don't have an account?"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:48
+msgid "Sign up"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:56
+msgid "Username or Email"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:61
+msgid "Get New Password"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:65
+msgid "Cancel"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:73
+msgid "Username"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:78
+msgid "Email address"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:87
+msgid "A password will be e-mailed to you."
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:91
+msgid "Register"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:96
+msgid "Already have an account?"
+msgstr ""
+
+#: plugins/login-with-ajax/modal/widget_out.php:96
+msgid "Log in"
+msgstr ""
+
+#: search.php:19
+msgid "Search results for: %s"
+msgstr ""
+
+#: single-job_listing.php:69
+#: template-parts/content-page.php:42
+#: template-parts/content-single.php:54
+msgid "Pages:"
+msgstr ""
+
+#: tag.php:19
+msgid "Tag: "
+msgstr ""
+
+#: template-parts/content-none.php:16
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: wc-paid-listings/package-selection.php:40
+msgid "Your packages"
+msgstr ""
+
+#: wc-paid-listings/package-selection.php:50
+msgid "%s listing posted out of %d"
+msgid_plural "%s listings posted out of %d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: wc-paid-listings/package-selection.php:52
+msgid "%s listing posted"
+msgid_plural "%s listings posted"
+msgstr[0] ""
+msgstr[1] ""
+
+#: wc-paid-listings/package-selection.php:56
+msgid "listed for %s day"
+msgid_plural "listed for %s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: wc-paid-listings/package-selection.php:63
+#: wc-paid-listings/package-selection.php:127
+msgid "Get Started"
+msgstr ""
+
+#: wc-paid-listings/package-selection.php:71
+msgid "Purchase packages"
+msgstr ""
+
+#: wc-paid-listings/package-selection.php:98
+msgid "Free"
+msgstr ""
+
+#: wc-paid-listings/package-selection.php:106
+msgid "day"
+msgstr ""
+
+#: wc-paid-listings/package-selection.php:109
+msgid "week"
+msgstr ""
+
+#: wc-paid-listings/package-selection.php:112
+msgid "month"
+msgstr ""
+
+#: wc-paid-listings/package-selection.php:115
+msgid "year"
+msgstr ""
+
+#: woocommerce/archive-product.php:57
+msgid "All Products"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:90
+msgid " (taxes estimated for %s)"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:93
+msgid "Note: Shipping and taxes are estimated%s and will be updated during checkout based on your billing and shipping information."
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:41
+msgid "Click here to login"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:45
+msgid "If you have shopped with us before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing &amp; Shipping section."
+msgstr ""
+
+#: woocommerce/loop/loop-end.php:11
+msgid "Older products"
+msgstr ""
+
+#: woocommerce/loop/loop-end.php:12
+msgid "Newer products"
+msgstr ""
+
+#: woocommerce/loop/loop-end.php:13
+msgid "Products navigation"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:34
+msgid "Hello <strong>%1$s</strong> (not %1$s? <a href=\"%2$s\">Sign out</a>)."
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:39
+msgid "From your account dashboard you can view your recent orders, manage your shipping and billing addresses and <a href=\"%s\">edit your password and account details</a>."
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:49
+msgid "From your account dashboard you can view your %1$srecent orders%2$s, manage your %3$sshipping and billing addresses%2$s and %4$sedit your password and account details%2$s."
+msgstr ""
+
+#: woocommerce/order/order-details-customer.php:43
+msgid "Telephone:"
+msgstr ""
+
+#: wp-job-manager-bookmarks/my-bookmarks.php:16
+#: wp-job-manager-bookmarks/my-bookmarks.php:30
+msgid "Bookmark"
+msgstr ""
+
+#: wp-job-manager-bookmarks/my-bookmarks.php:17
+#: wp-job-manager-bookmarks/my-bookmarks.php:33
+msgid "Notes"
+msgstr ""

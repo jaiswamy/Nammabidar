@@ -1,0 +1,165 @@
+%single-listing-width {
+	padding-left: 24px;
+	padding-right: 24px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include query-above($xsmall) {
+		padding-left: 56px;
+		padding-right: 56px;
+
+		max-width: $single-listing-width + 112px;
+	}
+
+}
+
+/* body */.single-job_listing {
+	background-color: $gray-lightest; // @todo temp
+
+	.nav-links {
+		@extend %single-listing-width;
+	}
+
+	.single_job_listing {
+		margin-bottom: 30px;
+	}
+
+	// article.job_listing {
+	// 	margin-bottom: rem(70px);
+	// }
+
+	.entry-featured {
+		height: 50vh;
+
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+	}
+
+	// Two column layout (Content + sidebar)
+	/* .entry-content > */.single_job_listing {
+		@extend %single-listing-width;
+		@extend .cf;
+
+
+		.column-content {
+			z-index: 2;
+		}
+
+		.column-sidebar {
+			z-index: 3;
+			position: relative;
+		}
+
+		.grid {
+			margin-left: -25px;
+		}
+
+		.grid__item {
+			padding-left: 25px;
+		}
+
+		@include query-above($xsmall) {
+			.grid {
+				margin-left: -60px;
+			}
+
+			.grid__item {
+				padding-left: 60px;
+			}
+		}
+
+		@include query-above($lap) {
+			.column-content {
+				width: 62%;
+			}
+
+			.column-sidebar {
+				width: 38%;
+			}
+
+			.grid {
+				margin-left: -45px;
+			}
+
+			.grid__item {
+				padding-left: 45px;
+			}
+		}
+
+	}
+
+	.entry-header {
+		position: relative;
+		z-index: 1;
+
+		padding: rem(20px) 0;
+
+		@include query-above($xsmall) {
+		    padding: 23px 0 15px;
+		}
+
+		&:before {
+			content: "";
+
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: -999vw;
+			right: -999vw;
+			z-index: -1;
+
+			display: block;
+
+			background: white;
+			border-bottom: 1px solid $borders;
+
+			pointer-events: none;
+		}
+	}
+
+	.entry-title {
+		@extend %ends--hard;
+		margin-top: 0;
+	    margin-left: -0.07em; // Small Typo Fixing
+
+		color: $accent;
+
+		-moz-hyphens: none;
+		hyphens: none;
+	}
+		.listing-claimed-icon {
+			display: inline-block;
+			margin-left: 10px;
+		}
+
+	// Listing tagline
+	.entry-subtitle {
+		@extend %alt-sans-light;
+
+		display: block;
+		margin-bottom: 10px;
+		margin-top: 10px;
+
+		font-size: rem(16px);
+		line-height: 1.1;
+		color: $gray-light;
+
+		@include query-above($xsmall) {
+			margin-bottom: 17px;
+			margin-top: 12px;
+			
+			font-size: rem(18px);
+		}
+	}
+
+	// Apply to job button
+	.job_application.application {
+		display: none; // @todo temp
+	}
+}
+
+.single-listing-map-category-icon {
+	display: none;
+}

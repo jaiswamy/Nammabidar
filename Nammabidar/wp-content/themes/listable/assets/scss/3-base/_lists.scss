@@ -1,0 +1,63 @@
+/* Definition Lists */
+%dl {
+    display: flex;
+    flex-wrap: wrap;
+
+    dt, dd {
+        padding: 0.5em 0;
+        border-bottom: 1px dashed rgba(0,0,0,0.1);
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }
+
+    dt {
+        font-weight: bold;
+        flex-basis: 33%;
+    }
+
+    dd {
+        flex-basis: 66%;
+    }
+}
+
+/* Unordered Lists */
+%ul, %ol {
+    padding-left: rem(22px);
+
+    ul, ol {
+        list-style: initial;
+        margin: 0 0 -0.5em;
+        padding-left: 2em;
+    }
+
+    li {
+        position: relative;
+        padding: 0.25em 0;
+
+        display: list-item;
+
+        @include query-below($small) {
+            padding-left: 0;
+            margin-left: 0;
+
+            li {
+                // padding-left: 20rem;
+                // margin-left: $default-spacing-unit - 20rem;
+            }
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}
+
+%ul {
+    list-style: initial;
+}
+
+%ol {
+    list-style: decimal;
+}

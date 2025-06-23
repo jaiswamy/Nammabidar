@@ -1,0 +1,31 @@
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql123
+      MYSQL_DATABASE: u499940289_nammabidar
+      MYSQL_USER: u499940289_nammabdr
+      MYSQL_PASSWORD: NammaBidar@2021
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./u499940289_nammabidar.sql:/docker-entrypoint-initdb.d/u499940289_nammabidar.sql
+
+  web:
+    build: .
+    container_name: uttarkarnataka_app
+    ports:
+      - "8096:80"
+    volumes:
+      - ./uttarkarnataka:/var/www/html
+    depends_on:
+      - db
+    environment:
+      MYSQL_HOST: db
+      MYSQL_PORT: 3306
+      MYSQL_DB: u499940289_nammabidar
+      MYSQL_USER: u499940289_nammabdr
+      MYSQL_PASSWORD: NammaBidar@2021
+
+volumes:
+  db_data:

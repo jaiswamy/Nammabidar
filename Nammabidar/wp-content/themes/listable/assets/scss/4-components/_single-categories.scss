@@ -1,0 +1,119 @@
+// The categories right before the title
+.single-categories-breadcrumb {
+	font-size: 0;
+	margin-bottom: rem(12px);
+
+	@include query-above($xsmall) {
+		// margin-bottom: rem(25px); // @todo temp
+	}
+
+	a {
+		display: inline-block;
+		font-size: rem(14px);
+		color: $gray;
+
+		@include query-above($xsmall) {
+			font-size: rem(16px);
+		}
+
+		&:after {
+			content: "\00bb";
+			margin: 0 rem(6px);
+
+			color: $gray;
+		}
+
+		&:last-child:after {
+			content: none;
+		}
+
+		&:hover {
+			color: $accent;
+		}
+	}
+}
+
+.tax-job_listing_category {
+
+	.select2-results {
+		&__options {
+			box-shadow: none;
+			border: 1px solid rgba(0, 0, 0, 0.075);
+			border-top: 0;
+		}
+		&__option {
+			color: $gray;
+			font-size: 13px;
+
+			padding: 6px 16px;
+
+			border: 0;
+		}
+	}
+
+	.select2-container {
+		&--open .select2-dropdown--below {
+			top: -2px;
+		}
+
+		&--default {
+			.select2-results__option--highlighted:first-child,
+			.select2-results__option--highlighted[aria-selected]{
+				color: $gray;
+			}
+
+			.select2-results__option--highlighted[aria-selected]:not(:first-child) {
+				background-color: transparent;
+			}
+
+			.select2-selection--single .select2-selection__rendered {
+				border: 1px solid rgba(0, 0, 0, 0.075);
+			}
+
+			.select2-selection--single .select2-selection__rendered {
+				height: 40px;
+				padding: 10px 15px;
+
+				color: $gray;
+			}
+
+		}
+
+		.select2-selection--single {
+			border: 0;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			border: 0 solid transparent;
+			border-width: 5px;
+			border-top-color: #ABABAB;
+			margin-top: -2px;
+		}
+
+	}
+	.select2-results .select2-results__options .select2-results__option:hover {
+		color: $accent;
+		background-color: transparent;
+	}
+
+	.chosen-container-active.chosen-with-drop .chosen-single {
+		box-shadow: none;
+	}
+
+	.chosen-container-single .chosen-single span {
+		@extend %alt-sans-serif;
+		width: 100% !important;
+		height: 40px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		color: $gray;
+		padding: 10px 15px;
+		font-size: 14.95px;
+		line-height: 1.5;
+	}
+}

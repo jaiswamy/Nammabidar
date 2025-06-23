@@ -1,0 +1,56 @@
+.grid.job_listings {
+	padding: 30px;
+	padding-top: 20px;
+	margin-bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	> .grid__item {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 0;
+	}
+
+	@include query-cards() {
+		padding: 26px;
+		padding-top: 16px;
+	}
+
+	@include query-below(nth(nth($small-cards, 1), 1)) {
+		display: block;
+
+		> .grid__item {
+			width: 480px;
+			float: none;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+	}
+
+	@include query-below($xsmall) {
+		padding: 0;
+		padding-top: 20px;
+
+		> .grid__item {
+			width: 100%;
+			margin: 0;
+			background: white;
+		}
+	}
+}
+
+.jobs-by-tags-page ul.job_listings {
+	@extend .grid--widget;
+	border: 0;
+
+	.grid__item {
+		@extend .grid__item--widget;
+	}
+}
+
+.select-tags {
+	.tags-select {
+		display: none;
+	}
+}

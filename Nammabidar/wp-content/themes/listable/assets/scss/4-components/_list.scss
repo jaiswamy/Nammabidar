@@ -1,0 +1,21 @@
+.list {
+	margin-left: -30px;
+	margin-bottom: -30px;
+
+	> * {
+		padding-left: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+@include query-cards() {
+	.list {
+		margin-left: -26px;
+		margin-bottom: -26px;
+
+		> * {
+			padding-left: 26px;
+			padding-bottom: 26px;
+		}
+	}
+}

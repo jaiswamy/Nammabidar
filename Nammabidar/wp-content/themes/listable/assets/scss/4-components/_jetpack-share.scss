@@ -1,0 +1,116 @@
+div.sd-social.sd-social {
+
+	.sd-title {
+		display: none;
+	}
+
+	ul {
+		margin-bottom: 0 !important;
+	}
+
+	& > div.sd-content.sd-content ul li {
+		position: static;
+
+		&:before {
+			display: none;
+		}
+
+		& > a {
+	    	color: $gray !important;
+			padding: rem(10px) 0;
+			margin: 0;
+
+			border: 0;
+			background: none;
+			box-shadow: none;
+			text-align: center;
+
+			span {
+				margin-left: 3px;
+				font-size: rem(11px);
+				font-weight: 600;
+				text-transform: uppercase;
+				color: $dark;
+
+				&.share-count {
+					color: white;
+					padding: 2px;
+				}
+			}
+		}
+	}
+
+	.inner{
+		min-width: 150px;
+
+		li {
+			display: block;
+		}
+
+		a span {
+			color: $dark !important;
+		}
+	}
+}
+
+div.sd-social.sd-social-icon {
+	.sd-content ul li[class*='share-'] a.sd-button {
+		background: none;
+	}
+
+	& > div.sd-content.sd-content ul li > a {
+	    padding: 0.85em;
+	    top: 0.1em;
+
+		span {
+			margin: 0;
+		}
+
+	}
+}
+
+div.sharedaddy h3.sd-title.sd-title,
+#jp-relatedposts h3.jp-relatedposts-headline.jp-relatedposts-headline {
+	font-size: 0.95rem;
+	font-weight: normal;
+
+	&:before {
+		display: none !important;
+	}
+
+	em {
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+
+.sharedaddy div.sd-social-icon .sd-content ul li[class*='share-'].share-press-this a.sd-button {
+	color: $gray;
+
+	&:before {
+		color: $gray;
+	}
+}
+
+
+// Colors for Sharing Buttons
+
+.share-facebook:before 		{ 	color: #3b5998; }
+.share-twitter:before 		{	color: #00aced;	}
+.share-google-plus-1:before { 	color: #dd4b39; }
+.share-pinterest:before 	{ 	color: #cb2027; }
+.share-email:before 		{ 	color: #02a8ec; }
+.share-linkedin:before 		{ 	color: #007bb6; }
+.share-pocket:before 		{ 	color: #dd4b55; }
+.share-tumblr:before 		{ 	color: #2C4762; }
+
+
+// Position the email box on small devices
+// in such way that it does not cause
+// horizontal scroll
+@include query-below($lap) {
+	#sharing_email {
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+}

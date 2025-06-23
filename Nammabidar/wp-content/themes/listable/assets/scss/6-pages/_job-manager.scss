@@ -1,0 +1,397 @@
+// dirty!!!
+
+.grid--filters {
+	margin-left: -30px;
+
+	.grid__item {
+		padding-left: 30px;
+	}
+
+	@include query-cards() {
+		margin-left: -26px;
+
+		.grid__item {
+			padding-left: 26px;
+		}
+	}
+}
+
+.job_filters {
+	background: white;
+
+	.search & .showing_jobs {
+		display: block;
+	}
+}
+
+%showing-jobs {
+	padding: 35px 30px 0;
+	text-align: right;
+	color: $gray-light;
+	font-size: 14px;
+	border-top: 0;
+
+	@include query-below($lap) {
+		padding-top: 26px;
+	}
+
+	strong {
+		font-weight: normal;
+		color: #8B8586;
+	}
+}
+
+.job_filters .showing_jobs {
+	@extend %showing-jobs;
+}
+
+.job_filters .search_jobs {
+	padding: 20px 30px 6px;
+
+	@include query-cards() {
+		padding: 16px 26px;
+	}
+}
+
+.search_jobs {
+	border-bottom: 1px solid $borders;
+
+	> .btn.reset {
+		position: relative;
+
+		flex: 0 0 auto;
+		margin-left: 20px;
+		transform: none;
+		top: 0;
+
+		padding: 12px 25px;
+
+		font-size: rem(18px);
+		background-image: none;
+
+		@include query-below($lap) {
+			margin-left: 0;
+			margin-bottom: 10px;
+		}
+	}
+
+	select {
+		@extend %alt-sans-serif;
+		background: white;
+		color: $gray;
+		font-size: 15px;
+		padding: 11px 15px 10px;
+
+		.touch & {
+			display: block;
+		}
+	}
+
+	@include query-below($lap) {
+		display: none;
+
+		.show-filters & {
+			display: block;
+		}
+
+		.show-map & {
+			border-bottom-color: transparent;
+		}
+	}
+}
+
+.job_types,
+.filter_by_tag {
+	display: none;
+}
+
+.active-tag {
+	@extend %alt-sans-serif;
+	display: inline-block;
+	padding: 7px 12px 6px;
+	padding-right: 32px;
+	margin-right: 8px;
+	margin-bottom: 14px;
+	border: 1px solid $borders;
+	border-radius: 4px;
+	font-size: 13px;
+	color: $gray;
+	position: relative;
+	background: $gray-lightest;
+	cursor: default;
+}
+
+.chosen-container .chosen-drop {
+	margin-top: -1px;
+	border-radius: 0 0 4px 4px;
+	border: 1px solid $borders;
+	border-top: 0;
+}
+
+.select-tags {
+	.search-field {
+
+	}
+
+
+	.chosen-drop {
+		background: $gray-lightest;
+	}
+
+	.chosen-container-multi .chosen-choices {
+		border: 1px solid $borders;
+		background: $gray-lightest;
+		color: $gray;
+
+		&:after {
+		    content: "";
+		    position: absolute;
+		    top: 50%;
+		    right: 8px;
+		    border: 0 solid transparent;
+		    border-width: 5px;
+		    border-top-color: $gray-light;
+		    margin-top: -2px;
+		}
+	}
+
+	.chosen-container-multi .chosen-choices li.search-field {
+		@include placeholder() {
+			color: $gray;
+		}
+	}
+}
+
+.remove-tag {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 9px;
+	right: 7px;
+	cursor: pointer;
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		width: 13px;
+		height: 2px;
+		border-radius: 1px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+		background-color: $gray-light;
+	}
+
+	&:before {
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+}
+
+.filter_by_tag {
+	display: none !important;
+}
+
+.job_filters .showing_jobs {
+	@extend .clearfix;
+
+	@include query-below($lap) {
+		.show-map & {
+			display: none !important;
+		}
+	}
+
+	.rss_link {
+		display: none;
+	}
+
+	a {
+		float: left;
+	}
+
+	> span {
+		float: right;
+	}
+}
+
+.job-manager-form fieldset label {
+	width: auto;
+	float: none;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.job-manager-form fieldset div.field {
+	width: auto;
+	float: none;
+}
+
+.job-manager-form fieldset {
+	border: 0;
+	padding: 0;
+	margin-bottom: 25px;
+}
+
+.chosen-results {
+	@extend %alt-sans-serif;
+	color: $gray;
+	font-weight: 300;
+	line-height: 1.75;
+}
+
+.results {
+	@extend %alt-sans-serif;
+	float: left;
+	font-size: 16px;
+	color: $dark;
+}
+
+.job_filters .showing_jobs a {
+	float: right;
+	margin-right: 10px;
+}
+
+.search_region:not(select),
+.select-categories {
+	width: 230px;
+	margin-right: 16px;
+}
+
+.select-tags {
+	width: 150px;
+}
+
+.search_region:not(select),
+.select-categories,
+.select-tags {
+	display: inline-block;
+	margin-bottom: 14px;
+
+	@include query-below(nth(nth($small-cards,1),1)) {
+		margin-right: 0;
+	}
+
+	@include query-below($lap) {
+		width: 100%;
+	}
+}
+
+.entry-content .job_listing_preview_title .button,
+.job-manager-form div.field,
+.job_listing_preview_title .button,
+.job-manager-form label {
+	float: none !important;
+}
+
+.page-job-dashboard,
+.page-my-bookmarks {
+	background: $gray-lightest;
+
+	&.page-template-full_width_no_title .entry-content {
+		padding-top: 60px;
+	}
+}
+
+@include query-below($lap) {
+	.job-manager-bookmarks {
+
+		[data-label="Bookmark"], [data-label="Notes"] {
+			width: 100% !important;
+		}
+	}
+}
+
+.page-job-dashboard,
+.page-my-bookmarks,
+.woocommerce-account.logged-in {
+	.page-header {
+		display: none;
+	}
+}
+
+ul.job-dashboard-actions,
+ul.job-manager-bookmark-actions {
+
+	> li {
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:after {
+			display: none;
+		}
+	}
+
+	a {
+		@extend %btn--table;
+
+		&[class*="delete"] {
+			border-color: transparent;
+		}
+	}
+
+	@include query-above($lap) {
+		text-align: right;
+	}
+
+	@include query-below($lap) {
+		visibility: visible !important;
+
+		> li:first-child > a[class*="delete"] {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions li .job-dashboard-action-delete,
+#job-manager-bookmarks table ul.job-manager-bookmark-actions li .job-manager-bookmark-action-delete {
+	color: $gray;
+
+	&:hover {
+		color: tomato;
+	}
+}
+
+.job-dashboard-actions .job-dashboard-action-delete {
+	color: $accent;
+}
+
+.job-dashboard-actions > li:after {
+	display: none;
+}
+
+.page-my-bookmarks,
+.woocommerce-account.logged-in {
+	@extend .page.page-template-full_width;
+}
+
+#job-manager-job-dashboard table ul.job-dashboard-actions {
+	visibility: visible;
+}
+
+input[type="submit"],
+button[type="submit"] {
+
+	&.secondary {
+		border: 2px solid rgba(0, 0, 0, 0.075);
+		background: white;
+		color: $gray;
+
+		&:hover {
+			background: $gray-lightest;
+			color: $dark;
+		}
+	}
+}
+
+
+.page-job-dashboard {
+	#job-manager-job-dashboard {
+		@include query-above($lap) {
+			margin-left: -30px;
+			margin-right: -30px;
+		}
+	}
+}

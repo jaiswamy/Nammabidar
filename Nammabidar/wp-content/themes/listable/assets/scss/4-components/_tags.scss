@@ -1,0 +1,23 @@
+.tags-links {
+	margin: rem(60px) 0 rem(20px) 0;
+	display: block;
+
+	color: $gray;
+	font-size: rem(13px);
+	text-transform: uppercase;
+
+	a {
+		display: inline-block;
+		margin-right: 1em;
+		transition: $transition-micro color linear;
+		color: $gray;
+
+		&:before {
+			content: "#";
+		}
+
+		&:hover, &:focus {
+			color: $accent;
+		}
+	}
+}

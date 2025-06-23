@@ -1,0 +1,15 @@
+///*----------------------------------------*\
+//   ICONS FONTS
+//\*----------------------------------------*/
+
+// Font Awesome 4.7.0
+$fa-css-prefix: icon;
+$fa-font-path: "assets/fonts/fontawesome";
+
+@import "font-awesome/font-awesome";
+
+%fa {
+	font-family: FontAwesome;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+}

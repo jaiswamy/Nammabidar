@@ -1,0 +1,287 @@
+// Standard comments
+
+h2.comments-title {
+	@extend %alt-sans-serif;
+	@extend %ends--hard;
+
+	padding: rem(24px) 0;
+	margin-top: 0;
+
+	font-size: rem(18px);
+
+	border-top: 1px solid $borders;
+}
+
+ol.comment-list {
+	list-style-type: none;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	li.comment:before {
+		content: none;
+	}
+
+	.single-job_listing & .comment-header, 	.comment-avatar {
+		position: relative;
+		z-index: 1;
+
+		float: left;
+		width: rem(75px);
+
+		text-align: center;
+	}
+
+	.comment-avatar {
+		margin-left: rem(-100px);
+	}
+
+	.avatar {
+		margin: 0 auto;
+		margin-bottom: rem(10px);
+		display: block;
+		border-radius: 50%;
+	}
+
+	.comment-author, .comment-meta {
+		display: inline-block;
+	}
+
+	.fn {
+		font-size: rem(15px);
+		font-weight: normal;
+		line-height: rem(16px);
+		color: $dark;
+
+		&, a {
+			display: block;
+		}
+
+		a {
+			color: $dark;
+
+			&:hover {
+				color: $accent;
+			}
+		}
+
+		.single:not(.single-job_listing) &, .page & {
+			font-weight: 600;
+		}
+	}
+
+	.comment-content {
+		position: relative;
+
+		.single-job_listing & {
+			padding-left: rem(100px);
+		}
+
+		font-size: rem(15px);
+		color: $dark;
+
+		p:first-of-type {
+			margin-top: rem(9px);
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.reply {
+		float: right;
+		color: $dark;
+		text-transform: uppercase;
+	}
+
+	& > .comment:last-child {
+		border-bottom: 1px solid $borders;
+
+		.single-job_listing & {
+			border-bottom: 0;
+		}
+	}
+}
+
+.comment, .pingback {
+	@extend %clearfix;
+	position: relative;
+	border-top: 1px solid $borders;
+
+	.single-job_listing & {
+		padding-left: 0;
+	}
+
+	.children {
+		list-style: none;
+		padding-left: rem(30px);
+		margin-bottom: 0;
+
+		li {
+			padding-bottom: 0;
+		}
+	}
+
+	.comment-wrapper {
+		@extend .cf;
+		padding: rem(35px) 0;
+		padding-left: rem(100px);
+
+		.single-job_listing & {
+			padding-left: 0;
+		}
+	}
+
+	&.bypostauthor {
+		color: inherit;
+		// border-left: 10px solid $borders;
+
+		// .comment-avatar {
+		// 	margin-left: rem(-90px);
+		// }
+
+		// .comment-wrapper {
+		// 	padding-left: rem(100px);
+		// }
+	}
+}
+
+.pingback {
+	padding-left: 0;
+}
+
+.comment-meta a {
+	color: $gray;
+}
+
+// Comment form
+.comment-respond {
+
+	.listing-sidebar--main & {
+		padding: rem(30px) rem(25px);
+
+		background-color: white;
+		border: 1px solid $borders;
+		border-radius: 3px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: rem(8px);
+
+		font-size: rem(15px);
+		font-weight: 600;
+
+		color: $dark;
+	}
+
+	p {
+		flex: 0 0 100%;
+		margin-bottom: rem(20px);
+	}
+
+	.comment-reply-title {
+		margin-top: 0;
+		margin-bottom: rem(22px);
+
+		font-size: rem(18px);
+
+		&:after {
+			content: "";
+			display: block;
+			margin-top: rem(17px);
+			border-bottom: 1px solid currentColor;
+			opacity: 0.2;
+		}
+	}
+}
+
+.comment-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin-bottom: rem(-20px);
+
+	.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+		font-size: 26px;
+		margin-right: 1px;
+	}
+}
+
+.single-job_listing {
+
+	.comment-form-url {
+		display: none;
+	}
+
+	.comment-form-email, .comment-form-author {
+		order: 10;
+	}
+
+	.form-submit {
+		order: 11;
+	}
+
+	.logged-in-as {
+		order: 12;
+	}
+
+	.comment-notes,
+	.comment-subscription-form {
+		display: none;
+	}
+
+	.comment-edit-link {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+p.comment-form-email, p.comment-form-author {
+	flex: 0 0 100%;
+
+	@include query-above($lap) {
+		flex: 0 0 48%;
+	}
+}
+
+.form-submit {
+	input[type="submit"] {
+		display: block;
+	}
+}
+
+.comment-subscription-form {
+	input {
+		-webkit-appearance: none !important;
+		width: 22px !important;
+	}
+
+	input, label {
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	label {
+		@extend %ends--hard;
+
+		font-weight: 500;
+	}
+}
+
+.comment-form-cookies-consent {
+
+	input[type="checkbox"] {
+		margin-left: 0;
+		margin-right: 1em;
+		float: left;
+	}
+
+	label {
+		font: inherit;
+		letter-spacing: inherit;
+		text-transform: inherit;
+	}
+}

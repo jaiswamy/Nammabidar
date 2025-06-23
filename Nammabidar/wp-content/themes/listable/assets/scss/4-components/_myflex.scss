@@ -1,0 +1,105 @@
+.myflex {
+	@extend .clearfix;
+
+	&.no-map {
+	    max-width: 1060px;
+	    margin: 0 auto;
+	    display: block;
+
+        .active-tags {
+        	display: inline;
+    		margin-left: 14px;
+    	}
+
+    	.active-tag {
+    		margin-top: -1px;
+    		position: relative;
+    		top: 1px;
+    		padding-top: 10px;
+    		padding-bottom: 8px;
+    	}
+
+    	.remove-tag {
+    		top: 11px;
+    	}
+
+	    .loader {
+	    	left: 50%;
+	    }
+
+	    .job_filters {
+	    	background: none;
+	    }
+
+	    .search_jobs {
+	    	background: white;
+	    	padding: 20px;
+	    	padding-bottom: 6px;
+	    	border-bottom: 1px solid $borders;
+
+	    	@include query-above($desk) {
+		    	margin-top: 20px;
+    	    	border-radius: 8px;
+		    	border: 1px solid $borders;
+	    	}
+	    }
+
+	    .findme {
+	    	display: none;
+	    }
+
+		@include query-above($lap) {
+			.grid.job_listings > .grid__item {
+				width: calc(100%/3);
+			}
+		}
+
+		.btn--view-map {
+			display: none;
+		}
+	} // .no-map
+
+	@include query-above($lap) {
+		display: flex;
+	}
+}
+
+.myflex__left {
+	flex-grow: 0;
+	min-height: 100vh;
+
+	@include query-above($lap) {
+		float: left;
+		width: 100%;
+		width: calc(600px);
+		flex-basis: 600px;
+	}
+
+	@include query-above($desk) {
+		flex-basis: 720px;
+		width: calc(720px);
+	}
+}
+
+.myflex__right {
+	flex-grow: 1;
+
+	@include query-above($lap) {
+		display: block;
+		float: left;
+		width: 100%;
+		width: calc(100%  - 600px);
+	}
+
+	@include query-above($desk) {
+		width: calc(100% - 720px);
+	}
+
+	.active-area {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}

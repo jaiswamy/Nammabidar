@@ -1,0 +1,337 @@
+@import "../0-settings/default";
+@import "../1-tools/helpers";
+@import "../1-tools/queries";
+@import "../4-components/btn";
+
+// Declaring and including fonts
+@font-face {
+	font-family: 'Hanken';
+	src: url('../../fonts/hanken/hanken-book-webfont.eot');
+	src: url('../../fonts/hanken/hanken-book-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../../fonts/hanken/hanken-book-webfont.woff2') format('woff2'),
+	url('../../fonts/hanken/hanken-book-webfont.woff') format('woff'),
+	url('../../fonts/hanken/hanken-book-webfont.ttf') format('truetype'),
+	url('../../fonts/hanken/hanken-book-webfont.svg#Hanken') format('svg');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Hanken';
+	src: url('../../fonts/hanken/hanken-light-webfont.eot');
+	src: url('../../fonts/hanken/hanken-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../../fonts/hanken/hanken-light-webfont.woff2') format('woff2'),
+	url('../../fonts/hanken/hanken-light-webfont.woff') format('woff'),
+	url('../../fonts/hanken/hanken-light-webfont.ttf') format('truetype'),
+	url('../../fonts/hanken/hanken-light-webfont.svg#Hanken') format('svg');
+	font-weight: 300;
+}
+
+%sans-serif	     { font-family: $default-sans-font; }
+%alt-sans-serif	 { font-family: $alt-sans-font; }
+%alt-sans-light	 { font-weight: 300; }
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700);
+
+$u: 24px;
+
+.page-login-modal {
+	background-color: transparent;
+	overflow: hidden;
+
+	#backtoblog {
+		display: none;
+	}
+
+	#login {
+		#nav, #backtoblog {
+			color: white;
+
+			a {
+				color: white;
+			}
+		}
+	}
+
+	.login form#loginform {
+		margin-top: 0;
+	}
+}
+
+html {
+	background: none;
+}
+
+body.login {
+	padding: 20px 0;
+	display: flex;
+
+	#login {
+		position: relative;
+		padding-top: 0;
+		width: 385px;
+		max-width: 100%;
+		margin: auto;
+	}
+}
+
+.login-action-register .message.register { display: none; }
+
+#login h1 {
+	position: absolute;
+	top: 40px;
+	left: 50px;
+
+	width: calc(100% - 100px);
+	display: block;
+	padding-bottom: 28px;
+
+	border-bottom: 2px solid $borders;
+
+	font-size: rem(18px);
+
+	a {
+		display: none;
+	}
+
+	&:before {
+		@extend %alt-sans-serif;
+
+		display: block;
+		text-align: left;
+	}
+
+	.login-action-lostpassword & {
+		top: 110px;
+	}
+
+	.login-action-rp & {
+		top: 90px;
+	}
+}
+
+.login-action-login h1:before { content: "Login"; }
+.login-action-register h1:before { content: "Register"; }
+.login-action-lostpassword h1:before { content: "Recover password"; }
+.login-action-rp h1:before {content: "Reset password";}
+
+.login {
+	form#loginform, form#registerform, form#lostpasswordform, form#resetpassform {
+		margin-top: 0;
+		padding: 40px 50px;
+		padding-top: 112px;
+
+		box-shadow: none;
+		border-radius: 7px;
+
+		.submit {
+			position: relative;
+
+			&:after {
+				content: "";
+
+				position: absolute;
+				top: 50%;
+				right: 15px;
+				transform: translateY(-50%);
+
+				display: inline-block;
+				width: 0;
+				height: 0;
+
+				border: 4px solid transparent;
+				border-left: 4px solid white;
+				pointer-events: none;
+			}
+		}
+
+		input[type="submit"] {
+			@extend %alt-sans-serif;
+			@extend %btn;
+
+			padding: 14px 24px;
+			margin-bottom: 0;
+			padding-right: 40px;
+			box-shadow: none;
+			text-shadow: none !important;
+			height: auto;
+			line-height: normal;
+
+			float: none !important;
+
+			&[disabled] {
+				border: 0 !important;
+
+				color: white !important;
+				background-color: $accent !important;
+			}
+		}
+	} // form#loginform, form#registerform
+
+	form#loginform {
+		input[type="password"] {
+			margin-bottom: 30px;
+			letter-spacing: .1em;
+		}
+
+		.wc-social-login {
+			margin: 20px 0;
+		}
+	}
+
+	form#registerform, form#lostpasswordform, form#resetpassform {
+		p.submit {
+			width: auto;
+		}
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"] {
+		margin-top: 5px;
+		margin-bottom: 22px;
+		box-shadow: none;
+		border-width: 1px;
+		background: none;
+
+		font-size: 15px;
+		font-weight: normal;
+		color: #5D5C5C;
+	}
+
+	.forgetmenot, .submit {
+		float: none !important;
+		display: inline-block;
+		vertical-align: middle;
+		@media screen and (min-width: 341px) {
+			width: 49.3%;
+		}
+	}
+
+	p.submit {
+		text-align: left;
+
+		@media screen and (max-width: 340px) {
+			margin-top: 15px !important;
+
+			&, input {
+				width: 100%;
+			}
+		}
+
+		@media screen and (min-width: 360px) {
+			text-align: right;
+		}
+	}
+
+	label {
+		@extend %sans-serif;
+
+		color: $dark;
+		font-size: 15px;
+		font-weight: 700;
+	}
+
+	.forgetmenot label {
+		color: $gray;
+		font-weight: 500;
+	}
+
+	.jetpack-sso-wrap {
+		float: none;
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	.password-input-wrapper {
+		display: flex;
+
+		& .wp-hide-pw {
+			display: flex;
+			align-items: center;
+			height: auto;
+			border: 2px solid rgba(0, 0, 0, 0.075);
+			border-left: 0;
+			box-shadow: none;
+
+			margin-bottom: 0 !important;
+		}
+	}
+
+	#pass-strength-result {
+		margin-top: 5px;
+	}
+} // .login
+
+#login {
+	#nav, #backtoblog {
+		text-align: center;
+
+		a {
+			@extend %sans-serif;
+			font-size: 15px;
+		}
+	}
+
+	.login-action-rp & {
+		.password-input {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"] {
+
+		display: block;
+		vertical-align: middle;
+		width: 100%;
+		padding: rem(12px) rem(12px);
+		outline: 0;
+		border-radius: 3px;
+		border: 2px solid $borders;
+
+		-webkit-appearance: none;
+
+		.lt-ie9 & input {
+			width: 100%;
+			padding: $u/2 0;
+			outline: 0;
+		}
+
+		&:focus {
+			border-color: darken($borders, 10%);
+			outline: 0;
+		}
+	}
+
+	label {
+		@extend %sans-serif;
+
+		color: $dark;
+		font-size: 15px;
+		font-weight: 700;
+	}
+}
+
+.login {
+	div#login_error, div.message {
+		position: absolute;
+		top: 7px;
+		left: 0;
+		right: 0;
+
+		padding: 20px 50px;
+
+		border-bottom: 4px solid #00a0d2;
+		border-left: 0;
+	}
+
+	div#login_error {
+		border-bottom-color: #dc3232;
+	}
+}
+
+.page-login-modal .message.register {
+	display: none;
+}

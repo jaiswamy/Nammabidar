@@ -1,0 +1,15 @@
+/**
+ * The following styles get applied only in the WordPress admin (not edit pages).
+ *
+ */
+.components-modal__frame {
+  box-sizing: border-box;
+}
+
+.components-modal__frame *,
+.components-modal__frame *::before,
+.components-modal__frame *::after {
+  box-sizing: inherit;
+}
+
+/*# sourceMappingURL=admin.css.map*/

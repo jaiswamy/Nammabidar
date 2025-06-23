@@ -1,0 +1,26 @@
+.card--feature {
+	font-size: 16px;
+	line-height: 25px/16px;
+
+	.card__content {
+		@extend %sans-serif;
+		padding-bottom: 32px;
+		font-size: 16px;
+		font-weight: 300;
+
+		> img,
+		> svg {
+			display: inline-block;
+			margin: 0 auto;
+		}
+
+		> img {
+			margin-bottom: 15px;
+		}
+	}
+
+	.card__title {
+		@extend %alt-sans-serif;
+		margin-bottom: 5px;
+	}
+}

@@ -1,0 +1,214 @@
+.listing-sidebar--main,
+.listing-sidebar--secondary {
+  .product_list_widget {
+    flex-flow: column;
+
+    li {
+      padding: 0;
+
+      a .product-title {
+        padding: 15px 16px 0 16px;
+      }
+
+      .woocommerce-product-details__short-description {
+        padding: 0 16px 20px 16px;
+      }
+
+      @include query-below($xsmall) {
+        width: 100%;
+      }
+
+      @include query-above($xsmall) {
+        width: 50%;
+      }
+    }
+  }
+
+  .job_listings .content {
+    padding: 0 10px;
+
+    display: flex;
+    flex-flow: column;
+
+    .meta {
+      padding-top: 2px;
+      display: flex;
+
+      .location {
+        margin: 10px 0;
+      }
+
+      .company {
+        padding: 5px;
+        border: 0;
+        display: flex;
+        align-items: center;
+
+        min-height: 2em;
+        box-shadow: none;
+
+        &:empty {
+          display: none;
+        }
+      }
+
+      .job-type {
+        color: $dark;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .widget_shopping_cart_content {
+    .woocommerce-mini-cart {
+      flex-direction: column;
+    }
+
+    .woocommerce-mini-cart__total,
+    .woocommerce-mini-cart__buttons {
+      justify-content: space-between;
+    }
+
+    .woocommerce-mini-cart__buttons {
+      @include query-below($mobile){
+        flex-direction: column;
+
+        a {
+          width: 100%;
+
+          &.button:not(:last-of-type) {
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .tagcloud {
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+
+.listing-sidebar--main {
+  .product_list_widget {
+    align-items: center;
+
+    li {
+      @include query-above($lap) {
+        width: 60%;
+      }
+    }
+  }
+
+  .job_listings .content .meta {
+    margin-top: 10px;
+    align-items: baseline;
+    justify-content: flex-start;
+
+    .job-type {
+      margin-left: auto;
+    }
+  }
+
+  .widget_shopping_cart_content {
+    .woocommerce-mini-cart {
+      align-items: center;
+    }
+
+    .woocommerce-mini-cart__total,
+    .woocommerce-mini-cart__buttons {
+      justify-content: center;
+    }
+
+    .woocommerce-mini-cart__buttons a:not(:last-of-type) {
+      margin-right: 25px;
+    }
+  }
+
+  .widget_categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    li:not(:last-of-type) {
+      margin-right: 35px;
+    }
+  }
+}
+
+.listing-sidebar--secondary {
+
+  .product_list_widget {
+    @include query-below($lap) {
+      align-items: center;
+    }
+
+    li {
+      @include query-above($lap) {
+        width: 100%;
+      }
+    }
+  }
+
+  .job_listings .content .meta {
+    flex-flow: row wrap;
+    align-items: center;
+
+    .job-type {
+      @include query-below($lap) {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .widget_shopping_cart_content {
+    .woocommerce-mini-cart__total {
+      @include query-below($lap) {
+        justify-content: center;
+      }
+    }
+
+    .woocommerce-mini-cart__buttons {
+      justify-content: space-between;
+
+      @include query-below($lap) {
+        justify-content: center;
+
+        a:not(:last-of-type) {
+          margin-right: 25px;
+        }
+      }
+
+      a,
+      a:hover {
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .product-categories {
+    display: flex;
+    flex-wrap: wrap;
+
+    li:not(:last-of-type) {
+      margin-right: auto;
+    }
+  }
+
+  .tagcloud a:not(:last-of-type) {
+    margin-right: auto;
+  }
+
+  @include query-below($lap) {
+    .widget_archive ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li:not(:first-of-type) {
+        margin-left: auto;
+      }
+    }
+  }
+}

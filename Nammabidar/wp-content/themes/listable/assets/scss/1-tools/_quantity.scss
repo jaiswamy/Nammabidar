@@ -1,0 +1,51 @@
+// series of mixins used to make quantity queries using css
+
+// ie:
+//
+// .child {
+// 		color: red;
+// 		@include quantity-exactly(3) {
+// 			color: blue;
+// 		}
+// 		@include quantity-more-then(3) {
+// 			color: green;
+// 		}
+// }
+//
+// so elements with the class "child" which have only 2 other siblings
+// will be affected "color: blue" rule and those who have more then 2 siblings
+// will be affected by the "color: gren" rule
+// have in mind it doesn't matter if the siblings match the selector
+//
+//
+// in order to make queries targeting elements
+// which have exactly / at least "n" siblings matching the same selector
+// the :nth-last-of-type selector should be TESTED and then USED
+
+@mixin quantity-exactly($number) {
+	&:nth-last-child(#{$number}):first-child,
+	&:nth-last-child(#{$number}):first-child ~ * {
+	  @content;
+	}
+}
+
+@mixin quantity-more-then($number) {
+	&:nth-last-child(n+#{$number+1}) ~ *,
+	&:nth-last-child(n+#{$number+1}):first-child {
+	  @content;
+	}
+}
+
+@mixin quantity-at-least($number) {
+	&:nth-last-child(n+#{$number}) ~ *,
+	&:nth-last-child(n+#{$number}):first-child {
+	  @content;
+	}
+}
+
+// mixins to be done
+//
+// quantity-at-most
+// quantity-less-then
+//
+// cya!

@@ -1,0 +1,230 @@
+# Copyright (c) 2022 weDevs Pte. Ltd. All Rights Reserved.
+msgid ""
+msgstr ""
+"Project-Id-Version: Texty 1.1.1\n"
+"Report-Msgid-Bugs-To: https://github.com/weDevsOfficial/texty/issues\n"
+"Last-Translator: support@wedevs.com\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-06-02T14:24:51+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: texty\n"
+
+#. Plugin Name of the plugin
+msgid "Texty"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/texty/"
+msgstr ""
+
+#. Description of the plugin
+msgid "SMS Notification for WordPress"
+msgstr ""
+
+#. Author of the plugin
+msgid "weDevs"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wptexty.com/"
+msgstr ""
+
+msgid "Phone Number (Texty)"
+msgstr ""
+
+msgid "The to phone number"
+msgstr ""
+
+msgid "The message to be sent"
+msgstr ""
+
+msgid "The selected gateway"
+msgstr ""
+
+msgid "Clickatell"
+msgstr ""
+
+#. translators: URL to Twilio settings and help docs
+msgid "Send SMS with Clickatell. Follow <a href=\"%1$s\" target=\"_blank\">this link</a> to get the API. Follow <a href=\"%2$s\" target=\"_blank\">these instructions</a> to configure the gateway."
+msgstr ""
+
+msgid "API Key"
+msgstr ""
+
+msgid "Fake Gateway"
+msgstr ""
+
+msgid "This is a fake gateway that logs the messages to <code>debug.log</code> file without sending the actual SMS."
+msgstr ""
+
+msgid "Plivo"
+msgstr ""
+
+#. translators: URL to Plivo settings and help docs
+msgid "Send SMS with Plivo. Follow <a href=\"%1$s\" target=\"_blank\">this link</a> to get the Auth ID and Token from Plivo. Follow <a href=\"%2$s\" target=\"_blank\">these instructions</a> to configure the gateway."
+msgstr ""
+
+msgid "Auth ID"
+msgstr ""
+
+msgid "Auth Token"
+msgstr ""
+
+msgid "From Number"
+msgstr ""
+
+msgid "Must be a valid number associated with your Plivo account"
+msgstr ""
+
+msgid "Twilio"
+msgstr ""
+
+#. translators: URL to Twilio settings and help docs
+msgid "Send SMS with Twilio. Follow <a href=\"%1$s\" target=\"_blank\">this link</a> to get the Account SID and Token from Twilio. Follow <a href=\"%2$s\" target=\"_blank\">these instructions</a> to configure the gateway."
+msgstr ""
+
+msgid "Account SID"
+msgstr ""
+
+msgid "Must be a valid number associated with your Twilio account"
+msgstr ""
+
+msgid "Vonage (nexmo)"
+msgstr ""
+
+#. translators: Vonage dashboard settings URL and help docs
+msgid "Send SMS with Vonage (formerly Nexmo). Follow <a href=\"%1$s\" target=\"_blank\">this link</a> to get the API Key and Secret from Vonage.  Follow <a href=\"%2$s\" target=\"_blank\">these instructions</a> to configure the gateway."
+msgstr ""
+
+msgid "API Secret"
+msgstr ""
+
+msgid "WordPress"
+msgstr ""
+
+msgid "WooCommerce"
+msgstr ""
+
+msgid "Dokan"
+msgstr ""
+
+msgid "Vendor - When Order Status is Complete"
+msgstr ""
+
+msgid "Vendor - When Order Status is Processing"
+msgstr ""
+
+msgid "Admin - When Order Status is Complete"
+msgstr ""
+
+msgid "Customer - When Order Status is Complete"
+msgstr ""
+
+msgid "Customer - When Order Status is On Hold"
+msgstr ""
+
+msgid "Admin - When Order Status is Processing"
+msgstr ""
+
+msgid "Customer - When Order Status is Processing"
+msgstr ""
+
+msgid "New Comment"
+msgstr ""
+
+msgid "New User Registration"
+msgstr ""
+
+msgid "Gateway Settings"
+msgstr ""
+
+msgid "Notifications"
+msgstr ""
+
+msgid "Tools"
+msgstr ""
+
+msgid "active"
+msgstr ""
+
+msgid "inactive"
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Select one or multiple user roles. Users with phone number in their profile will receive the text"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "You may use these variables: "
+msgstr ""
+
+msgid "Message has been sent."
+msgstr ""
+
+msgid "Error, message could not be sent."
+msgstr ""
+
+msgid "Phone Number"
+msgstr ""
+
+msgid "Write your message..."
+msgstr ""
+
+msgid "Sending..."
+msgstr ""
+
+msgid "Send Message"
+msgstr ""
+
+msgid "Connected"
+msgstr ""
+
+msgid "Not connected"
+msgstr ""
+
+msgid "Test Number"
+msgstr ""
+
+msgid "Enter a phone number to test the SMS sending."
+msgstr ""
+
+msgid "Send Test"
+msgstr ""
+
+msgid "Changes have been saved"
+msgstr ""
+
+msgid "Enable or disable notification based on different events."
+msgstr ""
+
+msgid "Plugin not installed"
+msgstr ""
+
+msgid "Saving..."
+msgstr ""
+
+msgid "Save Changes"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "SMS Gateway"
+msgstr ""
+
+msgid "Gateways"
+msgstr ""
+
+msgid "Test Message"
+msgstr ""
+
+msgid "Quick Send"
+msgstr ""

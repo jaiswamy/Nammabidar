@@ -1,0 +1,49 @@
+.popup__image {
+	@extend %card__image;
+}
+
+.popup__title.popup__title {
+	color: $accent;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+
+.popup__content {
+	padding: 15px;
+	font-size: 12px;
+}
+
+.popup__rating {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 7px;
+	padding-top: 5px;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	background: $accent;
+}
+
+.popup__address{
+	color: $gray-light;
+}
+
+.popup__pin + .popup__address {
+	padding-left: 10px;
+}
+
+.flexbox {
+	.popup__footer {
+		display: flex;
+		align-items: center;
+	}
+
+	.popup__rating {
+		flex-shrink: 0;
+	}
+}

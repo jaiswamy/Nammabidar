@@ -1,0 +1,19 @@
+.heart {
+	width: 48px;
+	height: 48px;
+	padding: 9px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all $transition-macro ease-in-out;
+
+	#heartshape {
+		stroke: white;
+		stroke-width: 2px;
+	}
+
+	&.is--bookmarked #heartshape {
+		fill: $accent;
+		stroke-width: 0;
+	}
+}

@@ -1,0 +1,160 @@
+// Settings		-- Default, settings and variables.
+// Tools		-- Functions and mixins.
+// Resets		-- Defaults
+// Base			-- Basic, high-level styling
+// Components	-- Designed UI elements.
+// Overrides	-- Overrides and helper classes.
+
+/**
+ *
+ * Table of Contents
+ * -------------------------------------------------
+ * 1.0 - Tools
+ *   1.1 - Clearfix
+ *   1.2 - Queries
+ *   1.3 - Helpers
+ *
+ * 2.0 - Resets
+ *
+ * 3.0 - Base
+ *   3.1 - Blockquote
+ *   3.2 - Lists
+ *   3.3 - Titles
+ *   3.4 - Links
+ *   3.5 - Typography
+ *   3.6 - WP Align
+ *
+ * 4.0 - Components
+ *   4.1 - Grid
+ *
+ * 5.0 - Objects
+ *   5.1 - Gallery
+ *
+ * 6.0 - Components
+ *   6.1 - Winners
+ */
+
+
+
+// #SETTINGS
+@import "0-settings/default";
+
+$editor-style : true;
+
+// #TOOLS
+/**
+ * 1.0 - Tools
+ *   1.1 - Clearfix
+ */
+@import "1-tools/clearfix";
+/**
+ *   1.2 - Queries
+ */
+@import "1-tools/queries";
+/**
+ *   1.3 - Helpers
+ */
+@import "1-tools/helpers";
+
+
+
+
+
+// #RESETS
+
+/**
+ * 2.0 - Resets
+ */
+@import "2-generic/reset";
+
+
+
+
+
+// #BASE
+
+/**
+ * 3.0 - Base
+ *   3.1 - Blockquote
+ */
+@import "3-base/blockquote";
+/**
+ *   3.2 - Lists
+ */
+@import "3-base/lists";
+/**
+ *   3.3 - Titles
+ */
+@import "3-base/titles";
+/**
+ *   3.4 - Links
+ */
+@import "3-base/links";
+/**
+ *   3.5 - Typography
+ */
+@import "3-base/typography";
+/**
+ *   3.6 - WP Align
+ */
+@import "3-base/wp-align";
+
+
+
+
+
+// #COMPONENTS
+
+/**
+ * 4.0 - Components
+ *   4.1 - Grid
+ */
+@import "4-components/grid";
+
+
+
+
+
+// #OBJECTS
+
+/**
+ * 5.0 - Objects
+ *   5.1 - Gallery
+ */
+@import "5-objects/gallery";
+
+
+
+
+
+/**
+ * 6.0 - Components
+ *   6.1 - Winners
+ */
+@import "8-overrides/winners";
+
+
+
+
+
+body {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	margin: 0 auto;
+	max-width: 700px;
+	-webkit-font-smoothing: initial !important;
+
+	border-top: 50px solid transparent;
+}
+
+.gallery,
+.gallery-item,
+.gallery-icon {
+	padding: 0;
+}
+
+.gallery {
+	line-height: inherit;
+}

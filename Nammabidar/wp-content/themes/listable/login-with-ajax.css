@@ -1,0 +1,177 @@
+.lwa-modal {
+  z-index: 1201;
+  width: 360px;
+  margin-left: -180px;
+  padding: 32px;
+  -webkit-font-smoothing: antialiased; }
+  .lwa-modal .lwa-modal-close {
+    display: none; }
+  .lwa-modal[style*="hidden"] {
+    display: none !important; }
+  .lwa-modal label {
+    color: #919191; }
+
+.lwa-modal-bg {
+  z-index: 1200; }
+
+.lwa-form {
+  display: none;
+  height: auto !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14.95px; }
+  .lwa-form.form-visible {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important; }
+  .lwa-form p {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 12px; }
+  .lwa-form p:last-child {
+    margin-bottom: 0; }
+  .lwa-form .oneall_social_login, .lwa-form .wc-social-login, .lwa-form .wp-social-login-widget {
+    position: relative;
+    padding-bottom: 19px;
+    margin-bottom: 23px;
+    border-bottom: 1px solid #D8D8D8; }
+  .lwa-form .wc-social-login:after {
+    content: attr(data-string);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: #919191;
+    background-color: white;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .lwa-form .wc-social-login p:first-child {
+    display: none; }
+  .lwa-form .wc-social-login a:first-of-type {
+    margin-top: 0; }
+  .lwa-form .wc-social-login .button-social-login {
+    display: block;
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none; }
+    .lwa-form .wc-social-login .button-social-login .si {
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 2em;
+      height: 2em;
+      border: 0;
+      border-radius: 50%;
+      font-weight: 400;
+      background-size: 1.4em 1.4em;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3); }
+      .lwa-form .wc-social-login .button-social-login .si.si-facebook, .lwa-form .wc-social-login .button-social-login .si.si-linkedin, .lwa-form .wc-social-login .button-social-login .si.si-instagram {
+        background-size: 1.5em 1.5em;
+        border-radius: 6px; }
+  .lwa-form .wp-social-login-provider-list {
+    padding-left: 0;
+    padding-right: 0; }
+  .lwa-form .wp-social-login-connect-with {
+    display: none; }
+  .lwa-form .oneall_social_login {
+    max-height: 110px;
+    overflow-y: scroll; }
+  .lwa-form .lwa-submit-wrapper {
+    margin: 0; }
+  .lwa-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #484848; }
+    .lwa-form button[type="submit"]:hover {
+      background-color: #FF4D55; }
+  .lwa-form .button-arrow {
+    position: relative; }
+    .lwa-form .button-arrow:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -18px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border: 4px solid transparent;
+      border-left: 4px solid white;
+      pointer-events: none; }
+  .lwa-form label {
+    display: block;
+    margin-bottom: 7px; }
+  .lwa-form .lwa-meta {
+    margin-top: 6px;
+    margin-bottom: 17px;
+    height: 25px; }
+  .lwa-form .lwa-bottom-text {
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid #D8D8D8;
+    text-align: center; }
+  .lwa-form .lwa-action-link {
+    color: #FF4D55; }
+
+.lwa-login .remember-me-checkbox {
+  margin: 0;
+  margin-right: 10px; }
+  .lwa-login .remember-me-checkbox:checked + label {
+    color: black; }
+
+.lwa-login .remember-me label {
+  font-weight: 500;
+  color: #919191;
+  margin-bottom: 0;
+  display: inline-block;
+  vertical-align: middle; }
+
+.lwa-login .lost-password {
+  text-align: right; }
+
+.lwa-login .lwa-show-remember-pass {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px; }
+
+.lwa-login .lwa-links-register-inline {
+  color: #FF4D55; }
+
+.lwa {
+  margin-bottom: 0; }
+  .lwa .lwa-remember, .lwa .lwa-register {
+    margin-top: 0; }
+
+.lwa-remember p {
+  margin: 0; }
+
+.lwa-remember .lwa-submit-wrapper {
+  margin-top: 25px;
+  margin-bottom: 20px; }
+
+.lwa-remember .cancel-button-wrapper a {
+  text-align: center;
+  display: block; }
+
+#lwa-modal-holder {
+  display: none; }
+
+/*# sourceMappingURL=login-with-ajax.css.map */

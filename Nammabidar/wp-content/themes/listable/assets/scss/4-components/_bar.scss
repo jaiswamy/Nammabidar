@@ -1,0 +1,111 @@
+%bar {
+    @extend %display--flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+
+    // above mask which is 300
+    // above .site-content which is 500
+    z-index: 550;
+
+    height: $header-height - 10;
+    flex-basis: $header-height - 10;
+
+    @include query-above($xsmall) {
+        height: $header-height;
+        flex-basis: $header-height;
+    }
+
+}
+
+.bar {
+    @extend %bar;
+}
+
+.bar--fixed {
+    @extend %bar;
+    @extend %position--fixed;
+    @extend %transform--0;
+    left: 7px;
+    right: 7px;
+    width: auto;
+}
+
+%bar-piece {
+    @extend %display--flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+%bar-middle {
+    flex-basis: 70%;
+    -webkit-flex-basis: 70%;
+    justify-content: center;
+    text-align: center;
+}
+
+%bar-side {
+    flex-basis: 15%;
+    -webkit-flex-basis: 15%;
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+}
+
+%bar-left {
+    padding-left: 48px;
+    justify-content: flex-start;
+    text-align: left;
+
+    @include query-below($desk) {
+        padding-left: 32px;
+    }
+}
+
+%bar-right {
+    padding-right: 48px;
+    justify-content: flex-end;
+    text-align: right;
+
+    @include query-below($desk) {
+        padding-right: 32px;
+    }
+}
+
+@include query-below($lap) {
+    %bar-piece {
+        margin: 0;
+        flex-basis: 33%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+
+.no-flexbox {
+    %bar {
+        display: table;
+        width: 100%;
+    }
+
+    .bar--fixed {
+        display: table;
+        width: 100%;
+    }
+
+    %bar-piece {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    %bar-side {
+        width: 15%;
+    }
+
+    %bar-middle {
+        width: 70%;
+    }
+}

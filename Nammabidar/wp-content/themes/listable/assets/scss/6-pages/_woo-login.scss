@@ -1,0 +1,101 @@
+.woocommerce-account:not(.logged-in) {
+	.site-content {
+		background-color: #FAFAFA;
+	}
+
+	.entry-featured {
+		border-bottom: none;
+	}
+
+	.entry-content {
+		padding: 0;
+		max-width: 385px;
+		background: white;
+	}
+	
+	.woocommerce {
+		form.login,
+		form.lost_reset_password {
+			@extend %login-form;
+		}
+
+		form.login {
+			input[type="submit"] {
+				@extend %btn;
+				float: right;
+				padding-right: 32px;
+				text-shadow: none !important;
+			}
+		}
+	}
+
+	.lost_password {
+		position: absolute;
+		top: 100%;
+		left: 0%;
+
+		margin-bottom: 0;
+		padding: 37px 0;
+		width: 100%;
+		text-align: center;
+
+		font-size: 15px;
+
+		a{
+			color: $gray;
+		}
+	}
+}
+
+// Style the Register form
+body.registration .entry-content {
+	@extend %login-form;
+
+	#buddypress .standard-form {
+		div.submit {
+			padding-top: 0;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			@extend %sans-serif;
+
+			width: 100% !important;
+			display: block;
+			vertical-align: middle;
+			padding: rem(13px) rem(15px);
+
+			outline: 0;
+
+			border-radius: 3px;
+			border: 1px solid $borders;
+			box-shadow: none;
+
+			font-size: 14.95px;
+			line-height: normal;
+			background: white;
+
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+
+			@include placeholder {
+				font-style: normal;
+				font-weight: 300;
+				opacity: 1;
+
+				color: $gray;
+			}
+		}
+
+		input#signup_submit[type="submit"] {
+			@extend %btn;
+			float: right;
+			padding-right: 32px;
+			text-shadow: none !important;
+			margin-right: 0;
+		}
+	}
+
+}

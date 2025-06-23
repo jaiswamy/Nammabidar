@@ -1,0 +1,76 @@
+.tooltip-container {
+	position: relative;
+	cursor: pointer;
+
+	// A "buffer" zone so that when hovered,
+	// the box doesn't lose focus when pointer
+	// goes to the tooltip
+	&:before {
+		content: "";
+
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+
+		transform: translateX(-50%);
+
+		width: rem(125px);
+		height: rem(20px);
+	}
+
+	&.active .tooltip {
+		opacity: 1;
+		pointer-events: auto;
+	}
+}
+
+.tooltip-trigger {
+	display: block;
+}
+
+.tooltip {
+	position: absolute;
+	top: rem(-20px);
+	left: 50%;
+
+	z-index: 1100;
+
+	transform: translateX(-50%) translateY(-100%);
+
+	display: block;
+	padding: 20px;
+	width: 150px;
+
+	border: 1px solid $borders;
+	background: white;
+
+	cursor: auto;
+	pointer-events: none;
+	opacity: 0;
+
+	&:before, &:after {
+		content: "";
+
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+
+		width: 0;
+		height: 0;
+
+		border: solid transparent;
+	}
+
+	&:before {
+		z-index: 1;
+
+		border-top-color: white;
+		border-width: 10px;
+	}
+
+	&:after {
+		border-top-color: $borders;
+		border-width: 11px;
+	}
+}

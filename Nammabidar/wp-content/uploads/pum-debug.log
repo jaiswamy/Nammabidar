@@ -1,0 +1,3 @@
+
+2021-7-16 06:18:30 - Subscriber table results: Created table nb_pum_subscribers
+2021-7-16 06:18:30 - Subscriber table exists check failed! Last error from wpdb: CREATE command denied to user 'hiideals_nammabi'@'localhost' for table 'nb_pum_subscribers'.

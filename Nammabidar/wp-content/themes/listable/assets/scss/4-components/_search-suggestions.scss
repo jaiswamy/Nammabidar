@@ -1,0 +1,390 @@
+%menu-search-item-wrapper {
+	display: block;
+	text-align: left;
+
+	border-bottom: 1px solid $borders;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+}
+
+%menu-search-item {
+	@extend %alt-sans-serif;
+
+	position: relative;
+
+	width: 100%;
+	display: block;
+
+	padding: 11px 20px;
+	padding-right: 35px;
+
+	font-size: 14.95px;
+
+	transition: none;
+}
+
+%menu-search-box-aspect {
+	border-top: 5px solid transparent;
+	background-color: white;
+	// win some, lose some // box-shadow: 0 1px 5px 0 rgba(46,46,46,0.20), 0 0 2px 0 rgba(0,0,0,0.25);
+	box-shadow: 0 2px 5px 0 rgba(46,46,46,0.20);
+}
+
+%menu-search {
+	@extend %menu-hover;
+	@extend %menu-search-box-aspect;
+
+	position: absolute;
+	left: 0;
+	z-index: 1020;
+
+	min-width: rem(220px);
+
+	opacity: 0;
+	pointer-events: none;
+
+	transition: opacity $transition-micro linear;
+
+	.is--iele10 & {
+		opacity: 1;
+		pointer-events: auto;
+		display: none;
+	}
+
+	li {
+		@extend %menu-search-item-wrapper;
+
+		a {
+			@extend %menu-search-item;
+
+			._mi {
+				position: absolute;
+
+				top: 50%;
+				left: 20px;
+
+				height: 20px;
+				margin-top: -10px;
+				width: auto;
+				max-width: 35px;
+
+				& + span {
+					margin-left: 25px;
+					display: inline-block;
+					vertical-align: baseline;
+				}
+			}
+
+			._svg {
+				filter: contrast(.1) brightness(150%);
+			}
+
+			i._mi {
+				color: $gray-light;
+			}
+		} // a
+	} // li
+
+	.menu-item-description {
+		@extend %sans-serif;
+
+		display: inline-block;
+		margin-left: 5px;
+
+		font-size: 12px;
+		line-height: 12px;
+		vertical-align: baseline;
+		font-weight: 300;
+		color: $gray-light;
+	}
+
+	.menu-item-has-children {
+		position: relative;
+
+		&:hover {
+			& > * {
+				opacity: 1;
+				pointer-events: auto;
+
+				.is--iele10 & {
+					display: block;
+				}
+			}
+
+			&:after {
+				border-left-color: $accent;
+			}
+
+		}
+
+		@include query-above($lap) {
+			// Arow Used for Sub Menus
+			&:after {
+				content: "";
+
+				position: absolute;
+				right: 17px;
+				top: 50%;
+
+				transform: translateY(-50%);
+
+				display: block;
+				width: 0;
+				height: 0;
+
+				border: 4px solid transparent;
+				border-left: 5px solid $gray;
+
+				transition: all $transition-micro linear;
+			}
+		}
+	} // .menu-item-has-children
+}
+
+%sub-menu--search {
+	position: absolute;
+	top: 0;
+	left: 96%;
+	z-index: 1001;
+
+	padding: rem(10px) 0;
+	min-width: rem(220px);
+
+	opacity: 0;
+	pointer-events: none;
+
+	background-color: white;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.20);
+
+	transition: opacity $transition-micro linear;
+
+	@include query-below($lap) {
+		display: none;
+	}
+
+	.is--iele10 & {
+		opacity: 1;
+		pointer-events: auto;
+		display: none;
+	}
+
+	li {
+		display: block;
+		border: 0;
+
+		a {
+			padding: rem(6px) rem(20px);
+			padding-right: rem(35px);
+		}
+	}
+} // %sub-menu--search
+
+.search-field-wrapper {
+	.is--active & {
+		.search-suggestions-menu {
+			opacity: 1;
+			pointer-events: auto;
+
+			.is--iele10 & {
+				display: block;
+			}
+		}
+
+		.page-template-front_page & {
+			.search-field {
+				box-shadow: 0 0 2px 0 rgba(0,0,0,0.25);
+			}
+
+			&.has--menu:after {
+				border-top-color: $accent;
+			}
+		}
+	}
+
+	.page-template-front_page &.has--menu {
+		position: relative !important;
+
+		&:after {
+			content: "";
+
+			position: absolute;
+			right: 17px;
+			top: 50%;
+			z-index: 1021;
+
+			transform: translateY(-25%);
+
+			display: block;
+			width: 0;
+			height: 0;
+
+			pointer-events: none;
+
+			border: 6px solid transparent;
+			border-top: 7px solid currentColor;
+		}
+	}
+
+	.site-header & {
+		width: 100%;
+	}
+
+	.search-field {
+		position: relative;
+		z-index: 1021;
+	}
+
+	label {
+		@extend .screen-reader-text;
+	}
+}
+
+.search-suggestions-menu {
+	@extend %menu-search;
+	top: 100%;
+	width: 100%;
+	min-width: 0;
+
+	.site-header & {
+		border-top: 1px solid $borders;
+
+		@include query-above($lap) {
+			left: 1%;
+			width: 98%;
+
+			&:before, &:after {
+				content: "";
+
+				position: absolute;
+				top: -1px;
+				left: 50%;
+				z-index: 1005;
+				transform: translateX(-50%);
+
+				width: 0;
+				height: 0;
+
+				border: solid transparent;
+
+				.header--transparent & {
+					content: none;
+				}
+			}
+
+			&:before {
+				z-index: 1006;
+
+				border-top-color: white;
+				border-width: 10px;
+			}
+
+			&:after {
+				border-top-color: $borders;
+				border-width: 11px;
+			}
+		}
+	}
+
+	.page-template-front_page & {
+		top: 93%;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+
+		@include query-below($small) {
+			border-radius: 4px;
+			width: 100%;
+
+			top: 105%;
+			top: calc(100% + 10px);
+		}
+
+		& > .menu-item:last-child a {
+			border-bottom-left-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+
+		& > .menu-item:hover {
+			&:after {
+				border-left-color: white;
+			}
+
+			& > a {
+				background-color: $accent;
+
+				&, * {
+					color: white;
+				}
+
+				._svg {
+					filter: invert(1) contrast(2);
+				}
+			}
+		}
+	}
+
+	.sub-menu {
+		@extend %sub-menu--search;
+	}
+}
+
+.select2-results__option {
+	@extend %menu-search-item;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.075)
+}
+
+.select2-results__options {
+	@extend %menu-search-box-aspect;
+	border-top: 0;
+}
+
+.select2-dropdown {
+	border: 0;
+	background-color: transparent;
+}
+
+.select2-results__options {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true]{
+	background-color: transparent;
+}
+
+.select2-results .select2-results__options .select2-results__option:hover {
+	background-color: $accent;
+	color: #fff;
+}
+
+.search_jobs--frontpage .search_region .select2-container {
+	&:after {
+		content: "";
+		position: absolute;
+		right: 17px;
+		top: 50%;
+		z-index: 1002;
+		-webkit-transform: translateY(-25%);
+		transform: translateY(-25%);
+		display: block;
+		width: 0;
+		height: 0;
+		pointer-events: none;
+		border: 6px solid transparent;
+		border-top: 7px solid currentColor;
+	}
+	&.select2-container--open {
+		&:after {
+			border-top-color: $accent;
+		}
+	}
+}
+
+.home .select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: transparent;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	display: none;
+}

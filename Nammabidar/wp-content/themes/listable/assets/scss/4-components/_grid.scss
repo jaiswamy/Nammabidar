@@ -1,0 +1,9 @@
+.grid {
+	@extend .clearfix;
+}
+
+.grid__item {
+	width: 100%;
+	display: block;
+	float: left;
+}

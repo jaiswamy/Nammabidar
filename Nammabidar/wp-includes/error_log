@@ -1,0 +1,12 @@
+[29-May-2021 21:17:25 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Dependencies' not found in /home/hiideals/public_html/nammabidar.in/wp-includes/class.wp-styles.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/hiideals/public_html/nammabidar.in/wp-includes/class.wp-styles.php on line 18
+[31-May-2021 11:48:57 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Dependencies' not found in /home/hiideals/public_html/nammabidar.in/wp-includes/class.wp-styles.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/hiideals/public_html/nammabidar.in/wp-includes/class.wp-styles.php on line 18
+[06-Jun-2021 09:51:11 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Dependencies' not found in /home/hiideals/public_html/nammabidar.in/wp-includes/class.wp-styles.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/hiideals/public_html/nammabidar.in/wp-includes/class.wp-styles.php on line 18

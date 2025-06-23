@@ -1,0 +1,74 @@
+// Colors
+$accent: 						#FF4D55;
+$borders: 						#EBEBEB;
+$borders: 						rgba(0,0,0,0.075);
+$gray:							#919191;
+$gray-light:					#ABABAB;
+$gray-lightest:					#F9F9F9;
+$dark: 							#484848;
+
+$borders-alt:                   #D8D8D8;
+
+
+
+// Fonts
+$default-sans-font:				"Source Sans Pro", Helvetica, sans-serif;
+$alt-sans-font:					"Hanken", sans-serif;
+
+$default-font-size:             16px;
+$default-line-height:           1.5;
+
+
+
+
+
+// Breakpoints
+$default: 						0;
+$mobile:     					320px;
+$xsmall:    					480px;
+$small: 						740px;
+$lap:    						900px;
+$desk:   						1200px;
+$large: 						1420px;
+
+// Rules for <<default> size will not be enclosed in any media query;
+// Rules for <<palm>> and <<lap>> will overwrite <<default>> rules,
+// those will be enclosed in media queries.
+
+// horizontal spacings
+// ---- default ----> / 600px / ---- lap ----> / 1024px / ---- desk ---->
+$responsive-title: 			(	$default: 24px,		$small: 48px,		$lap: 0000	);
+$responsive-body-text:		(	$default: 14px,		$small: 14.95px,	$lap: 16px	);
+
+// vertical rhythm
+$rhythm-title:				(	$default: 18px,			$small: 20px,	$lap: 0000	);
+$rhythm-meta:				(	$default: 8px,			$small: 0000,	$lap: 16px	);
+$rhythm-general:			(	$default: 14.95px,		$small: 20px,	$lap: 25px	);
+
+$small-cards: 				560px $small, $lap $desk;
+
+@mixin query-cards() {
+	@media only screen and (min-width: nth(nth($small-cards, 1), 1)) and (max-width: nth(nth($small-cards, 2), 1)), (min-width: nth(nth($small-cards, 1), 2)) and (max-width: nth(nth($small-cards, 2), 2)) {
+		@content;
+	}
+}
+
+
+
+
+
+// Content widths
+$single-listing-width		:	1000px;
+$page-width                 :   760px;  // 30 +  700 + 30 (single post, page)
+$page-full-width            :   1060px; // 30 + 1000 + 30 (page full width)
+
+// Various
+$header-height				:	60px;
+$gutter						:	24px;
+$editor-style               :   false;
+
+// Transitions & Timing
+$transition-micro 			:	0.1s;	// Small Elements: Buttons, Tags
+$transition-macro 			:	0.3s; 	// Larger Elements: Grid Cards
+$transition-entry 			:	0.3s; 	// Entrance Transition: Carousel Images, Front Page Hero Video
+

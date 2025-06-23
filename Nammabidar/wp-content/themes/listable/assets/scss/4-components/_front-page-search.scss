@@ -1,0 +1,448 @@
+// Front Page Search / Filters
+%frontpage-search-input {
+	height: 51px;
+	padding: 15px 20px;
+
+	font-size: 16px;
+	text-align: left;
+
+	color: $gray;
+
+	.has--one-field & {
+		border-radius: 4px;
+	}
+
+	@include query-below($lap) {
+		border-radius: 4px;
+	}
+
+	@include placeholder() {
+		opacity: 1;
+	}
+}
+
+%frontpage-search-input-arrow {
+	position: relative;
+
+	&:after {
+		content: "";
+
+		position: absolute;
+		right: 17px;
+		top: 50%;
+		z-index: 1002;
+
+		transform: translateY(-25%);
+
+		display: block;
+		width: 0;
+		height: 0;
+
+		pointer-events: none;
+
+		border: 6px solid transparent;
+		border-top: 7px solid currentColor;
+	}
+}
+
+select.search_region {
+
+	body:not(.with-chosen):not(.without-chosen) & {
+		display: none;
+	}
+
+	body.without-chosen & {
+		display: block;
+	}
+}
+
+.search_jobs--frontpage {
+	&.search_jobs {
+		display: flex;
+	}
+	.search_categories {
+		@include query-above($lap) {
+			width: 230px;
+		}
+	}
+
+	justify-content: center;
+	flex-direction: column;
+
+	@include query-above($lap) {
+		flex-direction: row;
+	}
+
+	.page-template-front_page & {
+		border: 0;
+	}
+
+	& > * {
+		position: static;
+	}
+
+	.is--ie9 & {
+		display: block;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.search-filter-wrapper {
+		margin-bottom: 10px;
+	}
+
+	.search_region .chosen-container {
+		&:after {
+			content: "";
+			position: absolute;
+			right: 17px;
+			top: 50%;
+			z-index: 1002;
+			-webkit-transform: translateY(-25%);
+			transform: translateY(-25%);
+			display: block;
+			width: 0;
+			height: 0;
+			pointer-events: none;
+			border: 6px solid transparent;
+			border-top: 7px solid currentColor;
+		}
+	}
+
+	@include query-below($lap) {
+		[class*="search_"]:not(.search_location) {
+			position: relative;
+
+			&:after {
+				content: "";
+
+				position: absolute;
+				right: 17px;
+				top: 50%;
+				z-index: 1002;
+
+				transform: translateY(-25%);
+
+				display: block;
+				width: 0;
+				height: 0;
+
+				pointer-events: none;
+
+				border: 6px solid transparent;
+				border-top: 7px solid currentColor;
+			}
+		}
+	}
+
+	@include query-above($lap) {
+		.search-filter-wrapper {
+			margin-bottom: 0;
+			flex: 0 1 200px;
+
+			input, .chosen-single {
+				border-radius: 0; // reset
+				border-right: 0 !important;
+				border-right: 1px solid $borders !important;
+
+				padding-right: 20px;
+			}
+
+			&:first-of-type {
+				input, select, .chosen-single {
+					border-top-left-radius: 4px;
+					border-bottom-left-radius: 4px;
+				}
+			}
+
+			&:last-of-type {
+				input, select, .chosen-single {
+					border-top-right-radius: 4px;
+					border-bottom-right-radius: 4px;
+
+					border: 0 !important;
+				}
+			}
+		}
+
+		.search-field-wrapper.search-filter-wrapper {
+			flex: 0 1 365px;
+		}
+	}
+
+	input, select {
+		border: 0;
+	}
+	@include query-above($lap) {
+		input, select {
+			border-radius: 0;
+			border: 0;
+		}
+	}
+
+	label {
+		@extend .screen-reader-text;
+	}
+
+	.search-form & .search-field {
+		@extend %frontpage-search-input;
+
+		color: $dark;
+		cursor: pointer;
+		background-color: white;
+
+		.is--ie9 & {
+			width: 70%;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	.page-template-front_page & .search-submit {
+		@extend %btn;
+
+		position: relative;
+
+		flex: 0 0 auto;
+		margin-left: 20px;
+		transform: none;
+		top: 0;
+
+		padding: 12px 25px;
+		padding-left: 28px;
+
+		font-size: rem(18px);
+		background-image: none;
+
+		.search-icon {
+			display: inline-block;
+			position: relative;
+			top: 3px;
+			right: 2px;
+		}
+
+		@include query-below($lap) {
+			padding: 12px 0;
+			margin-left: 0;
+
+			.search-icon {
+				right: -1px;
+			}
+		}
+
+		.is--ie9 & {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	} // .search-submit
+
+	input, .chosen-single {
+		background-color: white;
+	}
+
+	.search_region {
+		position: relative;
+		margin-right: 0;
+	}
+
+	select.search_region {
+		margin-bottom: 0;
+	}
+
+	.search_location #search_location {
+		@extend %frontpage-search-input;
+
+		position: static;
+
+		width: 100% !important;
+		margin-bottom: 0;
+
+		box-shadow: none;
+	}
+
+	.chosen-single {
+
+		line-height: normal;
+
+		& + span {
+			@extend %frontpage-search-input-arrow;
+
+			position: relative;
+			z-index: 1015;
+
+			height: 51px;
+
+			border: 0 !important;
+			box-shadow: none !important;
+			transition: none !important;
+		}
+
+		& > div {
+			display: none;
+		}
+	}
+
+	.search_categories.search-filter-wrapper .chosen-container-single {
+		@extend %frontpage-search-input-arrow;
+
+		select {
+			display: block;
+			line-height: 24px;
+		}
+	}
+
+	/* div */.search_region-dummy {
+		         @extend %frontpage-search-input-arrow;
+	         }
+
+	/* input */.select-region-dummy {
+		           @extend %frontpage-search-input;
+
+		           position: static !important;
+
+		           width: 100% !important;
+		           padding-top: 17px;
+		           margin-bottom: 0;
+
+		           line-height: 24px;
+		           box-shadow: none !important;
+	           }
+
+	.chosen-with-drop.chosen-container-active {
+		.chosen-single {
+			&:after {
+				border-top-color: $accent;
+			}
+		}
+
+		.chosen-drop {
+			opacity: 1;
+			pointer-events: auto;
+		}
+	}
+
+	.chosen-single,
+	&.search_jobs select {
+		@extend %frontpage-search-input;
+	}
+
+	.chosen-drop {
+		border: 0 !important;
+		border-radius: 0 !important;
+		margin: 0 !important;
+
+		top: 93%;
+		left: 0;
+
+		background: transparent;
+		opacity: 0;
+		pointer-events: none;
+
+		transition: linear $transition-micro opacity;
+	}
+
+	.chosen-container .chosen-results {
+		@extend %menu-search-box-aspect;
+
+		padding-left: 0;
+		margin: 0;
+
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+
+		li {
+			@extend %menu-search-item-wrapper;
+			@extend %menu-search-item;
+
+			padding-right: 20px;
+
+			color: $dark;
+			line-height: 1.5;
+
+			&:hover {
+				color: white;
+				background-color: $accent;
+			}
+		}
+	}
+
+	// If there's only one field we need some special style
+	&.has--one-field { // .search_jobs--frontpage.has--one-field
+		flex-direction: row;
+
+		.search-filter-wrapper {
+			flex: 0 1 375px;
+			margin-bottom: 0;
+		}
+
+		@include query-below($lap) {
+			.search-submit {
+				margin-left: 10px;
+
+				width: 50px;
+
+				span {
+					display: none;
+				}
+			}
+
+			.search-suggestions-menu {
+				width: 110%;
+				width: calc(100% + 60px);
+			}
+		}
+
+	}
+
+	.select2-container {
+		width: 100% !important;;
+	}
+
+	.search_jobs--frontpage .select2-choice .select2-chosen {
+		font-size: 16px;
+	}
+
+	.select2-selection__rendered {
+		height: 100%;
+	}
+
+	.select2-container--default .select2-selection--single {
+		@include query-above($lap) {
+			border-radius: 0;
+			border-top: 0;
+			border-bottom: 0;
+			border-right: 1px solid rgba(0, 0, 0, 0.075) !important;
+		}
+	}
+
+	.select2-container--default .select2-selection--single .select2-selection__rendered {
+		@extend %frontpage-search-input;
+	}
+}
+
+
+// Some default styles for select2
+.select2-search {
+	background: #FFFFFF;
+	border: 0 solid rgba(0, 0, 0, 0.075);
+	border-width: 0 1px;
+}
+
+.select2-results {
+	padding: 0;
+}
+
+.select2-container .select2-selection--single {
+	margin: 0;
+}
+
+.page-template-front_page {
+
+	.select2-search.select2-search--dropdown {
+		display: none;
+	}
+
+	.select2-container--default .select2-results>.select2-results__options {
+		max-height: 240px;
+	}
+}

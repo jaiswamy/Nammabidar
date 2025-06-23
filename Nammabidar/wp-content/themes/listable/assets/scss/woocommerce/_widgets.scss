@@ -1,0 +1,203 @@
+@import "front-page-widgets";
+@import "single-listing-widgets";
+
+.widgets_area,
+.listing-sidebar--main,
+.listing-sidebar--secondary {
+
+  .product_list_widget {
+    display: flex;
+
+    li {
+      margin-bottom: 20px;
+      border-radius: 8px;
+
+      position: relative;
+      font-family: $alt-sans-font;
+
+      &:after {
+        content: "";
+        display: block;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        border: 1px solid;
+        border-radius: inherit;
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      a {
+        display: flex;
+        flex-flow: column nowrap;
+
+        img {
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          width: auto;
+        }
+
+        .product-title {
+          padding: 22px 16px 0 16px;
+          margin-bottom: 18px;
+
+          align-self: center;
+          color: $dark;
+
+          font-size: 17px;
+          font-weight: 400;
+          text-transform: none;
+          letter-spacing: 0;
+          hyphens: none;
+        }
+      }
+
+      .woocommerce-product-details__short-description {
+        padding: 0 16px 38px 16px;
+        font-size: 14.95px;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .product__price {
+        padding: 5px 7px;
+
+        position: absolute;
+        top: 30px;
+        left: 0;
+
+        background-color: rgba(80, 80, 80, 0.72);
+        color: #FFFFFF;
+
+        font-size: 15px;
+        font-family: $default-sans-font;
+
+        &:empty {
+          display: none;
+        }
+
+        del {
+          font-weight: 300;
+        }
+
+        ins {
+          font-weight: 500;
+          text-decoration: none;
+        }
+      }
+
+
+    }
+  }
+
+  .job_listings {
+
+    .job_listing > a,
+    .job_listing.job_position_featured > a {
+      &:hover {
+        background: $gray-lightest;
+      }
+    }
+
+    .job_listing.job_position_featured > a {
+      background: $gray-lightest;
+    }
+
+    .content .meta {
+        color: $gray;
+    }
+  }
+
+  .widget_shopping_cart_content {
+    .remove_from_cart_button {
+      display: inline-block;
+
+      position: absolute;
+      top: -9px;
+      right: 0;
+
+      color: #FFFFFF;
+      font-size: 14px;
+      opacity: .99;
+      z-index: 10;
+
+      &:after {
+        content: "";
+
+        margin-left: -6px;
+        padding: 11px;
+
+        position: absolute;
+        top: 1px;
+        right: 0;
+        bottom: 0;
+        left: -1px;
+
+        background-color: $accent;
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+
+    .woocommerce-mini-cart {
+      display: flex;
+      justify-content: flex-start;
+
+      .woocommerce-mini-cart-item {
+        a:nth-of-type(2) .card__content {
+          padding: 22px 16px 0 16px;
+          margin-bottom: 18px;
+          align-self: center;
+
+          color: $dark;
+          font-size: 17px;
+          font-weight: 400;
+          text-transform: none;
+          letter-spacing: 0;
+          hyphens: none;
+        }
+
+        .quantity {
+          position: absolute;
+          bottom: 5px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    .woocommerce-mini-cart__total,
+    .woocommerce-mini-cart__buttons {
+      display: flex;
+      align-items: baseline;
+    }
+
+    .woocommerce-mini-cart__total {
+      color: $dark;
+
+      &:first-of-type {
+        margin-bottom: 0;
+      }
+
+      .woocommerce-Price-amount {
+        margin-left: 10px;
+        font-size: 14.95px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .tagcloud {
+    display: flex;
+
+    a:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+}

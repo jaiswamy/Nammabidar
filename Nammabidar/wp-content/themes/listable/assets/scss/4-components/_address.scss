@@ -1,0 +1,24 @@
+.address {
+	font-size: 14px;
+	line-height: 18px;
+
+	@include query-cards() {
+		font-size: 12px;
+		line-height: 15px;
+	}
+}
+
+	.address__postcode,
+	.address__country,
+	.address__city {
+		display: none;
+	}
+
+	[itemprop="streetAddress"] {
+		display: inline;
+	}
+
+	.address__street-no {
+		&:after 		{ content: ", " }
+		&:empty:after 	{ content: none }
+	}

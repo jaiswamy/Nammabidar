@@ -1,0 +1,63 @@
+/*------------------------------------*\
+   $BUTTONS
+\*------------------------------------*/
+
+%btn,
+.btn {
+	@extend %alt-sans-light;
+
+	display: inline-block;
+	padding: 12px 24px;
+
+	background-color: $accent;
+	color: white;
+
+	font-size: 14.95px;
+	text-align: center;
+
+	border-radius: 4px;
+	border: 0;
+
+	cursor: pointer;
+
+	transition: $transition-micro background-color ease-out;
+
+	-webkit-appearance: none;
+
+	&:hover,
+	&:focus {
+		background-color: $dark;
+	}
+
+	&.fullwidth {
+		display: block;
+		font-size: 18px;
+	}
+
+	&[disabled] {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+}
+
+.entry-content a.btn,
+.entry-content a.btn:hover {
+	color: white;
+}
+
+%btn--table {
+	display: inline-block;
+    padding: 2px 13px 3px 14px;
+	border: 2px solid $borders;
+	border-radius: 4px;
+	font-size: 14.95px;
+	line-height: 1.7;
+    font-family: inherit;
+	background: white;
+	color: $gray;
+
+	&:hover,
+	&:focus {
+		color: $dark;
+	}
+}
